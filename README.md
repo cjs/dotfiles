@@ -5,6 +5,11 @@ my own carefully crafted lightsaber.
 
     {///////\\\\\\\<#>}=============================================
 
+This is shamelessly stolen from [pengwynn's dotfiles]( https://github.com/pengwynn/dotfiles), which is turn
+was cloned from [Holman's][holman/dotfiles] repository.
+
+The below is pengwynn's.
+
 [Yonk][] and I scour the galaxy looking for nanosecond timesavers for all our
 favorite tools. If you've got a tip [let us know][octodots].
 
