@@ -1,0 +1,22 @@
+"*":
+  welcome:
+    showOnStartup: false
+  linter:
+    subtleLinterErrors: [
+      "shellcheck"
+      "puppet-lint"
+    ]
+  "linter-shellcheck":
+    shellcheckExecutablePath: "/usr/local/bin/shellcheck"
+  editor:
+    invisibles: {}
+  "linter-puppet-lint":
+    puppetLintArguments: "--no-autoloader_layout-check"
+    oldVersion: false
+  core:
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  "notational-velocity":
+    directory: "/Users/cjs/Dropbox/Notational Data"

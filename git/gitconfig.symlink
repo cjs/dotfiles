@@ -1,6 +1,6 @@
 [user]
-  name = Wynn Netherland
-  email = wynn@github.com
+  name = Craig Steinberger
+  email = cjs@github.com
 [color]
   ui = auto
 [color "branch"]
@@ -40,7 +40,7 @@
   ls = ls-files
   mybranches = "!f() { if test $# = 0 ; then set -- refs/remotes ; fi ; git for-each-ref --format='%(authordate:relative)\t%(refname:short)\t%(authoremail)' --sort=authordate \"$@\" | sed -ne \"s/\t<$(git config user.email)>//p\" | column -s '\t' -t ; } ; f"
   # depends on hub
-  mypulls = browse -- pulls/pengwynn
+  mypulls = browse -- pulls/cjs
   # Find FIXME, TODO, etc, optimized by @x3ro https://gist.github.com/3908985
   n = !"f() { git ls-files $1 | xargs notes | awk -F: '{ print $1,$2; print $3,$4; print $5}' | grcat conf.notes | less -r;  }; f"
   pullm = !"git pull origin master"
@@ -79,7 +79,7 @@
 [branch]
 
 [github]
-  user = pengwynn
+  user = cjs
 
 [difftool]
   prompt = false
