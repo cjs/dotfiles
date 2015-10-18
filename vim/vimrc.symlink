@@ -217,7 +217,7 @@ let g:gitgutter_eager = 0
 
 " GH Dashboard
 " ==========
-let g:github_dashboard = { 'username': 'pengwynn', 'password': $GITHUB_TOKEN }
+let g:github_dashboard = { 'username': 'cjs', 'password': $GITHUB_TOKEN }
 
 " Searching
 " ==========
