@@ -207,7 +207,7 @@ source ~/.vim/writing.vim
 
 let base16colorspace=256
 set bg=dark
-colorscheme base16-eighties
+colorscheme base16-solarized
 
 
 " Git Gutter
