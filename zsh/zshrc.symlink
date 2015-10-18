@@ -1,4 +1,4 @@
-export PATH=/Users/cjs/.dotfiles/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/wynn/.config/base16-shell
+export PATH=/Users/cjs/.dotfiles/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/cjs/.config/base16-shell
 
 # base-16
 BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"
@@ -11,7 +11,7 @@ export DOTFILES=$HOME/.dotfiles
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/code
 
-source /opt/github/env.sh
+#source /opt/github/env.sh
 
 # source every .zsh file in this rep
 for config_file ($ZSH/**/*.zsh) source $config_file
@@ -44,5 +44,3 @@ for config_file ($ZSH/**/completion.sh) source $config_file
 
 source `brew --prefix grc`/etc/grc.bashrc
 
-# added by travis gem
-[ -f /Users/wynn/.travis/travis.sh ] && source /Users/wynn/.travis/travis.sh
