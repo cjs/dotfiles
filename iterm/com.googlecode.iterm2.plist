@@ -12204,7 +12204,7 @@
 			<key>Window Type</key>
 			<integer>1</integer>
 			<key>Working Directory</key>
-			<string>/Users/wynn</string>
+			<string>/Users/cjs</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -12929,7 +12929,7 @@
 			<key>Window Type</key>
 			<integer>1</integer>
 			<key>Working Directory</key>
-			<string>/Users/wynn</string>
+			<string>/Users/cjs</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -13654,7 +13654,7 @@
 			<key>Window Type</key>
 			<integer>1</integer>
 			<key>Working Directory</key>
-			<string>/Users/wynn</string>
+			<string>/Users/cjs</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -14379,7 +14379,7 @@
 			<key>Window Type</key>
 			<integer>1</integer>
 			<key>Working Directory</key>
-			<string>/Users/wynn</string>
+			<string>/Users/cjs</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -15104,7 +15104,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/wynn</string>
+			<string>/Users/cjs</string>
 		</dict>
 	</array>
 	<key>NoSyncNeverRemindPrefsChangesLost</key>
@@ -15157,7 +15157,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/wynn/.dotfiles/iterm</string>
+	<string>/Users/cjs/.dotfiles/iterm</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
