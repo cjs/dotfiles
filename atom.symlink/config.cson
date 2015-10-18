@@ -10,13 +10,17 @@
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
   editor:
     invisibles: {}
+    fontFamily: "inconsolata"
   "linter-puppet-lint":
     puppetLintArguments: "--no-autoloader_layout-check"
     oldVersion: false
   core:
     themes: [
-      "seti-ui"
-      "seti-syntax"
+      "one-dark-ui"
+      "cobalt2-syntax"
     ]
   "notational-velocity":
     directory: "/Users/cjs/Dropbox/Notational Data"
+  "exception-reporting":
+    userId: "1f9709cf-d9a3-18bc-44a8-76fea8073dbe"
+  "one-dark-ui": {}
