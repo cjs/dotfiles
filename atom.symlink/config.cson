@@ -1,26 +1,27 @@
 "*":
-  welcome:
-    showOnStartup: false
-  linter:
-    subtleLinterErrors: [
-      "shellcheck"
-      "puppet-lint"
-    ]
-  "linter-shellcheck":
-    shellcheckExecutablePath: "/usr/local/bin/shellcheck"
-  editor:
-    invisibles: {}
-    fontFamily: "inconsolata"
-  "linter-puppet-lint":
-    puppetLintArguments: "--no-autoloader_layout-check"
-    oldVersion: false
   core:
     themes: [
       "one-dark-ui"
       "cobalt2-syntax"
     ]
-  "notational-velocity":
-    directory: "/Users/cjs/Dropbox/Notational Data"
+  editor:
+    fontFamily: "inconsolata"
+    invisibles: {}
   "exception-reporting":
     userId: "1f9709cf-d9a3-18bc-44a8-76fea8073dbe"
+  linter:
+    subtleLinterErrors: [
+      "shellcheck"
+      "puppet-lint"
+    ]
+  "linter-puppet-lint":
+    oldVersion: false
+    puppetLintArguments: "--no-autoloader_layout-check"
+  "linter-shellcheck":
+    shellcheckExecutablePath: "/usr/local/bin/shellcheck"
+  "notational-velocity":
+    directory: "/Users/cjs/Dropbox/Notational Data"
   "one-dark-ui": {}
+  "status-bar": {}
+  welcome:
+    showOnStartup: false
