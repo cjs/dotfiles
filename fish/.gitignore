@@ -1,5 +1,8 @@
 fishd.*
 fish_history
 local.fish
+fish_read_history
+completions
+generated_completions
 *_private.fish
 *_creds.fish
