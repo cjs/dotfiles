@@ -620,6 +620,12 @@ defaults write com.apple.terminal StringEncodings -array 4
 # Don’t display the annoying prompt when quitting iTerm
 # defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+# Enable Secure input by default
+# Terminal.app
+$ defaults write com.apple.terminal SecureKeyboardEntry 1
+# iTerm2
+$ defaults write com.googlecode.iterm2 "Secure Input" 1
+
 ###############################################################################
 # Time Machine                                                                #
 ###############################################################################
