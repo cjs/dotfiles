@@ -1,6 +1,7 @@
 [user]
   name = Craig Steinberger
   email = cjs@github.com
+	signingkey = E5BA0ED3
 [color]
   ui = auto
 [color "branch"]
