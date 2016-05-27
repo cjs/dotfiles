@@ -1,4 +1,6 @@
 "*":
+  "atom-beautify":
+    _analyticsUserId: "5a03ff30-43e9-4650-a0f6-904787892501"
   core:
     themes: [
       "one-dark-ui"
@@ -10,6 +12,7 @@
   "exception-reporting":
     userId: "1f9709cf-d9a3-18bc-44a8-76fea8073dbe"
   linter:
+    showErrorPanel: false
     subtleLinterErrors: [
       "shellcheck"
       "puppet-lint"
@@ -17,6 +20,8 @@
   "linter-puppet-lint":
     oldVersion: false
     puppetLintArguments: "--no-autoloader_layout-check"
+  "linter-rubocop":
+    command: "/Users/cjs/.rbenv/versions/2.2.4/bin/rubocop"
   "linter-shellcheck":
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
   "notational-velocity":
