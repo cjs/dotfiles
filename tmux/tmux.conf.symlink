@@ -6,7 +6,7 @@ set -g default-terminal "screen-256color"
 
 ## keybindings
 unbind C-b
-unbind C-a
+unbind C-s
 unbind ,
 unbind .
 unbind n
@@ -17,7 +17,8 @@ unbind l
 unbind &
 unbind "'"
 
-set-option -g prefix C-a # C-a for prefix just like screen
+set-option -g prefix C-s
+bind-key -r C-s send-prefix
 
 bind-key C-a    last-window
 
@@ -65,7 +66,7 @@ bind-key Escape copy-mode -u
 bind-key Up     copy-mode -u
 bind-key r      source-file $HOME/.tmux.conf\; display "The matrix has been reloaded"
 bind-key R      refresh-client
-bind-key a      send-key C-a
+#bind-key a      send-key C-a
 # -r: can be repeated without pressing prefix#     again (500ms after last '-r' action or prefix)
 bind-key -r h   select-pane -t :.-
 bind-key -r l   select-pane -t :.+
@@ -99,7 +100,7 @@ bind-key / set-option status
 # Where appropriate, special character sequences may be prefixed with a
 # number to specify the maximum length, in this line "#10W'.
 set -g status-left ""
-set-option -g status-right '#[fg=colour3]#S#[fg=default] [#I:#P] /// #(battery -o tmux -m default -g default)#[fg=default]%a %d %b %H:%M'
+set-option -g status-right '#[fg=colour3]#S#[fg=default] [#I:#P] /// #(battery -t -m default -g default) #[fg=default]%a %d %b %H:%M'
 
 set-option -g status-right-length 100
 set-option -g status-left-length 120
@@ -145,6 +146,6 @@ set-window-option -g    mode-fg   black    # selector foreground
 ## Copy/paste
 unbind -t vi-copy Enter
 bind-key -t vi-copy Enter copy-pipe 'reattach-to-user-namespace pbcopy'
-set-option -g default-command "reattach-to-user-namespace -l zsh; tmux rename-window zsh"
+set-option -g default-command "reattach-to-user-namespace -l fish; tmux rename-window fish"
 
 # vim: set ft=tmux:
