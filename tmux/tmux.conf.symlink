@@ -90,7 +90,6 @@ set-option -g message-bg colour4
 set-option -g display-time 5000
 
 ## set status bar
-set-option -g status-utf8 on
 set-option -g status-interval 1
 set-option -g status-fg colour08
 set-option -g status-bg default
@@ -132,11 +131,9 @@ set-option -g base-index 1
 set -g pane-base-index 1
 
 set-option -g   visual-activity   off
-set-option -g   visual-content    off
 set-option -g   set-titles        on
 set-option -gw  automatic-rename  on
 set-option -gw  monitor-activity  off
-set-option -gw  monitor-content   off
 
 set-window-option -g window-status-format ' #I #W '
 set-window-option -g window-status-attr dim
@@ -155,4 +152,10 @@ set-window-option -g    mode-fg   black    # selector foreground
 
 set-option -g default-command "reattach-to-user-namespace -l fish; tmux rename-window fish"
 
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
 # vim: set ft=tmux:
