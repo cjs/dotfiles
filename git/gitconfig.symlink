@@ -1,3 +1,4 @@
+# vim: ft=gitconfig
 [user]
   name = Craig Steinberger
   email = cjs@github.com
@@ -72,10 +73,6 @@
 [diff]
   tool = vimdiff
 
-# vim: ft=gitconfig
-[credential]
-  helper = osxkeychain
-
 [web]
   browser = open
 [filter "media"]
@@ -83,6 +80,8 @@
 	smudge = git-media-smudge %f
 
 [filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
   required = true
+[credential]
+	helper = osxkeychain
