@@ -5,6 +5,7 @@ source $fisher_home/config.fish
 prepend_to_path "/usr/local/sbin"
 prepend_to_path "$HOME/.dotfiles/bin"
 prepend_to_path "$HOME/bin"
+prepend_to_path "$HOME/anaconda/bin"
 prepend_to_path "./bin"
 
 # base-16
@@ -21,3 +22,5 @@ for i in $DOTFILES/**/*.fish
     source $i
   end
 end
+
+source $DOTFILES/fish/functions/iterm_integration.fish_manual
