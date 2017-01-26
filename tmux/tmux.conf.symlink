@@ -1,11 +1,6 @@
 # Don't lose ENV
 set -ga update-environment ' ITERM_PROFILE TMUX_STATUS_LEFT'
 
-set -g default-shell $SHELL
-if-shell 'test "$(uname -s)" = Darwin' 'set-option -g default-command "exec reattach-to-user-namespace -l ${SHELL}"'
-
-set -g default-terminal "screen-256color"
-
 ## keybindings
 unbind C-b
 unbind C-s
@@ -54,8 +49,6 @@ bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
 
 # Update default binding of `Enter` to also use copy-pipe
 unbind -t vi-copy Enter
-bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
-
 # Smart pane switching with awareness of vim splits
 # See: https://github.com/christoomey/vim-tmux-navigator
 is_vim='echo "#{pane_current_command}" | grep -iqE "(^|\/)g?(view|n?vim?)(diff)?$"'
@@ -81,8 +74,6 @@ bind-key R      refresh-client
 bind-key -r h   select-pane -t :.-
 bind-key -r l   select-pane -t :.+
 
-set -g history-limit 10000
-
 ## messages
 set-option -g quiet
 set-option -g message-fg colour0
@@ -90,7 +81,6 @@ set-option -g message-bg colour4
 set-option -g display-time 5000
 
 ## set status bar
-set-option -g status-utf8 on
 set-option -g status-interval 1
 set-option -g status-fg colour08
 set-option -g status-bg default
@@ -132,11 +122,9 @@ set-option -g base-index 1
 set -g pane-base-index 1
 
 set-option -g   visual-activity   off
-set-option -g   visual-content    off
 set-option -g   set-titles        on
 set-option -gw  automatic-rename  on
 set-option -gw  monitor-activity  off
-set-option -gw  monitor-content   off
 
 set-window-option -g window-status-format ' #I #W '
 set-window-option -g window-status-attr dim
@@ -155,4 +143,14 @@ set-window-option -g    mode-fg   black    # selector foreground
 
 set-option -g default-command "reattach-to-user-namespace -l fish; tmux rename-window fish"
 
+# Shell vi mode compatibility with tmux-plugins/tmux-yank
+set -g @shell_mode 'vi'
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-yank'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
 # vim: set ft=tmux:
