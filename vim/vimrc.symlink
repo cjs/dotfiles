@@ -50,6 +50,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'ryanss/vim-hackernews'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-syntastic/syntastic'
+Plug 'ConradIrwin/vim-bracketed-paste'
 call plug#end()
 
 " Per-directory .vimrc files
