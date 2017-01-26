@@ -143,9 +143,13 @@ set-window-option -g    mode-fg   black    # selector foreground
 
 set-option -g default-command "reattach-to-user-namespace -l fish; tmux rename-window fish"
 
+# Shell vi mode compatibility with tmux-plugins/tmux-yank
+set -g @shell_mode 'vi'
+
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-yank'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
