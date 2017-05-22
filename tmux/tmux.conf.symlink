@@ -75,7 +75,6 @@ bind-key -r h   select-pane -t :.-
 bind-key -r l   select-pane -t :.+
 
 ## messages
-set-option -g quiet
 set-option -g message-fg colour0
 set-option -g message-bg colour4
 set-option -g display-time 5000
