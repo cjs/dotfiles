@@ -1,6 +1,6 @@
-set fisher_home ~/.local/share/fisherman
-set fisher_config ~/.config/fisherman
-source $fisher_home/config.fish
+#set fisher_home ~/.local/share/fisherman
+#set fisher_config ~/.config/fisherman
+#source $fisher_home/fisher.fish
 
 prepend_to_path "/usr/local/sbin"
 prepend_to_path "$HOME/.dotfiles/bin"
@@ -23,4 +23,6 @@ for i in $DOTFILES/**/*.fish
   end
 end
 
-source $DOTFILES/fish/functions/iterm_integration.fish_manual
+#source $DOTFILES/fish/functions/iterm_integration.fish_manual
+
+#test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish

@@ -1,0 +1,16 @@
+mgoodness/plugin-asp
+oh-my-fish/plugin-aws
+oh-my-fish/plugin-exenv
+fisherman/free
+fisherman/getopts
+fisherman/gitignore
+fisherman/grc
+# https://gist.github.com/cjs/5133d46c366e9637e06f5a048f80fbf6
+fisherman/humanize_duration
+oh-my-fish/plugin-osx
+oh-my-fish/plugin-peco
+rafaelrinaldi/pure
+fisherman/pyenv
+fisherman/shark
+fisherman/spin
+fisherman/z

@@ -6,3 +6,4 @@ completions
 generated_completions
 *_private.fish
 *_creds.fish
+conf.d/**
