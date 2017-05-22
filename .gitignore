@@ -3,7 +3,9 @@
 .netrwhist
 nginx/vhosts/github*
 vim/vim.symlink/bundle/**
+vim/vim.symlink/autoload/plug.vim.old
 tmux/tmux.symlink/plugins/**
 tmux/tmux.symlink/resurrect/**
 fish/functions/**
 ruby/bundle.symlink/cache/**
+
