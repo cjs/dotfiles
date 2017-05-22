@@ -5,7 +5,7 @@
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AllowClipboardAccess</key>
-	<false/>
+	<true/>
 	<key>AnimateDimming</key>
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -11472,13 +11472,13 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 196 606 456 0 0 1440 900 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>0 277 400 129 0 0 1440 877 </string>
+	<string>4760 533 400 129 4000 -180 1920 1080 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>2410 229 620 392 1440 -540 2560 1417 </string>
+	<string>2410 228 620 392 1440 -540 2560 1417 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2177 369 796 473 1440 -540 2560 1417 </string>
+	<string>2176 369 796 473 1440 -540 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>1440 -540 2560 1440 1440 -540 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -16034,7 +16034,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-13T16:01:16Z</date>
+	<date>2017-05-21T23:58:18Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -16090,6 +16090,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.13</string>
+	<string>3.0.15</string>
 </dict>
 </plist>
