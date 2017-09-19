@@ -2,7 +2,7 @@
 [user]
   name = Craig Steinberger
   email = cjs@github.com
-	signingkey = E5BA0ED3
+	signingkey = B6CF6990889F641BDA8C0C5EC97085CFE5BA0ED3
 [color]
   ui = auto
 [color "branch"]
@@ -85,3 +85,5 @@
   required = true
 [credential]
 	helper = osxkeychain
+[commit]
+	gpgsign = true
