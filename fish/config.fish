@@ -10,8 +10,10 @@ prepend_to_path "./bin"
 
 # base-16
 set base16_shell ~/.config/base16-shell/base16-eighties.dark.sh
-if test -f $base16_shell
-  eval sh $base16_shell
+if status --is-interactive
+  if test -f $base_16_shell
+    sh $base16_shell
+  end
 end
 
 set -x -g DOTFILES "$HOME/.dotfiles"
