@@ -4,7 +4,6 @@ tap 'homebrew/bundle'
 tap 'homebrew/completions'
 tap 'homebrew/dev-tools'
 tap 'homebrew/services'
-tap 'homebrew/versions'
 tap 'Goles/battery'
 
 brew 'ack'
