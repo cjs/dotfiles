@@ -1,7 +1,7 @@
 # vim: ft=gitconfig
 [user]
-  name = Craig Steinberger
-  email = cjs@github.com
+	name = Craig Steinberger
+	email = cjs@github.com
 	signingkey = B6CF6990889F641BDA8C0C5EC97085CFE5BA0ED3
 [color]
   ui = auto
@@ -83,6 +83,7 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
   required = true
+	process = git-lfs filter-process
 [credential]
 	helper = osxkeychain
 [commit]
