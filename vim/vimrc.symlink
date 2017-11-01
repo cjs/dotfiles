@@ -9,52 +9,49 @@ endif
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+" https://github.com/dag/vim-fish#teach-a-vim-to-fish
+if &shell =~# 'fish$'
+    set shell=bash
+endif
+
 call plug#begin('~/.vim/bundle')
 
 "Plug 'eparreno/vim-l9'
+Plug 'ConradIrwin/vim-bracketed-paste'
+Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'plasticboy/vim-markdown'
-Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-surround'
-Plug 'vim-scripts/ZoomWin'
-Plug 'mattn/webapi-vim'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-endwise'
-Plug 'airblade/vim-gitgutter'
-Plug 'godlygeek/tabular'
-Plug 'scrooloose/nerdtree'
-Plug 'mattn/gist-vim'
-Plug 'epmatsw/ag.vim'
-Plug 'tpope/vim-commentary'
-Plug 'tmux-plugins/vim-tmux'
-Plug 'ervandew/supertab'
-Plug 'tpope/vim-rbenv'
-Plug 'zerowidth/vim-copy-as-rtf'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'justinmk/vim-gtfo'
-Plug 'jayflo/vim-skip'
-Plug 'kchmck/vim-coffee-script'
+Plug 'ervandew/supertab'
 Plug 'gcmt/wildfire.vim'
-Plug 'fatih/vim-go'
-Plug 'benmills/vim-golang-alternate'
-Plug 'junegunn/vim-github-dashboard'
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'tpope/vim-projectionist'
-Plug 'tpope/vim-rake'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
-Plug 'ryanss/vim-hackernews'
-Plug 'jiangmiao/auto-pairs'
-"Plug 'vim-syntastic/syntastic'
-Plug 'w0rp/ale'
-Plug 'ConradIrwin/vim-bracketed-paste'
-Plug 'hashivim/vim-terraform'
+Plug 'godlygeek/tabular'
 Plug 'hashivim/vim-packer'
 Plug 'hashivim/vim-vagrant'
+Plug 'jayflo/vim-skip'
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'justinmk/vim-gtfo'
+Plug 'machakann/vim-sandwich'
+Plug 'mattn/gist-vim'
+Plug 'mattn/webapi-vim'
+Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
+Plug 'tmux-plugins/vim-tmux'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rake'
+Plug 'tpope/vim-rbenv'
+Plug 'tpope/vim-rhubarb'
+" Plug 'tpope/vim-surround'
+Plug 'vim-scripts/ZoomWin'
+Plug 'w0rp/ale'
+Plug 'zerowidth/vim-copy-as-rtf'
 call plug#end()
 
 " Per-directory .vimrc files
@@ -197,18 +194,6 @@ function! ShowFileInNERDTree()
   endif
 endfunction
 map <leader>f :call ShowFileInNERDTree()<cr>
-
-" Plugin overrides
-source ~/.vim/autocmd.vim
-source ~/.vim/format.vim
-source ~/.vim/ruby.vim
-source ~/.vim/common.vim
-source ~/.vim/tmux.vim
-source ~/.vim/ctrlp.vim
-source ~/.vim/go.vim
-source ~/.vim/goyo.vim
-source ~/.vim/snippets.vim
-source ~/.vim/writing.vim
 
 let base16colorspace=256
 set bg=dark
