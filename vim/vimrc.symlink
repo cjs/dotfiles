@@ -9,6 +9,11 @@ endif
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+" https://github.com/dag/vim-fish#teach-a-vim-to-fish
+if &shell =~# 'fish$'
+    set shell=bash
+endif
+
 call plug#begin('~/.vim/bundle')
 
 "Plug 'eparreno/vim-l9'
