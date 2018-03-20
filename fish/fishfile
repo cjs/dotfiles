@@ -1,6 +1,7 @@
 mgoodness/plugin-asp
 fisherman/await
 oh-my-fish/plugin-aws
+oh-my-fish/plugin-direnv
 oh-my-fish/plugin-exenv
 fisherman/free
 fisherman/fzf
