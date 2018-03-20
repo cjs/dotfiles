@@ -23,11 +23,13 @@ Plug 'chriskempson/base16-vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
+Plug 'fatih/vim-go'
 Plug 'gcmt/wildfire.vim'
 Plug 'godlygeek/tabular'
 Plug 'hashivim/vim-packer'
 Plug 'hashivim/vim-vagrant'
 Plug 'jayflo/vim-skip'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
@@ -48,7 +50,8 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-rbenv'
 Plug 'tpope/vim-rhubarb'
-" Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/ZoomWin'
 Plug 'w0rp/ale'
 Plug 'zerowidth/vim-copy-as-rtf'
@@ -86,6 +89,7 @@ set splitright                  " Opens vertical split right of current window
 set splitbelow                  " Opens horizontal split below current window
 "set shortmess=filnxtToOI       " see :help shortmess
                                 " http://items.sjbach.com/319/configuring-vim-right
+
 
 
 " Mouse
