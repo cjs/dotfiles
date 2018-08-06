@@ -622,9 +622,9 @@ defaults write com.apple.terminal StringEncodings -array 4
 
 # Enable Secure input by default
 # Terminal.app
-$ defaults write com.apple.terminal SecureKeyboardEntry 1
+defaults write com.apple.terminal SecureKeyboardEntry 1
 # iTerm2
-$ defaults write com.googlecode.iterm2 "Secure Input" 1
+defaults write com.googlecode.iterm2 "Secure Input" 1
 
 ###############################################################################
 # Time Machine                                                                #
