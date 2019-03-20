@@ -2,6 +2,7 @@ fishd.*
 fish_history
 local.fish
 fish_read_history
+fish_variables
 completions
 generated_completions
 *_private.fish
