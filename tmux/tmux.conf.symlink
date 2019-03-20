@@ -99,9 +99,11 @@ bind-key / set-option status
 # Where appropriate, special character sequences may be prefixed with a
 # number to specify the maximum length, in this line "#10W'.
 set -g status-left ""
-set-option -g status-right '#[fg=colour3]#S#[fg=default] [#I:#P] /// #(battery -t -m default -g default) #[fg=default]%a %d %b %H:%M'
+# battery stopped working and printing extra lines https://github.com/Goles/Battery/issues/45
+#set-option -g status-right '#[fg=colour3]#S#[fg=default] [#I:#P] /// #(battery -t -m default -g default) #[fg=default]%a %d %b %H:%M'
+set-option -g status-right '#[fg=colour3]#S#[fg=default] [#I:#P] /// #[fg=default]%a %d %b %H:%M'
 
-set-option -g status-right-length 100
+set-option -g status-right-length 150
 set-option -g status-left-length 120
 
 ## highlight active window
