@@ -84,7 +84,9 @@
 	smudge = git-lfs smudge -- %f
   required = true
 	process = git-lfs filter-process
-[credential]
-	helper = osxkeychain
 [commit]
 	gpgsign = true
+[credential]
+	helper = osxkeychain
+[protocol]
+	version = 2
