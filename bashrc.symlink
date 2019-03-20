@@ -52,3 +52,5 @@ if [ $ITERM_SESSION_ID ]; then
 fi
 
 complete -C aws_completer aws
+
+command -v vg >/dev/null 2>&1 && eval "$(vg eval --shell bash)"

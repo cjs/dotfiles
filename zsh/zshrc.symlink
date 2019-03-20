@@ -47,3 +47,5 @@ eval "$(rbenv init -)"
 rbenv global 2.2.4
 
 archey -c
+
+command -v vg >/dev/null 2>&1 && eval "$(vg eval --shell zsh)"
