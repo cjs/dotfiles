@@ -1,1 +1,0 @@
-/Users/cjs/.config/fisherman/httpie-completion/httpie-completion.fish
