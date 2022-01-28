@@ -1,0 +1,1922 @@
+{
+  "{\"filename\":\"/Users/cjs/github/github/lib/sprockets/resolve-js-dependencies.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.7.6": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "path",
+            "imported": [
+              "resolve"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "resolve",
+                "local": "resolve"
+              }
+            ]
+          },
+          {
+            "source": "./dependencies",
+            "imported": [
+              "traverseScriptDependencies"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "traverseScriptDependencies",
+                "local": "traverseScriptDependencies"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/Users/cjs/github/github/lib/sprockets/resolve-js-dependencies.js",
+      "filenameRelative": "/Users/cjs/github/github/lib/sprockets/resolve-js-dependencies.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "resolve-js-dependencies.js",
+      "sourceFileName": "resolve-js-dependencies.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "resolve-js-dependencies"
+    },
+    "ignored": false,
+    "code": "#!/usr/bin/env babel-node\n'use strict';\n\nvar _path = require('path');\n\nvar _dependencies = require('./dependencies');\n\nvar entry = (0, _path.resolve)(process.argv[2]);\n\n(0, _dependencies.traverseScriptDependencies)(entry).then(function (paths) {\n  var _iteratorNormalCompletion = true;\n  var _didIteratorError = false;\n  var _iteratorError = undefined;\n\n  try {\n    for (var _iterator = paths[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {\n      var path = _step.value;\n\n      process.stdout.write(path + \"\\n\");\n    }\n  } catch (err) {\n    _didIteratorError = true;\n    _iteratorError = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion && _iterator.return) {\n        _iterator.return();\n      }\n    } finally {\n      if (_didIteratorError) {\n        throw _iteratorError;\n      }\n    }\n  }\n}).catch(function (err) {\n  setImmediate(function () {\n    throw err;\n  });\n});\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlc29sdmUtanMtZGVwZW5kZW5jaWVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUE7O0FBQ0E7O0FBRUEsSUFBTSxRQUFRLG1CQUFRLFFBQVEsSUFBUixDQUFhLENBQWIsQ0FBUixDQUFSOztBQUVOLDhDQUEyQixLQUEzQixFQUFrQyxJQUFsQyxDQUF1QyxVQUFDLEtBQUQsRUFBVzs7Ozs7O0FBQ2hELHlCQUFtQiwrQkFBbkIsb0dBQTBCO1VBQWYsbUJBQWU7O0FBQ3hCLGNBQVEsTUFBUixDQUFlLEtBQWYsQ0FBcUIsT0FBSyxJQUFMLENBQXJCLENBRHdCO0tBQTFCOzs7Ozs7Ozs7Ozs7OztHQURnRDtDQUFYLENBQXZDLENBSUcsS0FKSCxDQUlTLGVBQU87QUFDZCxlQUFhLFlBQU07QUFBRSxVQUFNLEdBQU4sQ0FBRjtHQUFOLENBQWIsQ0FEYztDQUFQLENBSlQiLCJmaWxlIjoicmVzb2x2ZS1qcy1kZXBlbmRlbmNpZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuaW1wb3J0IHtyZXNvbHZlfSBmcm9tICdwYXRoJ1xuaW1wb3J0IHt0cmF2ZXJzZVNjcmlwdERlcGVuZGVuY2llc30gZnJvbSAnLi9kZXBlbmRlbmNpZXMnXG5cbmNvbnN0IGVudHJ5ID0gcmVzb2x2ZShwcm9jZXNzLmFyZ3ZbMl0pXG5cbnRyYXZlcnNlU2NyaXB0RGVwZW5kZW5jaWVzKGVudHJ5KS50aGVuKChwYXRocykgPT4ge1xuICBmb3IgKGNvbnN0IHBhdGggb2YgcGF0aHMpIHtcbiAgICBwcm9jZXNzLnN0ZG91dC53cml0ZShwYXRoK1wiXFxuXCIpXG4gIH1cbn0pLmNhdGNoKGVyciA9PiB7XG4gIHNldEltbWVkaWF0ZSgoKSA9PiB7IHRocm93IGVyciB9KVxufSlcbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "resolve-js-dependencies.js"
+      ],
+      "names": [],
+      "mappings": ";;AAEA;;AACA;;AAEA,IAAM,QAAQ,mBAAQ,QAAQ,IAAR,CAAa,CAAb,CAAR,CAAR;;AAEN,8CAA2B,KAA3B,EAAkC,IAAlC,CAAuC,UAAC,KAAD,EAAW;;;;;;AAChD,yBAAmB,+BAAnB,oGAA0B;UAAf,mBAAe;;AACxB,cAAQ,MAAR,CAAe,KAAf,CAAqB,OAAK,IAAL,CAArB,CADwB;KAA1B;;;;;;;;;;;;;;GADgD;CAAX,CAAvC,CAIG,KAJH,CAIS,eAAO;AACd,eAAa,YAAM;AAAE,UAAM,GAAN,CAAF;GAAN,CAAb,CADc;CAAP,CAJT",
+      "file": "resolve-js-dependencies.js",
+      "sourcesContent": [
+        "\n\nimport {resolve} from 'path'\nimport {traverseScriptDependencies} from './dependencies'\n\nconst entry = resolve(process.argv[2])\n\ntraverseScriptDependencies(entry).then((paths) => {\n  for (const path of paths) {\n    process.stdout.write(path+\"\\n\")\n  }\n}).catch(err => {\n  setImmediate(() => { throw err })\n})\n"
+      ]
+    },
+    "mtime": 1463177158000
+  },
+  "{\"filename\":\"/Users/cjs/github/github/lib/sprockets/dependencies.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.7.6": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "path",
+            "imported": [
+              "dirname"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "dirname",
+                "local": "dirname"
+              }
+            ]
+          },
+          {
+            "source": "fs",
+            "imported": [
+              "readFile"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "readFile",
+                "local": "_readFile"
+              }
+            ]
+          },
+          {
+            "source": "./resolve",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "resolve"
+              }
+            ]
+          },
+          {
+            "source": "./tsort",
+            "imported": [
+              "tsortAsync"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "tsortAsync",
+                "local": "tsortAsync"
+              }
+            ]
+          },
+          {
+            "source": "./promisify",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "promisify"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [
+            "traverseScriptDependencies",
+            "entry"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "traverseScriptDependencies",
+              "exported": "traverseScriptDependencies"
+            },
+            {
+              "kind": "local",
+              "local": "entry",
+              "exported": "entry"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/Users/cjs/github/github/lib/sprockets/dependencies.js",
+      "filenameRelative": "/Users/cjs/github/github/lib/sprockets/dependencies.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "dependencies.js",
+      "sourceFileName": "dependencies.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "dependencies"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.traverseScriptDependencies = traverseScriptDependencies;\n\nvar _path = require('path');\n\nvar _fs = require('fs');\n\nvar _resolve = require('./resolve');\n\nvar _resolve2 = _interopRequireDefault(_resolve);\n\nvar _tsort = require('./tsort');\n\nvar _promisify = require('./promisify');\n\nvar _promisify2 = _interopRequireDefault(_promisify);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar readFile = (0, _promisify2.default)(_fs.readFile);\n\nfunction readRequireDirectives(code, callback) {\n  var lines = code.match(/^\\/\\/=.+$/gm) || [];\n  var _iteratorNormalCompletion = true;\n  var _didIteratorError = false;\n  var _iteratorError = undefined;\n\n  try {\n    for (var _iterator = lines[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {\n      var line = _step.value;\n\n      var m = line.match(/= require ([\\w\\.\\/-]+)/);\n      if (m) {\n        callback(m[1]);\n      }\n    }\n  } catch (err) {\n    _didIteratorError = true;\n    _iteratorError = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion && _iterator.return) {\n        _iterator.return();\n      }\n    } finally {\n      if (_didIteratorError) {\n        throw _iteratorError;\n      }\n    }\n  }\n}\n\nfunction readStubDirectives(code, callback) {\n  var lines = code.match(/^\\/\\/=.+$/gm) || [];\n  var _iteratorNormalCompletion2 = true;\n  var _didIteratorError2 = false;\n  var _iteratorError2 = undefined;\n\n  try {\n    for (var _iterator2 = lines[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {\n      var line = _step2.value;\n\n      var m = line.match(/= stub ([\\w\\.\\/-]+)/);\n      if (m) {\n        callback(m[1]);\n      }\n    }\n  } catch (err) {\n    _didIteratorError2 = true;\n    _iteratorError2 = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion2 && _iterator2.return) {\n        _iterator2.return();\n      }\n    } finally {\n      if (_didIteratorError2) {\n        throw _iteratorError2;\n      }\n    }\n  }\n}\n\nfunction readImports(code, callback) {\n  var lines = code.match(/^import.+$/gm) || [];\n  var _iteratorNormalCompletion3 = true;\n  var _didIteratorError3 = false;\n  var _iteratorError3 = undefined;\n\n  try {\n    for (var _iterator3 = lines[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {\n      var line = _step3.value;\n\n      var m = line.match(/^import.+['\"]([\\w\\!\\.\\/-]+)['\"];?$/);\n      if (m) {\n        callback('environment/require');\n        callback(m[1]);\n      }\n    }\n  } catch (err) {\n    _didIteratorError3 = true;\n    _iteratorError3 = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion3 && _iterator3.return) {\n        _iterator3.return();\n      }\n    } finally {\n      if (_didIteratorError3) {\n        throw _iteratorError3;\n      }\n    }\n  }\n}\n\nfunction readAmdDeps(code, callback) {\n  var lines = code.match(/^\\s*define\\(.+$/gm) || [];\n  var _iteratorNormalCompletion4 = true;\n  var _didIteratorError4 = false;\n  var _iteratorError4 = undefined;\n\n  try {\n    for (var _iterator4 = lines[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {\n      var line = _step4.value;\n\n      var m = line.match(/\\[([^\\]]+)\\]/);\n      if (m) {\n        var _iteratorNormalCompletion5 = true;\n        var _didIteratorError5 = false;\n        var _iteratorError5 = undefined;\n\n        try {\n          for (var _iterator5 = m[1].replace(/['\"]/g, \"\").split(/\\s*,\\s*/)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {\n            var dep = _step5.value;\n\n            if (dep !== 'exports') {\n              callback('environment/require');\n              callback(dep);\n            }\n          }\n        } catch (err) {\n          _didIteratorError5 = true;\n          _iteratorError5 = err;\n        } finally {\n          try {\n            if (!_iteratorNormalCompletion5 && _iterator5.return) {\n              _iterator5.return();\n            }\n          } finally {\n            if (_didIteratorError5) {\n              throw _iteratorError5;\n            }\n          }\n        }\n      }\n    }\n  } catch (err) {\n    _didIteratorError4 = true;\n    _iteratorError4 = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion4 && _iterator4.return) {\n        _iterator4.return();\n      }\n    } finally {\n      if (_didIteratorError4) {\n        throw _iteratorError4;\n      }\n    }\n  }\n}\n\nfunction readRequires(code, callback) {\n  var lines = code.match(/require\\(.+$/gm) || [];\n  var _iteratorNormalCompletion6 = true;\n  var _didIteratorError6 = false;\n  var _iteratorError6 = undefined;\n\n  try {\n    for (var _iterator6 = lines[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {\n      var line = _step6.value;\n\n      var m = line.match(/require[ (]['\"]([\\w\\/-]+)['\"]/);\n      if (m) {\n        callback('environment/require');\n        callback(m[1]);\n      }\n    }\n  } catch (err) {\n    _didIteratorError6 = true;\n    _iteratorError6 = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion6 && _iterator6.return) {\n        _iterator6.return();\n      }\n    } finally {\n      if (_didIteratorError6) {\n        throw _iteratorError6;\n      }\n    }\n  }\n}\n\nfunction scanScriptRequiredDependencies(filename) {\n  var basedir, code, resolvers, push;\n  return regeneratorRuntime.async(function scanScriptRequiredDependencies$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          push = function push(path) {\n            resolvers.push((0, _resolve2.default)(path, basedir));\n          };\n\n          basedir = (0, _path.dirname)(filename);\n          _context.next = 4;\n          return regeneratorRuntime.awrap(readFile(filename, 'utf8'));\n\n        case 4:\n          code = _context.sent;\n          resolvers = [];\n\n\n          if (filename.match(\"app/assets/javascripts\")) {\n            readRequireDirectives(code, push);\n            readRequires(code, push);\n          } else if (filename.match(\"app/assets/modules\")) {\n            readRequireDirectives(code, push);\n            readImports(code, push);\n          } else if (filename.match(\"test/js\")) {\n            readRequireDirectives(code, push);\n            readImports(code, push);\n          } else if (filename.match(\"node_modules\")) {\n            readAmdDeps(code, push);\n          }\n\n          return _context.abrupt('return', Promise.all(resolvers));\n\n        case 8:\n        case 'end':\n          return _context.stop();\n      }\n    }\n  }, null, this);\n}\n\nfunction scanScriptStubbedDependencies(filename) {\n  var basedir, code, resolvers;\n  return regeneratorRuntime.async(function scanScriptStubbedDependencies$(_context2) {\n    while (1) {\n      switch (_context2.prev = _context2.next) {\n        case 0:\n          basedir = (0, _path.dirname)(filename);\n          _context2.next = 3;\n          return regeneratorRuntime.awrap(readFile(filename, 'utf8'));\n\n        case 3:\n          code = _context2.sent;\n          resolvers = [];\n\n\n          readStubDirectives(code, function (path) {\n            resolvers.push((0, _resolve2.default)(path, basedir));\n          });\n\n          return _context2.abrupt('return', Promise.all(resolvers));\n\n        case 7:\n        case 'end':\n          return _context2.stop();\n      }\n    }\n  }, null, this);\n}\n\nfunction traverseScriptRequiredDependencies(entry) {\n  var ctx;\n  return regeneratorRuntime.async(function traverseScriptRequiredDependencies$(_context3) {\n    while (1) {\n      switch (_context3.prev = _context3.next) {\n        case 0:\n          ctx = {};\n          return _context3.abrupt('return', (0, _tsort.tsortAsync)([entry], scanScriptRequiredDependencies.bind(ctx)));\n\n        case 2:\n        case 'end':\n          return _context3.stop();\n      }\n    }\n  }, null, this);\n}\n\nfunction traverseScriptStubbedDependencies(entry) {\n  var ctx, stubbed;\n  return regeneratorRuntime.async(function traverseScriptStubbedDependencies$(_context4) {\n    while (1) {\n      switch (_context4.prev = _context4.next) {\n        case 0:\n          ctx = {};\n          _context4.next = 3;\n          return regeneratorRuntime.awrap(scanScriptStubbedDependencies(entry));\n\n        case 3:\n          stubbed = _context4.sent;\n          return _context4.abrupt('return', (0, _tsort.tsortAsync)(stubbed, scanScriptRequiredDependencies.bind(ctx)));\n\n        case 5:\n        case 'end':\n          return _context4.stop();\n      }\n    }\n  }, null, this);\n}\n\nfunction traverseScriptDependencies(entry) {\n  var requiredPending, stubbedPending, required, stubbed, _iteratorNormalCompletion7, _didIteratorError7, _iteratorError7, _iterator7, _step7, filename;\n\n  return regeneratorRuntime.async(function traverseScriptDependencies$(_context5) {\n    while (1) {\n      switch (_context5.prev = _context5.next) {\n        case 0:\n          requiredPending = traverseScriptRequiredDependencies(entry);\n          stubbedPending = traverseScriptStubbedDependencies(entry);\n          _context5.next = 4;\n          return regeneratorRuntime.awrap(requiredPending);\n\n        case 4:\n          required = _context5.sent;\n          _context5.next = 7;\n          return regeneratorRuntime.awrap(stubbedPending);\n\n        case 7:\n          stubbed = _context5.sent;\n          _iteratorNormalCompletion7 = true;\n          _didIteratorError7 = false;\n          _iteratorError7 = undefined;\n          _context5.prev = 11;\n\n\n          for (_iterator7 = stubbed[Symbol.iterator](); !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {\n            filename = _step7.value;\n\n            required.delete(filename);\n          }\n\n          _context5.next = 19;\n          break;\n\n        case 15:\n          _context5.prev = 15;\n          _context5.t0 = _context5['catch'](11);\n          _didIteratorError7 = true;\n          _iteratorError7 = _context5.t0;\n\n        case 19:\n          _context5.prev = 19;\n          _context5.prev = 20;\n\n          if (!_iteratorNormalCompletion7 && _iterator7.return) {\n            _iterator7.return();\n          }\n\n        case 22:\n          _context5.prev = 22;\n\n          if (!_didIteratorError7) {\n            _context5.next = 25;\n            break;\n          }\n\n          throw _iteratorError7;\n\n        case 25:\n          return _context5.finish(22);\n\n        case 26:\n          return _context5.finish(19);\n\n        case 27:\n          return _context5.abrupt('return', required);\n\n        case 28:\n        case 'end':\n          return _context5.stop();\n      }\n    }\n  }, null, this, [[11, 15, 19, 27], [20,, 22, 26]]);\n}\n//# sourceMappingURL=data:application/json;base64,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QUFlLGtDQUFmLENBQWtELEtBQWxEO01BQ1E7Ozs7O2dCQUFNOzRDQUNMLHVCQUFXLENBQUMsS0FBRCxDQUFYLEVBQW9CLCtCQUErQixJQUEvQixDQUFvQyxHQUFwQyxDQUFwQjs7Ozs7Ozs7Q0FGVDs7QUFLQSxTQUFlLGlDQUFmLENBQWlELEtBQWpEO01BQ1EsS0FDQTs7Ozs7QUFEQSxnQkFBTTs7MENBQ1UsOEJBQThCLEtBQTlCOzs7QUFBaEI7NENBQ0MsdUJBQVcsT0FBWCxFQUFvQiwrQkFBK0IsSUFBL0IsQ0FBb0MsR0FBcEMsQ0FBcEI7Ozs7Ozs7O0NBSFQ7O0FBTU8sU0FBZSwwQkFBZixDQUEwQyxLQUExQztNQUNDLGlCQUNBLGdCQUNBLFVBQ0EsOEZBRUs7Ozs7OztBQUxMLDRCQUFrQixtQ0FBbUMsS0FBbkM7QUFDbEIsMkJBQWlCLGtDQUFrQyxLQUFsQzs7MENBQ0E7OztBQUFqQjs7MENBQ2dCOzs7QUFBaEI7Ozs7Ozs7QUFFTiw0QkFBdUIsMEJBQXZCLHdHQUFnQztBQUFyQixvQ0FBcUI7O0FBQzlCLHFCQUFTLE1BQVQsQ0FBZ0IsUUFBaEIsRUFEOEI7V0FBaEM7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs0Q0FJTzs7Ozs7Ozs7Q0FWRiIsImZpbGUiOiJkZXBlbmRlbmNpZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge2Rpcm5hbWV9IGZyb20gJ3BhdGgnXG5pbXBvcnQge3JlYWRGaWxlIGFzIF9yZWFkRmlsZX0gZnJvbSAnZnMnXG5pbXBvcnQgcmVzb2x2ZSBmcm9tICcuL3Jlc29sdmUnXG5pbXBvcnQge3Rzb3J0QXN5bmN9IGZyb20gJy4vdHNvcnQnXG5pbXBvcnQgcHJvbWlzaWZ5IGZyb20gJy4vcHJvbWlzaWZ5J1xuXG5jb25zdCByZWFkRmlsZSA9IHByb21pc2lmeShfcmVhZEZpbGUpXG5cbmZ1bmN0aW9uIHJlYWRSZXF1aXJlRGlyZWN0aXZlcyhjb2RlLCBjYWxsYmFjaykge1xuICBjb25zdCBsaW5lcyA9IGNvZGUubWF0Y2goL15cXC9cXC89LiskL2dtKSB8fCBbXVxuICBmb3IgKGNvbnN0IGxpbmUgb2YgbGluZXMpIHtcbiAgICBjb25zdCBtID0gbGluZS5tYXRjaCgvPSByZXF1aXJlIChbXFx3XFwuXFwvLV0rKS8pXG4gICAgaWYgKG0pIHtcbiAgICAgIGNhbGxiYWNrKG1bMV0pXG4gICAgfVxuICB9XG59XG5cbmZ1bmN0aW9uIHJlYWRTdHViRGlyZWN0aXZlcyhjb2RlLCBjYWxsYmFjaykge1xuICBjb25zdCBsaW5lcyA9IGNvZGUubWF0Y2goL15cXC9cXC89LiskL2dtKSB8fCBbXVxuICBmb3IgKGNvbnN0IGxpbmUgb2YgbGluZXMpIHtcbiAgICBjb25zdCBtID0gbGluZS5tYXRjaCgvPSBzdHViIChbXFx3XFwuXFwvLV0rKS8pXG4gICAgaWYgKG0pIHtcbiAgICAgIGNhbGxiYWNrKG1bMV0pXG4gICAgfVxuICB9XG59XG5cbmZ1bmN0aW9uIHJlYWRJbXBvcnRzKGNvZGUsIGNhbGxiYWNrKSB7XG4gIGNvbnN0IGxpbmVzID0gY29kZS5tYXRjaCgvXmltcG9ydC4rJC9nbSkgfHwgW11cbiAgZm9yIChjb25zdCBsaW5lIG9mIGxpbmVzKSB7XG4gICAgY29uc3QgbSA9IGxpbmUubWF0Y2goL15pbXBvcnQuK1snXCJdKFtcXHdcXCFcXC5cXC8tXSspWydcIl07PyQvKVxuICAgIGlmIChtKSB7XG4gICAgICBjYWxsYmFjaygnZW52aXJvbm1lbnQvcmVxdWlyZScpXG4gICAgICBjYWxsYmFjayhtWzFdKVxuICAgIH1cbiAgfVxufVxuXG5mdW5jdGlvbiByZWFkQW1kRGVwcyhjb2RlLCBjYWxsYmFjaykge1xuICBjb25zdCBsaW5lcyA9IGNvZGUubWF0Y2goL15cXHMqZGVmaW5lXFwoLiskL2dtKSB8fCBbXVxuICBmb3IgKGNvbnN0IGxpbmUgb2YgbGluZXMpIHtcbiAgICBjb25zdCBtID0gbGluZS5tYXRjaCgvXFxbKFteXFxdXSspXFxdLylcbiAgICBpZiAobSkge1xuICAgICAgZm9yIChjb25zdCBkZXAgb2YgbVsxXS5yZXBsYWNlKC9bJ1wiXS9nLCBcIlwiKS5zcGxpdCgvXFxzKixcXHMqLykpIHtcbiAgICAgICAgaWYgKGRlcCAhPT0gJ2V4cG9ydHMnKSB7XG4gICAgICAgICAgY2FsbGJhY2soJ2Vudmlyb25tZW50L3JlcXVpcmUnKVxuICAgICAgICAgIGNhbGxiYWNrKGRlcClcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuXG5mdW5jdGlvbiByZWFkUmVxdWlyZXMoY29kZSwgY2FsbGJhY2spIHtcbiAgY29uc3QgbGluZXMgPSBjb2RlLm1hdGNoKC9yZXF1aXJlXFwoLiskL2dtKSB8fCBbXVxuICBmb3IgKGNvbnN0IGxpbmUgb2YgbGluZXMpIHtcbiAgICBjb25zdCBtID0gbGluZS5tYXRjaCgvcmVxdWlyZVsgKF1bJ1wiXShbXFx3XFwvLV0rKVsnXCJdLylcbiAgICBpZiAobSkge1xuICAgICAgY2FsbGJhY2soJ2Vudmlyb25tZW50L3JlcXVpcmUnKVxuICAgICAgY2FsbGJhY2sobVsxXSlcbiAgICB9XG4gIH1cbn1cblxuYXN5bmMgZnVuY3Rpb24gc2NhblNjcmlwdFJlcXVpcmVkRGVwZW5kZW5jaWVzKGZpbGVuYW1lKSB7XG4gIGNvbnN0IGJhc2VkaXIgPSBkaXJuYW1lKGZpbGVuYW1lKVxuICBjb25zdCBjb2RlID0gYXdhaXQgcmVhZEZpbGUoZmlsZW5hbWUsICd1dGY4JylcblxuICBjb25zdCByZXNvbHZlcnMgPSBbXVxuXG4gIGZ1bmN0aW9uIHB1c2gocGF0aCkge1xuICAgIHJlc29sdmVycy5wdXNoKHJlc29sdmUocGF0aCwgYmFzZWRpcikpXG4gIH1cblxuICBpZiAoZmlsZW5hbWUubWF0Y2goXCJhcHAvYXNzZXRzL2phdmFzY3JpcHRzXCIpKSB7XG4gICAgcmVhZFJlcXVpcmVEaXJlY3RpdmVzKGNvZGUsIHB1c2gpXG4gICAgcmVhZFJlcXVpcmVzKGNvZGUsIHB1c2gpXG4gIH0gZWxzZSBpZiAoZmlsZW5hbWUubWF0Y2goXCJhcHAvYXNzZXRzL21vZHVsZXNcIikpIHtcbiAgICByZWFkUmVxdWlyZURpcmVjdGl2ZXMoY29kZSwgcHVzaClcbiAgICByZWFkSW1wb3J0cyhjb2RlLCBwdXNoKVxuICB9IGVsc2UgaWYgKGZpbGVuYW1lLm1hdGNoKFwidGVzdC9qc1wiKSkge1xuICAgIHJlYWRSZXF1aXJlRGlyZWN0aXZlcyhjb2RlLCBwdXNoKVxuICAgIHJlYWRJbXBvcnRzKGNvZGUsIHB1c2gpXG4gIH0gZWxzZSBpZiAoZmlsZW5hbWUubWF0Y2goXCJub2RlX21vZHVsZXNcIikpIHtcbiAgICByZWFkQW1kRGVwcyhjb2RlLCBwdXNoKVxuICB9XG5cbiAgcmV0dXJuIFByb21pc2UuYWxsKHJlc29sdmVycylcbn1cblxuYXN5bmMgZnVuY3Rpb24gc2NhblNjcmlwdFN0dWJiZWREZXBlbmRlbmNpZXMoZmlsZW5hbWUpIHtcbiAgY29uc3QgYmFzZWRpciA9IGRpcm5hbWUoZmlsZW5hbWUpXG4gIGNvbnN0IGNvZGUgPSBhd2FpdCByZWFkRmlsZShmaWxlbmFtZSwgJ3V0ZjgnKVxuXG4gIGNvbnN0IHJlc29sdmVycyA9IFtdXG5cbiAgcmVhZFN0dWJEaXJlY3RpdmVzKGNvZGUsIHBhdGggPT4ge1xuICAgIHJlc29sdmVycy5wdXNoKHJlc29sdmUocGF0aCwgYmFzZWRpcikpXG4gIH0pXG5cbiAgcmV0dXJuIFByb21pc2UuYWxsKHJlc29sdmVycylcbn1cblxuYXN5bmMgZnVuY3Rpb24gdHJhdmVyc2VTY3JpcHRSZXF1aXJlZERlcGVuZGVuY2llcyhlbnRyeSkge1xuICBjb25zdCBjdHggPSB7fVxuICByZXR1cm4gdHNvcnRBc3luYyhbZW50cnldLCBzY2FuU2NyaXB0UmVxdWlyZWREZXBlbmRlbmNpZXMuYmluZChjdHgpKVxufVxuXG5hc3luYyBmdW5jdGlvbiB0cmF2ZXJzZVNjcmlwdFN0dWJiZWREZXBlbmRlbmNpZXMoZW50cnkpIHtcbiAgY29uc3QgY3R4ID0ge31cbiAgY29uc3Qgc3R1YmJlZCA9IGF3YWl0IHNjYW5TY3JpcHRTdHViYmVkRGVwZW5kZW5jaWVzKGVudHJ5KVxuICByZXR1cm4gdHNvcnRBc3luYyhzdHViYmVkLCBzY2FuU2NyaXB0UmVxdWlyZWREZXBlbmRlbmNpZXMuYmluZChjdHgpKVxufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gdHJhdmVyc2VTY3JpcHREZXBlbmRlbmNpZXMoZW50cnkpIHtcbiAgY29uc3QgcmVxdWlyZWRQZW5kaW5nID0gdHJhdmVyc2VTY3JpcHRSZXF1aXJlZERlcGVuZGVuY2llcyhlbnRyeSlcbiAgY29uc3Qgc3R1YmJlZFBlbmRpbmcgPSB0cmF2ZXJzZVNjcmlwdFN0dWJiZWREZXBlbmRlbmNpZXMoZW50cnkpXG4gIGNvbnN0IHJlcXVpcmVkID0gYXdhaXQgcmVxdWlyZWRQZW5kaW5nXG4gIGNvbnN0IHN0dWJiZWQgPSBhd2FpdCBzdHViYmVkUGVuZGluZ1xuXG4gIGZvciAoY29uc3QgZmlsZW5hbWUgb2Ygc3R1YmJlZCkge1xuICAgIHJlcXVpcmVkLmRlbGV0ZShmaWxlbmFtZSlcbiAgfVxuXG4gIHJldHVybiByZXF1aXJlZFxufVxuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "dependencies.js"
+      ],
+      "names": [],
+      "mappings": "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",
+      "file": "dependencies.js",
+      "sourcesContent": [
+        "import {dirname} from 'path'\nimport {readFile as _readFile} from 'fs'\nimport resolve from './resolve'\nimport {tsortAsync} from './tsort'\nimport promisify from './promisify'\n\nconst readFile = promisify(_readFile)\n\nfunction readRequireDirectives(code, callback) {\n  const lines = code.match(/^\\/\\/=.+$/gm) || []\n  for (const line of lines) {\n    const m = line.match(/= require ([\\w\\.\\/-]+)/)\n    if (m) {\n      callback(m[1])\n    }\n  }\n}\n\nfunction readStubDirectives(code, callback) {\n  const lines = code.match(/^\\/\\/=.+$/gm) || []\n  for (const line of lines) {\n    const m = line.match(/= stub ([\\w\\.\\/-]+)/)\n    if (m) {\n      callback(m[1])\n    }\n  }\n}\n\nfunction readImports(code, callback) {\n  const lines = code.match(/^import.+$/gm) || []\n  for (const line of lines) {\n    const m = line.match(/^import.+['\"]([\\w\\!\\.\\/-]+)['\"];?$/)\n    if (m) {\n      callback('environment/require')\n      callback(m[1])\n    }\n  }\n}\n\nfunction readAmdDeps(code, callback) {\n  const lines = code.match(/^\\s*define\\(.+$/gm) || []\n  for (const line of lines) {\n    const m = line.match(/\\[([^\\]]+)\\]/)\n    if (m) {\n      for (const dep of m[1].replace(/['\"]/g, \"\").split(/\\s*,\\s*/)) {\n        if (dep !== 'exports') {\n          callback('environment/require')\n          callback(dep)\n        }\n      }\n    }\n  }\n}\n\nfunction readRequires(code, callback) {\n  const lines = code.match(/require\\(.+$/gm) || []\n  for (const line of lines) {\n    const m = line.match(/require[ (]['\"]([\\w\\/-]+)['\"]/)\n    if (m) {\n      callback('environment/require')\n      callback(m[1])\n    }\n  }\n}\n\nasync function scanScriptRequiredDependencies(filename) {\n  const basedir = dirname(filename)\n  const code = await readFile(filename, 'utf8')\n\n  const resolvers = []\n\n  function push(path) {\n    resolvers.push(resolve(path, basedir))\n  }\n\n  if (filename.match(\"app/assets/javascripts\")) {\n    readRequireDirectives(code, push)\n    readRequires(code, push)\n  } else if (filename.match(\"app/assets/modules\")) {\n    readRequireDirectives(code, push)\n    readImports(code, push)\n  } else if (filename.match(\"test/js\")) {\n    readRequireDirectives(code, push)\n    readImports(code, push)\n  } else if (filename.match(\"node_modules\")) {\n    readAmdDeps(code, push)\n  }\n\n  return Promise.all(resolvers)\n}\n\nasync function scanScriptStubbedDependencies(filename) {\n  const basedir = dirname(filename)\n  const code = await readFile(filename, 'utf8')\n\n  const resolvers = []\n\n  readStubDirectives(code, path => {\n    resolvers.push(resolve(path, basedir))\n  })\n\n  return Promise.all(resolvers)\n}\n\nasync function traverseScriptRequiredDependencies(entry) {\n  const ctx = {}\n  return tsortAsync([entry], scanScriptRequiredDependencies.bind(ctx))\n}\n\nasync function traverseScriptStubbedDependencies(entry) {\n  const ctx = {}\n  const stubbed = await scanScriptStubbedDependencies(entry)\n  return tsortAsync(stubbed, scanScriptRequiredDependencies.bind(ctx))\n}\n\nexport async function traverseScriptDependencies(entry) {\n  const requiredPending = traverseScriptRequiredDependencies(entry)\n  const stubbedPending = traverseScriptStubbedDependencies(entry)\n  const required = await requiredPending\n  const stubbed = await stubbedPending\n\n  for (const filename of stubbed) {\n    required.delete(filename)\n  }\n\n  return required\n}\n"
+      ]
+    },
+    "mtime": 1463177158000
+  },
+  "{\"filename\":\"/Users/cjs/github/github/lib/sprockets/resolve.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.7.6": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "path",
+            "imported": [
+              "resolve"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "resolve",
+                "local": "resolve"
+              }
+            ]
+          },
+          {
+            "source": "resolve",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "_nodeResolve"
+              }
+            ]
+          },
+          {
+            "source": "./promisify",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "promisify"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [
+            "path",
+            "basedir"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "path",
+              "exported": "default"
+            },
+            {
+              "kind": "local",
+              "local": "basedir",
+              "exported": "default"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/Users/cjs/github/github/lib/sprockets/resolve.js",
+      "filenameRelative": "/Users/cjs/github/github/lib/sprockets/resolve.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "resolve.js",
+      "sourceFileName": "resolve.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "resolve"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function (path, basedir) {\n  path = resolveAliasHacks[path] || path;\n  return nodeResolve(path, { basedir: basedir, paths: loadPath });\n};\n\nvar _path = require('path');\n\nvar _resolve = require('resolve');\n\nvar _resolve2 = _interopRequireDefault(_resolve);\n\nvar _promisify = require('./promisify');\n\nvar _promisify2 = _interopRequireDefault(_promisify);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar nodeResolve = (0, _promisify2.default)(_resolve2.default);\n\n// Setup app/assets load path\n// We will eventually be able to remove this when all files are ES modules.\n// All of our ES modules use relative requires.\nvar loadPath = [(0, _path.resolve)(__dirname, '..', '..', 'app', 'assets', 'javascripts'), (0, _path.resolve)(__dirname, '..', '..', 'app', 'assets', 'modules')];\n\nvar minSuffix = process.env['UNCOMPRESS'] == '1' ? '' : '.min';\n\nvar resolveAliasHacks = {\n  // Should use package.json's \"browser\" instead of \"main\".\n  // \"main\" script is intended for server side\n  'chai': 'chai/chai',\n\n  // Should use package.json's \"browserify\" instead of \"main\"\n  // \"main\" script is intended for server side and uses jsdom.\n  'd3': 'd3/d3',\n\n  // Avoid using this .min hack for other third party scripts.\n  // See if we can get this script difference annotated in package.json.\n  'react-dom': 'react-dom/dist/react-dom' + minSuffix,\n  'react-dom/server': 'react-dom/dist/react-dom-server' + minSuffix,\n  'react': 'react/dist/react' + minSuffix,\n\n  // Should use package.json's \"browser\" instead of \"main\".\n  // \"main\" script is intended for server side and uses jsdom.\n  'topojson': 'topojson/build/topojson'\n};\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlc29sdmUuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O2tCQW9DZSxVQUFTLElBQVQsRUFBZSxPQUFmLEVBQXdCO0FBQ3JDLFNBQU8sa0JBQWtCLElBQWxCLEtBQTJCLElBQTNCLENBRDhCO0FBRXJDLFNBQU8sWUFBWSxJQUFaLEVBQWtCLEVBQUUsU0FBUyxPQUFULEVBQWtCLE9BQU8sUUFBUCxFQUF0QyxDQUFQLENBRnFDO0NBQXhCOztBQXBDZjs7QUFDQTs7OztBQUNBOzs7Ozs7QUFFQSxJQUFNLGNBQWMsMkNBQWQ7Ozs7O0FBS04sSUFBTSxXQUFXLENBQ2YsbUJBQVEsU0FBUixFQUFtQixJQUFuQixFQUF5QixJQUF6QixFQUErQixLQUEvQixFQUFzQyxRQUF0QyxFQUFnRCxhQUFoRCxDQURlLEVBRWYsbUJBQVEsU0FBUixFQUFtQixJQUFuQixFQUF5QixJQUF6QixFQUErQixLQUEvQixFQUFzQyxRQUF0QyxFQUFnRCxTQUFoRCxDQUZlLENBQVg7O0FBS04sSUFBTSxZQUFZLFFBQVEsR0FBUixDQUFZLFlBQVosS0FBNkIsR0FBN0IsR0FBbUMsRUFBbkMsR0FBd0MsTUFBeEM7O0FBRWxCLElBQU0sb0JBQW9COzs7QUFHeEIsVUFBUSxXQUFSOzs7O0FBSUEsUUFBTSxPQUFOOzs7O0FBSUEsNENBQXdDLFNBQXhDO0FBQ0EsMERBQXNELFNBQXREO0FBQ0EsZ0NBQTRCLFNBQTVCOzs7O0FBSUEsY0FBWSx5QkFBWjtDQWpCSSIsImZpbGUiOiJyZXNvbHZlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtyZXNvbHZlfSBmcm9tICdwYXRoJ1xuaW1wb3J0IF9ub2RlUmVzb2x2ZSBmcm9tICdyZXNvbHZlJ1xuaW1wb3J0IHByb21pc2lmeSBmcm9tICcuL3Byb21pc2lmeSdcblxuY29uc3Qgbm9kZVJlc29sdmUgPSBwcm9taXNpZnkoX25vZGVSZXNvbHZlKVxuXG4vLyBTZXR1cCBhcHAvYXNzZXRzIGxvYWQgcGF0aFxuLy8gV2Ugd2lsbCBldmVudHVhbGx5IGJlIGFibGUgdG8gcmVtb3ZlIHRoaXMgd2hlbiBhbGwgZmlsZXMgYXJlIEVTIG1vZHVsZXMuXG4vLyBBbGwgb2Ygb3VyIEVTIG1vZHVsZXMgdXNlIHJlbGF0aXZlIHJlcXVpcmVzLlxuY29uc3QgbG9hZFBhdGggPSBbXG4gIHJlc29sdmUoX19kaXJuYW1lLCAnLi4nLCAnLi4nLCAnYXBwJywgJ2Fzc2V0cycsICdqYXZhc2NyaXB0cycpLFxuICByZXNvbHZlKF9fZGlybmFtZSwgJy4uJywgJy4uJywgJ2FwcCcsICdhc3NldHMnLCAnbW9kdWxlcycpXG5dXG5cbmNvbnN0IG1pblN1ZmZpeCA9IHByb2Nlc3MuZW52WydVTkNPTVBSRVNTJ10gPT0gJzEnID8gJycgOiAnLm1pbidcblxuY29uc3QgcmVzb2x2ZUFsaWFzSGFja3MgPSB7XG4gIC8vIFNob3VsZCB1c2UgcGFja2FnZS5qc29uJ3MgXCJicm93c2VyXCIgaW5zdGVhZCBvZiBcIm1haW5cIi5cbiAgLy8gXCJtYWluXCIgc2NyaXB0IGlzIGludGVuZGVkIGZvciBzZXJ2ZXIgc2lkZVxuICAnY2hhaSc6ICdjaGFpL2NoYWknLFxuXG4gIC8vIFNob3VsZCB1c2UgcGFja2FnZS5qc29uJ3MgXCJicm93c2VyaWZ5XCIgaW5zdGVhZCBvZiBcIm1haW5cIlxuICAvLyBcIm1haW5cIiBzY3JpcHQgaXMgaW50ZW5kZWQgZm9yIHNlcnZlciBzaWRlIGFuZCB1c2VzIGpzZG9tLlxuICAnZDMnOiAnZDMvZDMnLFxuXG4gIC8vIEF2b2lkIHVzaW5nIHRoaXMgLm1pbiBoYWNrIGZvciBvdGhlciB0aGlyZCBwYXJ0eSBzY3JpcHRzLlxuICAvLyBTZWUgaWYgd2UgY2FuIGdldCB0aGlzIHNjcmlwdCBkaWZmZXJlbmNlIGFubm90YXRlZCBpbiBwYWNrYWdlLmpzb24uXG4gICdyZWFjdC1kb20nOiBgcmVhY3QtZG9tL2Rpc3QvcmVhY3QtZG9tJHttaW5TdWZmaXh9YCxcbiAgJ3JlYWN0LWRvbS9zZXJ2ZXInOiBgcmVhY3QtZG9tL2Rpc3QvcmVhY3QtZG9tLXNlcnZlciR7bWluU3VmZml4fWAsXG4gICdyZWFjdCc6IGByZWFjdC9kaXN0L3JlYWN0JHttaW5TdWZmaXh9YCxcblxuICAvLyBTaG91bGQgdXNlIHBhY2thZ2UuanNvbidzIFwiYnJvd3NlclwiIGluc3RlYWQgb2YgXCJtYWluXCIuXG4gIC8vIFwibWFpblwiIHNjcmlwdCBpcyBpbnRlbmRlZCBmb3Igc2VydmVyIHNpZGUgYW5kIHVzZXMganNkb20uXG4gICd0b3BvanNvbic6ICd0b3BvanNvbi9idWlsZC90b3BvanNvbidcbn1cblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24ocGF0aCwgYmFzZWRpcikge1xuICBwYXRoID0gcmVzb2x2ZUFsaWFzSGFja3NbcGF0aF0gfHwgcGF0aFxuICByZXR1cm4gbm9kZVJlc29sdmUocGF0aCwgeyBiYXNlZGlyOiBiYXNlZGlyLCBwYXRoczogbG9hZFBhdGggfSlcbn1cbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "resolve.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;;kBAoCe,UAAS,IAAT,EAAe,OAAf,EAAwB;AACrC,SAAO,kBAAkB,IAAlB,KAA2B,IAA3B,CAD8B;AAErC,SAAO,YAAY,IAAZ,EAAkB,EAAE,SAAS,OAAT,EAAkB,OAAO,QAAP,EAAtC,CAAP,CAFqC;CAAxB;;AApCf;;AACA;;;;AACA;;;;;;AAEA,IAAM,cAAc,2CAAd;;;;;AAKN,IAAM,WAAW,CACf,mBAAQ,SAAR,EAAmB,IAAnB,EAAyB,IAAzB,EAA+B,KAA/B,EAAsC,QAAtC,EAAgD,aAAhD,CADe,EAEf,mBAAQ,SAAR,EAAmB,IAAnB,EAAyB,IAAzB,EAA+B,KAA/B,EAAsC,QAAtC,EAAgD,SAAhD,CAFe,CAAX;;AAKN,IAAM,YAAY,QAAQ,GAAR,CAAY,YAAZ,KAA6B,GAA7B,GAAmC,EAAnC,GAAwC,MAAxC;;AAElB,IAAM,oBAAoB;;;AAGxB,UAAQ,WAAR;;;;AAIA,QAAM,OAAN;;;;AAIA,4CAAwC,SAAxC;AACA,0DAAsD,SAAtD;AACA,gCAA4B,SAA5B;;;;AAIA,cAAY,yBAAZ;CAjBI",
+      "file": "resolve.js",
+      "sourcesContent": [
+        "import {resolve} from 'path'\nimport _nodeResolve from 'resolve'\nimport promisify from './promisify'\n\nconst nodeResolve = promisify(_nodeResolve)\n\n// Setup app/assets load path\n// We will eventually be able to remove this when all files are ES modules.\n// All of our ES modules use relative requires.\nconst loadPath = [\n  resolve(__dirname, '..', '..', 'app', 'assets', 'javascripts'),\n  resolve(__dirname, '..', '..', 'app', 'assets', 'modules')\n]\n\nconst minSuffix = process.env['UNCOMPRESS'] == '1' ? '' : '.min'\n\nconst resolveAliasHacks = {\n  // Should use package.json's \"browser\" instead of \"main\".\n  // \"main\" script is intended for server side\n  'chai': 'chai/chai',\n\n  // Should use package.json's \"browserify\" instead of \"main\"\n  // \"main\" script is intended for server side and uses jsdom.\n  'd3': 'd3/d3',\n\n  // Avoid using this .min hack for other third party scripts.\n  // See if we can get this script difference annotated in package.json.\n  'react-dom': `react-dom/dist/react-dom${minSuffix}`,\n  'react-dom/server': `react-dom/dist/react-dom-server${minSuffix}`,\n  'react': `react/dist/react${minSuffix}`,\n\n  // Should use package.json's \"browser\" instead of \"main\".\n  // \"main\" script is intended for server side and uses jsdom.\n  'topojson': 'topojson/build/topojson'\n}\n\nexport default function(path, basedir) {\n  path = resolveAliasHacks[path] || path\n  return nodeResolve(path, { basedir: basedir, paths: loadPath })\n}\n"
+      ]
+    },
+    "mtime": 1463177158000
+  },
+  "{\"filename\":\"/Users/cjs/github/github/lib/sprockets/promisify.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.7.6": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [
+            "promisify",
+            "fn",
+            "self"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "promisify",
+              "exported": "default"
+            },
+            {
+              "kind": "local",
+              "local": "fn",
+              "exported": "default"
+            },
+            {
+              "kind": "local",
+              "local": "self",
+              "exported": "default"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/Users/cjs/github/github/lib/sprockets/promisify.js",
+      "filenameRelative": "/Users/cjs/github/github/lib/sprockets/promisify.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "promisify.js",
+      "sourceFileName": "promisify.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "promisify"
+    },
+    "ignored": false,
+    "code": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = promisify;\n// Public: Promisify Node async function.\nfunction promisify(fn, self) {\n  return function () {\n    var args = Array.prototype.slice.call(arguments);\n    return new Promise(function (resolve, reject) {\n      function callback(err, result) {\n        err ? reject(err) : resolve(result);\n      }\n      args.push(callback);\n      fn.apply(self, args);\n    });\n  };\n}\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb21pc2lmeS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7OztrQkFDd0I7O0FBQVQsU0FBUyxTQUFULENBQW1CLEVBQW5CLEVBQXVCLElBQXZCLEVBQTZCO0FBQzFDLFNBQU8sWUFBVztBQUNoQixRQUFNLE9BQU8sTUFBTSxTQUFOLENBQWdCLEtBQWhCLENBQXNCLElBQXRCLENBQTJCLFNBQTNCLENBQVAsQ0FEVTtBQUVoQixXQUFPLElBQUksT0FBSixDQUFZLFVBQUMsT0FBRCxFQUFVLE1BQVYsRUFBcUI7QUFDdEMsZUFBUyxRQUFULENBQWtCLEdBQWxCLEVBQXVCLE1BQXZCLEVBQStCO0FBQzdCLGNBQU0sT0FBTyxHQUFQLENBQU4sR0FBb0IsUUFBUSxNQUFSLENBQXBCLENBRDZCO09BQS9CO0FBR0EsV0FBSyxJQUFMLENBQVUsUUFBVixFQUpzQztBQUt0QyxTQUFHLEtBQUgsQ0FBUyxJQUFULEVBQWUsSUFBZixFQUxzQztLQUFyQixDQUFuQixDQUZnQjtHQUFYLENBRG1DO0NBQTdCIiwiZmlsZSI6InByb21pc2lmeS5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIFB1YmxpYzogUHJvbWlzaWZ5IE5vZGUgYXN5bmMgZnVuY3Rpb24uXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBwcm9taXNpZnkoZm4sIHNlbGYpIHtcbiAgcmV0dXJuIGZ1bmN0aW9uKCkge1xuICAgIGNvbnN0IGFyZ3MgPSBBcnJheS5wcm90b3R5cGUuc2xpY2UuY2FsbChhcmd1bWVudHMpXG4gICAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHtcbiAgICAgIGZ1bmN0aW9uIGNhbGxiYWNrKGVyciwgcmVzdWx0KSB7XG4gICAgICAgIGVyciA/IHJlamVjdChlcnIpIDogcmVzb2x2ZShyZXN1bHQpXG4gICAgICB9XG4gICAgICBhcmdzLnB1c2goY2FsbGJhY2spXG4gICAgICBmbi5hcHBseShzZWxmLCBhcmdzKVxuICAgIH0pXG4gIH1cbn1cbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "promisify.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;kBACwB;;AAAT,SAAS,SAAT,CAAmB,EAAnB,EAAuB,IAAvB,EAA6B;AAC1C,SAAO,YAAW;AAChB,QAAM,OAAO,MAAM,SAAN,CAAgB,KAAhB,CAAsB,IAAtB,CAA2B,SAA3B,CAAP,CADU;AAEhB,WAAO,IAAI,OAAJ,CAAY,UAAC,OAAD,EAAU,MAAV,EAAqB;AACtC,eAAS,QAAT,CAAkB,GAAlB,EAAuB,MAAvB,EAA+B;AAC7B,cAAM,OAAO,GAAP,CAAN,GAAoB,QAAQ,MAAR,CAApB,CAD6B;OAA/B;AAGA,WAAK,IAAL,CAAU,QAAV,EAJsC;AAKtC,SAAG,KAAH,CAAS,IAAT,EAAe,IAAf,EALsC;KAArB,CAAnB,CAFgB;GAAX,CADmC;CAA7B",
+      "file": "promisify.js",
+      "sourcesContent": [
+        "// Public: Promisify Node async function.\nexport default function promisify(fn, self) {\n  return function() {\n    const args = Array.prototype.slice.call(arguments)\n    return new Promise((resolve, reject) => {\n      function callback(err, result) {\n        err ? reject(err) : resolve(result)\n      }\n      args.push(callback)\n      fn.apply(self, args)\n    })\n  }\n}\n"
+      ]
+    },
+    "mtime": 1463177158000
+  },
+  "{\"filename\":\"/Users/cjs/github/github/lib/sprockets/tsort.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.7.6": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [
+            "tsortAsync",
+            "nodes",
+            "getEdges"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "tsortAsync",
+              "exported": "tsortAsync"
+            },
+            {
+              "kind": "local",
+              "local": "nodes",
+              "exported": "nodes"
+            },
+            {
+              "kind": "local",
+              "local": "getEdges",
+              "exported": "getEdges"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/Users/cjs/github/github/lib/sprockets/tsort.js",
+      "filenameRelative": "/Users/cjs/github/github/lib/sprockets/tsort.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "tsort.js",
+      "sourceFileName": "tsort.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "tsort"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.tsortAsync = tsortAsync;\n// Public: Topological sort (DFS)\n//\n// https://en.wikipedia.org/wiki/Topological_sorting#Depth-first_search\n//\n// Examples\n//\n//   const simple = new Map()\n//   simple.set(3, [8, 10])\n//   simple.set(5, [11])\n//   simple.set(7, [8, 11])\n//   simple.set(8, [9])\n//   simple.set(11, [2, 9, 10])\n//   tsortAsync(simple.keys(), n => simple.get(n))\n//   > 7, 5, 3, 11, 8, 10, 2, 9\n//\n//   const functions = new Map()\n//   functions.set('main', ['parse_options', 'tail_file', 'tail_forever'])\n//   functions.set('tail_file', ['pretty_name', 'write_header', 'tail'])\n//   functions.set('tail_forever', ['recheck', 'pretty_name', 'write_header', 'dump_remainder'])\n//   functions.set('tail', ['tail_lines', 'tail_bytes'])\n//   functions.set('tail_lines', ['start_lines', 'dump_remainder', 'file_lines', 'pipe_lines'])\n//   functions.set('tail_bytes', ['xlseek', 'start_bytes', 'dump_remainder', 'pipe_bytes'])\n//   functions.set('file_lines', ['dump_remainder'])\n//   functions.set('recheck', ['pretty_name'])\n//   tsortAsync(functions.keys(), n => functions.get(n))\n//\n// Returns sorted Set.\nfunction tsortAsync(nodes, getEdges) {\n  var sorted, marks, visit, _iteratorNormalCompletion2, _didIteratorError2, _iteratorError2, _iterator2, _step2, node;\n\n  return regeneratorRuntime.async(function tsortAsync$(_context2) {\n    while (1) {\n      switch (_context2.prev = _context2.next) {\n        case 0:\n          visit = function visit(node) {\n            var edges, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, edge;\n\n            return regeneratorRuntime.async(function visit$(_context) {\n              while (1) {\n                switch (_context.prev = _context.next) {\n                  case 0:\n                    if (!(marks.get(node) === 'temporary')) {\n                      _context.next = 4;\n                      break;\n                    }\n\n                    throw new Error('cycle in graph visiting ' + node);\n\n                  case 4:\n                    if (!marks.get(node)) {\n                      _context.next = 6;\n                      break;\n                    }\n\n                    return _context.abrupt('return');\n\n                  case 6:\n\n                    // mark n temporarily\n                    marks.set(node, 'temporary');\n\n                    // for each node m with an edge from n to m do\n                    _context.next = 9;\n                    return regeneratorRuntime.awrap(getEdges(node));\n\n                  case 9:\n                    edges = _context.sent;\n\n                    if (!edges) {\n                      _context.next = 37;\n                      break;\n                    }\n\n                    _iteratorNormalCompletion = true;\n                    _didIteratorError = false;\n                    _iteratorError = undefined;\n                    _context.prev = 14;\n                    _iterator = edges[Symbol.iterator]();\n\n                  case 16:\n                    if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {\n                      _context.next = 23;\n                      break;\n                    }\n\n                    edge = _step.value;\n                    _context.next = 20;\n                    return regeneratorRuntime.awrap(visit(edge));\n\n                  case 20:\n                    _iteratorNormalCompletion = true;\n                    _context.next = 16;\n                    break;\n\n                  case 23:\n                    _context.next = 29;\n                    break;\n\n                  case 25:\n                    _context.prev = 25;\n                    _context.t0 = _context['catch'](14);\n                    _didIteratorError = true;\n                    _iteratorError = _context.t0;\n\n                  case 29:\n                    _context.prev = 29;\n                    _context.prev = 30;\n\n                    if (!_iteratorNormalCompletion && _iterator.return) {\n                      _iterator.return();\n                    }\n\n                  case 32:\n                    _context.prev = 32;\n\n                    if (!_didIteratorError) {\n                      _context.next = 35;\n                      break;\n                    }\n\n                    throw _iteratorError;\n\n                  case 35:\n                    return _context.finish(32);\n\n                  case 36:\n                    return _context.finish(29);\n\n                  case 37:\n\n                    // mark n permanently\n                    // unmark n temporarily\n                    marks.set(node, 'permanent');\n\n                    // add n to head of L\n                    sorted.add(node);\n\n                  case 39:\n                  case 'end':\n                    return _context.stop();\n                }\n              }\n            }, null, this, [[14, 25, 29, 37], [30,, 32, 36]]);\n          };\n\n          // Empty list that will contain the sorted nodes\n          sorted = new Set();\n          marks = new Map();\n\n          // function visit(node n)\n\n          // while there are unmarked nodes do\n          _iteratorNormalCompletion2 = true;\n          _didIteratorError2 = false;\n          _iteratorError2 = undefined;\n          _context2.prev = 6;\n          _iterator2 = nodes[Symbol.iterator]();\n\n        case 8:\n          if (_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done) {\n            _context2.next = 16;\n            break;\n          }\n\n          node = _step2.value;\n\n          if (marks.get(node)) {\n            _context2.next = 13;\n            break;\n          }\n\n          _context2.next = 13;\n          return regeneratorRuntime.awrap(visit(node));\n\n        case 13:\n          _iteratorNormalCompletion2 = true;\n          _context2.next = 8;\n          break;\n\n        case 16:\n          _context2.next = 22;\n          break;\n\n        case 18:\n          _context2.prev = 18;\n          _context2.t0 = _context2['catch'](6);\n          _didIteratorError2 = true;\n          _iteratorError2 = _context2.t0;\n\n        case 22:\n          _context2.prev = 22;\n          _context2.prev = 23;\n\n          if (!_iteratorNormalCompletion2 && _iterator2.return) {\n            _iterator2.return();\n          }\n\n        case 25:\n          _context2.prev = 25;\n\n          if (!_didIteratorError2) {\n            _context2.next = 28;\n            break;\n          }\n\n          throw _iteratorError2;\n\n        case 28:\n          return _context2.finish(25);\n\n        case 29:\n          return _context2.finish(22);\n\n        case 30:\n          return _context2.abrupt('return', sorted);\n\n        case 31:\n        case 'end':\n          return _context2.stop();\n      }\n    }\n  }, null, this, [[6, 18, 22, 30], [23,, 25, 29]]);\n}\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRzb3J0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O1FBMkJzQjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFmLFNBQWUsVUFBZixDQUEwQixLQUExQixFQUFpQyxRQUFqQztNQUVDLFFBRUEsT0FHUyw0RkErQko7Ozs7OztBQS9CSSxpQ0FBTTtnQkFjYix1RkFFTzs7Ozs7OzBCQWRULE1BQU0sR0FBTixDQUFVLElBQVYsTUFBb0IsV0FBcEI7Ozs7OzBCQUNJLElBQUksS0FBSiw4QkFBcUMsSUFBckM7Ozt5QkFHRyxNQUFNLEdBQU4sQ0FBVSxJQUFWOzs7Ozs7Ozs7O0FBS1gsMEJBQU0sR0FBTixDQUFVLElBQVYsRUFBZ0IsV0FBaEI7Ozs7b0RBR29CLFNBQVMsSUFBVDs7O0FBQWQ7O3lCQUNGOzs7Ozs7Ozs7Z0NBQ2lCOzs7Ozs7OztBQUFSOztvREFFSCxNQUFNLElBQU47Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQU1WLDBCQUFNLEdBQU4sQ0FBVSxJQUFWLEVBQWdCLFdBQWhCOzs7QUFHQSwyQkFBTyxHQUFQLENBQVcsSUFBWDs7Ozs7Ozs7Ozs7QUFoQ0ksbUJBQVMsSUFBSSxHQUFKO0FBRVQsa0JBQVEsSUFBSSxHQUFKOzs7Ozs7Ozs7dUJBa0NLOzs7Ozs7OztBQUFSOztjQUNKLE1BQU0sR0FBTixDQUFVLElBQVY7Ozs7OzswQ0FFRyxNQUFNLElBQU47Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs0Q0FJSDs7Ozs7Ozs7Q0E3Q0YiLCJmaWxlIjoidHNvcnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBQdWJsaWM6IFRvcG9sb2dpY2FsIHNvcnQgKERGUylcbi8vXG4vLyBodHRwczovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9Ub3BvbG9naWNhbF9zb3J0aW5nI0RlcHRoLWZpcnN0X3NlYXJjaFxuLy9cbi8vIEV4YW1wbGVzXG4vL1xuLy8gICBjb25zdCBzaW1wbGUgPSBuZXcgTWFwKClcbi8vICAgc2ltcGxlLnNldCgzLCBbOCwgMTBdKVxuLy8gICBzaW1wbGUuc2V0KDUsIFsxMV0pXG4vLyAgIHNpbXBsZS5zZXQoNywgWzgsIDExXSlcbi8vICAgc2ltcGxlLnNldCg4LCBbOV0pXG4vLyAgIHNpbXBsZS5zZXQoMTEsIFsyLCA5LCAxMF0pXG4vLyAgIHRzb3J0QXN5bmMoc2ltcGxlLmtleXMoKSwgbiA9PiBzaW1wbGUuZ2V0KG4pKVxuLy8gICA+IDcsIDUsIDMsIDExLCA4LCAxMCwgMiwgOVxuLy9cbi8vICAgY29uc3QgZnVuY3Rpb25zID0gbmV3IE1hcCgpXG4vLyAgIGZ1bmN0aW9ucy5zZXQoJ21haW4nLCBbJ3BhcnNlX29wdGlvbnMnLCAndGFpbF9maWxlJywgJ3RhaWxfZm9yZXZlciddKVxuLy8gICBmdW5jdGlvbnMuc2V0KCd0YWlsX2ZpbGUnLCBbJ3ByZXR0eV9uYW1lJywgJ3dyaXRlX2hlYWRlcicsICd0YWlsJ10pXG4vLyAgIGZ1bmN0aW9ucy5zZXQoJ3RhaWxfZm9yZXZlcicsIFsncmVjaGVjaycsICdwcmV0dHlfbmFtZScsICd3cml0ZV9oZWFkZXInLCAnZHVtcF9yZW1haW5kZXInXSlcbi8vICAgZnVuY3Rpb25zLnNldCgndGFpbCcsIFsndGFpbF9saW5lcycsICd0YWlsX2J5dGVzJ10pXG4vLyAgIGZ1bmN0aW9ucy5zZXQoJ3RhaWxfbGluZXMnLCBbJ3N0YXJ0X2xpbmVzJywgJ2R1bXBfcmVtYWluZGVyJywgJ2ZpbGVfbGluZXMnLCAncGlwZV9saW5lcyddKVxuLy8gICBmdW5jdGlvbnMuc2V0KCd0YWlsX2J5dGVzJywgWyd4bHNlZWsnLCAnc3RhcnRfYnl0ZXMnLCAnZHVtcF9yZW1haW5kZXInLCAncGlwZV9ieXRlcyddKVxuLy8gICBmdW5jdGlvbnMuc2V0KCdmaWxlX2xpbmVzJywgWydkdW1wX3JlbWFpbmRlciddKVxuLy8gICBmdW5jdGlvbnMuc2V0KCdyZWNoZWNrJywgWydwcmV0dHlfbmFtZSddKVxuLy8gICB0c29ydEFzeW5jKGZ1bmN0aW9ucy5rZXlzKCksIG4gPT4gZnVuY3Rpb25zLmdldChuKSlcbi8vXG4vLyBSZXR1cm5zIHNvcnRlZCBTZXQuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gdHNvcnRBc3luYyhub2RlcywgZ2V0RWRnZXMpIHtcbiAgLy8gRW1wdHkgbGlzdCB0aGF0IHdpbGwgY29udGFpbiB0aGUgc29ydGVkIG5vZGVzXG4gIGNvbnN0IHNvcnRlZCA9IG5ldyBTZXQoKVxuXG4gIGNvbnN0IG1hcmtzID0gbmV3IE1hcCgpXG5cbiAgLy8gZnVuY3Rpb24gdmlzaXQobm9kZSBuKVxuICBhc3luYyBmdW5jdGlvbiB2aXNpdChub2RlKSB7XG4gICAgLy8gaWYgbiBoYXMgYSB0ZW1wb3JhcnkgbWFyayB0aGVuIHN0b3AgKG5vdCBhIERBRylcbiAgICBpZiAobWFya3MuZ2V0KG5vZGUpID09PSAndGVtcG9yYXJ5Jykge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKGBjeWNsZSBpbiBncmFwaCB2aXNpdGluZyAke25vZGV9YClcblxuICAgIC8vIHNraXAgaWYgbiBpcyBhbHJlYWR5IHZpc2l0ZWRcbiAgICB9IGVsc2UgaWYgKG1hcmtzLmdldChub2RlKSkge1xuICAgICAgcmV0dXJuXG4gICAgfVxuXG4gICAgLy8gbWFyayBuIHRlbXBvcmFyaWx5XG4gICAgbWFya3Muc2V0KG5vZGUsICd0ZW1wb3JhcnknKVxuXG4gICAgLy8gZm9yIGVhY2ggbm9kZSBtIHdpdGggYW4gZWRnZSBmcm9tIG4gdG8gbSBkb1xuICAgIGNvbnN0IGVkZ2VzID0gYXdhaXQgZ2V0RWRnZXMobm9kZSlcbiAgICBpZiAoZWRnZXMpIHtcbiAgICAgIGZvciAoY29uc3QgZWRnZSBvZiBlZGdlcykge1xuICAgICAgICAvLyB2aXNpdChtKVxuICAgICAgICBhd2FpdCB2aXNpdChlZGdlKVxuICAgICAgfVxuICAgIH1cblxuICAgIC8vIG1hcmsgbiBwZXJtYW5lbnRseVxuICAgIC8vIHVubWFyayBuIHRlbXBvcmFyaWx5XG4gICAgbWFya3Muc2V0KG5vZGUsICdwZXJtYW5lbnQnKVxuXG4gICAgLy8gYWRkIG4gdG8gaGVhZCBvZiBMXG4gICAgc29ydGVkLmFkZChub2RlKVxuICB9XG5cbiAgLy8gd2hpbGUgdGhlcmUgYXJlIHVubWFya2VkIG5vZGVzIGRvXG4gIGZvciAoY29uc3Qgbm9kZSBvZiBub2Rlcykge1xuICAgIGlmICghbWFya3MuZ2V0KG5vZGUpKSB7XG4gICAgICAvLyB2aXNpdChuKVxuICAgICAgYXdhaXQgdmlzaXQobm9kZSlcbiAgICB9XG4gIH1cblxuICByZXR1cm4gc29ydGVkXG59XG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "tsort.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;QA2BsB;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAf,SAAe,UAAf,CAA0B,KAA1B,EAAiC,QAAjC;MAEC,QAEA,OAGS,4FA+BJ;;;;;;AA/BI,iCAAM;gBAcb,uFAEO;;;;;;0BAdT,MAAM,GAAN,CAAU,IAAV,MAAoB,WAApB;;;;;0BACI,IAAI,KAAJ,8BAAqC,IAArC;;;yBAGG,MAAM,GAAN,CAAU,IAAV;;;;;;;;;;AAKX,0BAAM,GAAN,CAAU,IAAV,EAAgB,WAAhB;;;;oDAGoB,SAAS,IAAT;;;AAAd;;yBACF;;;;;;;;;gCACiB;;;;;;;;AAAR;;oDAEH,MAAM,IAAN;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAMV,0BAAM,GAAN,CAAU,IAAV,EAAgB,WAAhB;;;AAGA,2BAAO,GAAP,CAAW,IAAX;;;;;;;;;;;AAhCI,mBAAS,IAAI,GAAJ;AAET,kBAAQ,IAAI,GAAJ;;;;;;;;;uBAkCK;;;;;;;;AAAR;;cACJ,MAAM,GAAN,CAAU,IAAV;;;;;;0CAEG,MAAM,IAAN;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4CAIH;;;;;;;;CA7CF",
+      "file": "tsort.js",
+      "sourcesContent": [
+        "// Public: Topological sort (DFS)\n//\n// https://en.wikipedia.org/wiki/Topological_sorting#Depth-first_search\n//\n// Examples\n//\n//   const simple = new Map()\n//   simple.set(3, [8, 10])\n//   simple.set(5, [11])\n//   simple.set(7, [8, 11])\n//   simple.set(8, [9])\n//   simple.set(11, [2, 9, 10])\n//   tsortAsync(simple.keys(), n => simple.get(n))\n//   > 7, 5, 3, 11, 8, 10, 2, 9\n//\n//   const functions = new Map()\n//   functions.set('main', ['parse_options', 'tail_file', 'tail_forever'])\n//   functions.set('tail_file', ['pretty_name', 'write_header', 'tail'])\n//   functions.set('tail_forever', ['recheck', 'pretty_name', 'write_header', 'dump_remainder'])\n//   functions.set('tail', ['tail_lines', 'tail_bytes'])\n//   functions.set('tail_lines', ['start_lines', 'dump_remainder', 'file_lines', 'pipe_lines'])\n//   functions.set('tail_bytes', ['xlseek', 'start_bytes', 'dump_remainder', 'pipe_bytes'])\n//   functions.set('file_lines', ['dump_remainder'])\n//   functions.set('recheck', ['pretty_name'])\n//   tsortAsync(functions.keys(), n => functions.get(n))\n//\n// Returns sorted Set.\nexport async function tsortAsync(nodes, getEdges) {\n  // Empty list that will contain the sorted nodes\n  const sorted = new Set()\n\n  const marks = new Map()\n\n  // function visit(node n)\n  async function visit(node) {\n    // if n has a temporary mark then stop (not a DAG)\n    if (marks.get(node) === 'temporary') {\n      throw new Error(`cycle in graph visiting ${node}`)\n\n    // skip if n is already visited\n    } else if (marks.get(node)) {\n      return\n    }\n\n    // mark n temporarily\n    marks.set(node, 'temporary')\n\n    // for each node m with an edge from n to m do\n    const edges = await getEdges(node)\n    if (edges) {\n      for (const edge of edges) {\n        // visit(m)\n        await visit(edge)\n      }\n    }\n\n    // mark n permanently\n    // unmark n temporarily\n    marks.set(node, 'permanent')\n\n    // add n to head of L\n    sorted.add(node)\n  }\n\n  // while there are unmarked nodes do\n  for (const node of nodes) {\n    if (!marks.get(node)) {\n      // visit(n)\n      await visit(node)\n    }\n  }\n\n  return sorted\n}\n"
+      ]
+    },
+    "mtime": 1463177158000
+  },
+  "{\"filename\":\"/Users/cjs/github/github/lib/sprockets/resolve-js-dependencies.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "path",
+            "imported": [
+              "resolve"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "resolve",
+                "local": "resolve"
+              }
+            ]
+          },
+          {
+            "source": "./dependencies",
+            "imported": [
+              "traverseScriptDependencies"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "traverseScriptDependencies",
+                "local": "traverseScriptDependencies"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/Users/cjs/github/github/lib/sprockets/resolve-js-dependencies.js",
+      "filenameRelative": "/Users/cjs/github/github/lib/sprockets/resolve-js-dependencies.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "resolve-js-dependencies.js",
+      "sourceFileName": "resolve-js-dependencies.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "resolve-js-dependencies"
+    },
+    "ignored": false,
+    "code": "#!/usr/bin/env babel-node\n'use strict';\n\nvar _path = require('path');\n\nvar _dependencies = require('./dependencies');\n\nvar entry = (0, _path.resolve)(process.argv[2]);\n\n(0, _dependencies.traverseScriptDependencies)(entry).then(function (paths) {\n  var _iteratorNormalCompletion = true;\n  var _didIteratorError = false;\n  var _iteratorError = undefined;\n\n  try {\n    for (var _iterator = paths[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {\n      var path = _step.value;\n\n      process.stdout.write(path + \"\\n\");\n    }\n  } catch (err) {\n    _didIteratorError = true;\n    _iteratorError = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion && _iterator.return) {\n        _iterator.return();\n      }\n    } finally {\n      if (_didIteratorError) {\n        throw _iteratorError;\n      }\n    }\n  }\n}).catch(function (err) {\n  setImmediate(function () {\n    throw err;\n  });\n});\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlc29sdmUtanMtZGVwZW5kZW5jaWVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUE7O0FBQ0E7O0FBRUEsSUFBTSxRQUFRLG1CQUFRLFFBQVEsSUFBUixDQUFhLENBQWIsQ0FBUixDQUFkOztBQUVBLDhDQUEyQixLQUEzQixFQUFrQyxJQUFsQyxDQUF1QyxVQUFDLEtBQUQsRUFBVztBQUFBO0FBQUE7QUFBQTs7QUFBQTtBQUNoRCx5QkFBbUIsS0FBbkIsOEhBQTBCO0FBQUEsVUFBZixJQUFlOztBQUN4QixjQUFRLE1BQVIsQ0FBZSxLQUFmLENBQXFCLE9BQUssSUFBMUI7QUFDRDtBQUgrQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBSWpELENBSkQsRUFJRyxLQUpILENBSVMsZUFBTztBQUNkLGVBQWEsWUFBTTtBQUFFLFVBQU0sR0FBTjtBQUFXLEdBQWhDO0FBQ0QsQ0FORCIsImZpbGUiOiJyZXNvbHZlLWpzLWRlcGVuZGVuY2llcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxuXG5pbXBvcnQge3Jlc29sdmV9IGZyb20gJ3BhdGgnXG5pbXBvcnQge3RyYXZlcnNlU2NyaXB0RGVwZW5kZW5jaWVzfSBmcm9tICcuL2RlcGVuZGVuY2llcydcblxuY29uc3QgZW50cnkgPSByZXNvbHZlKHByb2Nlc3MuYXJndlsyXSlcblxudHJhdmVyc2VTY3JpcHREZXBlbmRlbmNpZXMoZW50cnkpLnRoZW4oKHBhdGhzKSA9PiB7XG4gIGZvciAoY29uc3QgcGF0aCBvZiBwYXRocykge1xuICAgIHByb2Nlc3Muc3Rkb3V0LndyaXRlKHBhdGgrXCJcXG5cIilcbiAgfVxufSkuY2F0Y2goZXJyID0+IHtcbiAgc2V0SW1tZWRpYXRlKCgpID0+IHsgdGhyb3cgZXJyIH0pXG59KVxuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "resolve-js-dependencies.js"
+      ],
+      "names": [],
+      "mappings": ";;AAEA;;AACA;;AAEA,IAAM,QAAQ,mBAAQ,QAAQ,IAAR,CAAa,CAAb,CAAR,CAAd;;AAEA,8CAA2B,KAA3B,EAAkC,IAAlC,CAAuC,UAAC,KAAD,EAAW;AAAA;AAAA;AAAA;;AAAA;AAChD,yBAAmB,KAAnB,8HAA0B;AAAA,UAAf,IAAe;;AACxB,cAAQ,MAAR,CAAe,KAAf,CAAqB,OAAK,IAA1B;AACD;AAH+C;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAIjD,CAJD,EAIG,KAJH,CAIS,eAAO;AACd,eAAa,YAAM;AAAE,UAAM,GAAN;AAAW,GAAhC;AACD,CAND",
+      "file": "resolve-js-dependencies.js",
+      "sourcesContent": [
+        "\n\nimport {resolve} from 'path'\nimport {traverseScriptDependencies} from './dependencies'\n\nconst entry = resolve(process.argv[2])\n\ntraverseScriptDependencies(entry).then((paths) => {\n  for (const path of paths) {\n    process.stdout.write(path+\"\\n\")\n  }\n}).catch(err => {\n  setImmediate(() => { throw err })\n})\n"
+      ]
+    },
+    "mtime": 1470779705000
+  },
+  "{\"filename\":\"/Users/cjs/github/github/lib/sprockets/dependencies.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "path",
+            "imported": [
+              "dirname"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "dirname",
+                "local": "dirname"
+              }
+            ]
+          },
+          {
+            "source": "fs",
+            "imported": [
+              "readFile"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "readFile",
+                "local": "_readFile"
+              }
+            ]
+          },
+          {
+            "source": "./resolve",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "resolve"
+              }
+            ]
+          },
+          {
+            "source": "./tsort",
+            "imported": [
+              "tsortAsync"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "tsortAsync",
+                "local": "tsortAsync"
+              }
+            ]
+          },
+          {
+            "source": "./promisify",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "promisify"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [
+            "traverseScriptDependencies",
+            "entry"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "traverseScriptDependencies",
+              "exported": "traverseScriptDependencies"
+            },
+            {
+              "kind": "local",
+              "local": "entry",
+              "exported": "entry"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/Users/cjs/github/github/lib/sprockets/dependencies.js",
+      "filenameRelative": "/Users/cjs/github/github/lib/sprockets/dependencies.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "dependencies.js",
+      "sourceFileName": "dependencies.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "dependencies"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.traverseScriptDependencies = traverseScriptDependencies;\n\nvar _path = require('path');\n\nvar _fs = require('fs');\n\nvar _resolve = require('./resolve');\n\nvar _resolve2 = _interopRequireDefault(_resolve);\n\nvar _tsort = require('./tsort');\n\nvar _promisify = require('./promisify');\n\nvar _promisify2 = _interopRequireDefault(_promisify);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar readFile = (0, _promisify2.default)(_fs.readFile);\n\nfunction readRequireDirectives(code, callback) {\n  var lines = code.match(/^\\/\\/=.+$/gm) || [];\n  var _iteratorNormalCompletion = true;\n  var _didIteratorError = false;\n  var _iteratorError = undefined;\n\n  try {\n    for (var _iterator = lines[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {\n      var line = _step.value;\n\n      var m = line.match(/= require ([\\w\\.\\/-]+)/);\n      if (m) {\n        callback(m[1]);\n      }\n    }\n  } catch (err) {\n    _didIteratorError = true;\n    _iteratorError = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion && _iterator.return) {\n        _iterator.return();\n      }\n    } finally {\n      if (_didIteratorError) {\n        throw _iteratorError;\n      }\n    }\n  }\n}\n\nfunction readStubDirectives(code, callback) {\n  var lines = code.match(/^\\/\\/=.+$/gm) || [];\n  var _iteratorNormalCompletion2 = true;\n  var _didIteratorError2 = false;\n  var _iteratorError2 = undefined;\n\n  try {\n    for (var _iterator2 = lines[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {\n      var line = _step2.value;\n\n      var m = line.match(/= stub ([\\w\\.\\/-]+)/);\n      if (m) {\n        callback(m[1]);\n      }\n    }\n  } catch (err) {\n    _didIteratorError2 = true;\n    _iteratorError2 = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion2 && _iterator2.return) {\n        _iterator2.return();\n      }\n    } finally {\n      if (_didIteratorError2) {\n        throw _iteratorError2;\n      }\n    }\n  }\n}\n\nfunction readImports(code, callback) {\n  var lines = code.match(/^import.+$/gm) || [];\n  var _iteratorNormalCompletion3 = true;\n  var _didIteratorError3 = false;\n  var _iteratorError3 = undefined;\n\n  try {\n    for (var _iterator3 = lines[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {\n      var line = _step3.value;\n\n      var m = line.match(/^import.+['\"]([\\w\\!\\.\\/-]+)['\"];?$/);\n      if (m) {\n        callback('environment/require');\n        callback(m[1]);\n      }\n    }\n  } catch (err) {\n    _didIteratorError3 = true;\n    _iteratorError3 = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion3 && _iterator3.return) {\n        _iterator3.return();\n      }\n    } finally {\n      if (_didIteratorError3) {\n        throw _iteratorError3;\n      }\n    }\n  }\n}\n\nfunction readAmdDeps(code, callback) {\n  var lines = code.match(/^\\s*define\\(.+$/gm) || [];\n  var _iteratorNormalCompletion4 = true;\n  var _didIteratorError4 = false;\n  var _iteratorError4 = undefined;\n\n  try {\n    for (var _iterator4 = lines[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {\n      var line = _step4.value;\n\n      var m = line.match(/\\[([^\\]]+)\\]/);\n      if (m) {\n        var _iteratorNormalCompletion5 = true;\n        var _didIteratorError5 = false;\n        var _iteratorError5 = undefined;\n\n        try {\n          for (var _iterator5 = m[1].replace(/['\"]/g, \"\").split(/\\s*,\\s*/)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {\n            var dep = _step5.value;\n\n            if (dep !== 'exports') {\n              callback('environment/require');\n              callback(dep);\n            }\n          }\n        } catch (err) {\n          _didIteratorError5 = true;\n          _iteratorError5 = err;\n        } finally {\n          try {\n            if (!_iteratorNormalCompletion5 && _iterator5.return) {\n              _iterator5.return();\n            }\n          } finally {\n            if (_didIteratorError5) {\n              throw _iteratorError5;\n            }\n          }\n        }\n      }\n    }\n  } catch (err) {\n    _didIteratorError4 = true;\n    _iteratorError4 = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion4 && _iterator4.return) {\n        _iterator4.return();\n      }\n    } finally {\n      if (_didIteratorError4) {\n        throw _iteratorError4;\n      }\n    }\n  }\n}\n\nfunction readRequires(code, callback) {\n  var lines = code.match(/require\\(.+$/gm) || [];\n  var _iteratorNormalCompletion6 = true;\n  var _didIteratorError6 = false;\n  var _iteratorError6 = undefined;\n\n  try {\n    for (var _iterator6 = lines[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {\n      var line = _step6.value;\n\n      var m = line.match(/require[ (]['\"]([\\w\\/-]+)['\"]/);\n      if (m) {\n        callback('environment/require');\n        callback(m[1]);\n      }\n    }\n  } catch (err) {\n    _didIteratorError6 = true;\n    _iteratorError6 = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion6 && _iterator6.return) {\n        _iterator6.return();\n      }\n    } finally {\n      if (_didIteratorError6) {\n        throw _iteratorError6;\n      }\n    }\n  }\n}\n\nfunction scanScriptRequiredDependencies(filename) {\n  var basedir, code, resolvers, push;\n  return regeneratorRuntime.async(function scanScriptRequiredDependencies$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          push = function push(path) {\n            resolvers.push((0, _resolve2.default)(path, basedir));\n          };\n\n          basedir = (0, _path.dirname)(filename);\n          _context.next = 4;\n          return regeneratorRuntime.awrap(readFile(filename, 'utf8'));\n\n        case 4:\n          code = _context.sent;\n          resolvers = [];\n\n\n          if (filename.match(\"app/assets/javascripts\")) {\n            readRequireDirectives(code, push);\n            readRequires(code, push);\n          } else if (filename.match(\"app/assets/modules\")) {\n            readRequireDirectives(code, push);\n            readImports(code, push);\n          } else if (filename.match(\"test/js\")) {\n            readRequireDirectives(code, push);\n            readImports(code, push);\n          } else if (filename.match(\"node_modules\")) {\n            readAmdDeps(code, push);\n          }\n\n          return _context.abrupt('return', Promise.all(resolvers));\n\n        case 8:\n        case 'end':\n          return _context.stop();\n      }\n    }\n  }, null, this);\n}\n\nfunction scanScriptStubbedDependencies(filename) {\n  var basedir, code, resolvers;\n  return regeneratorRuntime.async(function scanScriptStubbedDependencies$(_context2) {\n    while (1) {\n      switch (_context2.prev = _context2.next) {\n        case 0:\n          basedir = (0, _path.dirname)(filename);\n          _context2.next = 3;\n          return regeneratorRuntime.awrap(readFile(filename, 'utf8'));\n\n        case 3:\n          code = _context2.sent;\n          resolvers = [];\n\n\n          readStubDirectives(code, function (path) {\n            resolvers.push((0, _resolve2.default)(path, basedir));\n          });\n\n          return _context2.abrupt('return', Promise.all(resolvers));\n\n        case 7:\n        case 'end':\n          return _context2.stop();\n      }\n    }\n  }, null, this);\n}\n\nfunction traverseScriptRequiredDependencies(entry) {\n  var ctx;\n  return regeneratorRuntime.async(function traverseScriptRequiredDependencies$(_context3) {\n    while (1) {\n      switch (_context3.prev = _context3.next) {\n        case 0:\n          // eslint-disable-line require-yield\n          ctx = {};\n          return _context3.abrupt('return', (0, _tsort.tsortAsync)([entry], scanScriptRequiredDependencies.bind(ctx)));\n\n        case 2:\n        case 'end':\n          return _context3.stop();\n      }\n    }\n  }, null, this);\n}\n\nfunction traverseScriptStubbedDependencies(entry) {\n  var ctx, stubbed;\n  return regeneratorRuntime.async(function traverseScriptStubbedDependencies$(_context4) {\n    while (1) {\n      switch (_context4.prev = _context4.next) {\n        case 0:\n          ctx = {};\n          _context4.next = 3;\n          return regeneratorRuntime.awrap(scanScriptStubbedDependencies(entry));\n\n        case 3:\n          stubbed = _context4.sent;\n          return _context4.abrupt('return', (0, _tsort.tsortAsync)(stubbed, scanScriptRequiredDependencies.bind(ctx)));\n\n        case 5:\n        case 'end':\n          return _context4.stop();\n      }\n    }\n  }, null, this);\n}\n\nfunction traverseScriptDependencies(entry) {\n  var requiredPending, stubbedPending, required, stubbed, _iteratorNormalCompletion7, _didIteratorError7, _iteratorError7, _iterator7, _step7, filename;\n\n  return regeneratorRuntime.async(function traverseScriptDependencies$(_context5) {\n    while (1) {\n      switch (_context5.prev = _context5.next) {\n        case 0:\n          requiredPending = traverseScriptRequiredDependencies(entry);\n          stubbedPending = traverseScriptStubbedDependencies(entry);\n          _context5.next = 4;\n          return regeneratorRuntime.awrap(requiredPending);\n\n        case 4:\n          required = _context5.sent;\n          _context5.next = 7;\n          return regeneratorRuntime.awrap(stubbedPending);\n\n        case 7:\n          stubbed = _context5.sent;\n          _iteratorNormalCompletion7 = true;\n          _didIteratorError7 = false;\n          _iteratorError7 = undefined;\n          _context5.prev = 11;\n\n\n          for (_iterator7 = stubbed[Symbol.iterator](); !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {\n            filename = _step7.value;\n\n            required.delete(filename);\n          }\n\n          _context5.next = 19;\n          break;\n\n        case 15:\n          _context5.prev = 15;\n          _context5.t0 = _context5['catch'](11);\n          _didIteratorError7 = true;\n          _iteratorError7 = _context5.t0;\n\n        case 19:\n          _context5.prev = 19;\n          _context5.prev = 20;\n\n          if (!_iteratorNormalCompletion7 && _iterator7.return) {\n            _iterator7.return();\n          }\n\n        case 22:\n          _context5.prev = 22;\n\n          if (!_didIteratorError7) {\n            _context5.next = 25;\n            break;\n          }\n\n          throw _iteratorError7;\n\n        case 25:\n          return _context5.finish(22);\n\n        case 26:\n          return _context5.finish(19);\n\n        case 27:\n          return _context5.abrupt('return', required);\n\n        case 28:\n        case 'end':\n          return _context5.stop();\n      }\n    }\n  }, null, this, [[11, 15, 19, 27], [20,, 22, 26]]);\n}\n//# sourceMappingURL=data:application/json;base64,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O0FBQUEsNENBR1MsdUJBQVcsT0FBWCxFQUFvQiwrQkFBK0IsSUFBL0IsQ0FBb0MsR0FBcEMsQ0FBcEIsQ0FIVDs7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFNTyxTQUFlLDBCQUFmLENBQTBDLEtBQTFDO0FBQUEsTUFDQyxlQURELEVBRUMsY0FGRCxFQUdDLFFBSEQsRUFJQyxPQUpELHVGQU1NLFFBTk47O0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQyx5QkFERCxHQUNtQixtQ0FBbUMsS0FBbkMsQ0FEbkI7QUFFQyx3QkFGRCxHQUVrQixrQ0FBa0MsS0FBbEMsQ0FGbEI7QUFBQTtBQUFBLDBDQUdrQixlQUhsQjs7QUFBQTtBQUdDLGtCQUhEO0FBQUE7QUFBQSwwQ0FJaUIsY0FKakI7O0FBQUE7QUFJQyxpQkFKRDtBQUFBO0FBQUE7QUFBQTtBQUFBOzs7QUFNTCw0QkFBdUIsT0FBdkIsMkhBQWdDO0FBQXJCLG9CQUFxQjs7QUFDOUIscUJBQVMsTUFBVCxDQUFnQixRQUFoQjtBQUNEOztBQVJJO0FBQUE7O0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBQUE7O0FBQUE7QUFBQTs7QUFBQTtBQUFBOztBQUFBO0FBQUEsNENBVUUsUUFWRjs7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSIsImZpbGUiOiJkZXBlbmRlbmNpZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge2Rpcm5hbWV9IGZyb20gJ3BhdGgnXG5pbXBvcnQge3JlYWRGaWxlIGFzIF9yZWFkRmlsZX0gZnJvbSAnZnMnXG5pbXBvcnQgcmVzb2x2ZSBmcm9tICcuL3Jlc29sdmUnXG5pbXBvcnQge3Rzb3J0QXN5bmN9IGZyb20gJy4vdHNvcnQnXG5pbXBvcnQgcHJvbWlzaWZ5IGZyb20gJy4vcHJvbWlzaWZ5J1xuXG5jb25zdCByZWFkRmlsZSA9IHByb21pc2lmeShfcmVhZEZpbGUpXG5cbmZ1bmN0aW9uIHJlYWRSZXF1aXJlRGlyZWN0aXZlcyhjb2RlLCBjYWxsYmFjaykge1xuICBjb25zdCBsaW5lcyA9IGNvZGUubWF0Y2goL15cXC9cXC89LiskL2dtKSB8fCBbXVxuICBmb3IgKGNvbnN0IGxpbmUgb2YgbGluZXMpIHtcbiAgICBjb25zdCBtID0gbGluZS5tYXRjaCgvPSByZXF1aXJlIChbXFx3XFwuXFwvLV0rKS8pXG4gICAgaWYgKG0pIHtcbiAgICAgIGNhbGxiYWNrKG1bMV0pXG4gICAgfVxuICB9XG59XG5cbmZ1bmN0aW9uIHJlYWRTdHViRGlyZWN0aXZlcyhjb2RlLCBjYWxsYmFjaykge1xuICBjb25zdCBsaW5lcyA9IGNvZGUubWF0Y2goL15cXC9cXC89LiskL2dtKSB8fCBbXVxuICBmb3IgKGNvbnN0IGxpbmUgb2YgbGluZXMpIHtcbiAgICBjb25zdCBtID0gbGluZS5tYXRjaCgvPSBzdHViIChbXFx3XFwuXFwvLV0rKS8pXG4gICAgaWYgKG0pIHtcbiAgICAgIGNhbGxiYWNrKG1bMV0pXG4gICAgfVxuICB9XG59XG5cbmZ1bmN0aW9uIHJlYWRJbXBvcnRzKGNvZGUsIGNhbGxiYWNrKSB7XG4gIGNvbnN0IGxpbmVzID0gY29kZS5tYXRjaCgvXmltcG9ydC4rJC9nbSkgfHwgW11cbiAgZm9yIChjb25zdCBsaW5lIG9mIGxpbmVzKSB7XG4gICAgY29uc3QgbSA9IGxpbmUubWF0Y2goL15pbXBvcnQuK1snXCJdKFtcXHdcXCFcXC5cXC8tXSspWydcIl07PyQvKVxuICAgIGlmIChtKSB7XG4gICAgICBjYWxsYmFjaygnZW52aXJvbm1lbnQvcmVxdWlyZScpXG4gICAgICBjYWxsYmFjayhtWzFdKVxuICAgIH1cbiAgfVxufVxuXG5mdW5jdGlvbiByZWFkQW1kRGVwcyhjb2RlLCBjYWxsYmFjaykge1xuICBjb25zdCBsaW5lcyA9IGNvZGUubWF0Y2goL15cXHMqZGVmaW5lXFwoLiskL2dtKSB8fCBbXVxuICBmb3IgKGNvbnN0IGxpbmUgb2YgbGluZXMpIHtcbiAgICBjb25zdCBtID0gbGluZS5tYXRjaCgvXFxbKFteXFxdXSspXFxdLylcbiAgICBpZiAobSkge1xuICAgICAgZm9yIChjb25zdCBkZXAgb2YgbVsxXS5yZXBsYWNlKC9bJ1wiXS9nLCBcIlwiKS5zcGxpdCgvXFxzKixcXHMqLykpIHtcbiAgICAgICAgaWYgKGRlcCAhPT0gJ2V4cG9ydHMnKSB7XG4gICAgICAgICAgY2FsbGJhY2soJ2Vudmlyb25tZW50L3JlcXVpcmUnKVxuICAgICAgICAgIGNhbGxiYWNrKGRlcClcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuXG5mdW5jdGlvbiByZWFkUmVxdWlyZXMoY29kZSwgY2FsbGJhY2spIHtcbiAgY29uc3QgbGluZXMgPSBjb2RlLm1hdGNoKC9yZXF1aXJlXFwoLiskL2dtKSB8fCBbXVxuICBmb3IgKGNvbnN0IGxpbmUgb2YgbGluZXMpIHtcbiAgICBjb25zdCBtID0gbGluZS5tYXRjaCgvcmVxdWlyZVsgKF1bJ1wiXShbXFx3XFwvLV0rKVsnXCJdLylcbiAgICBpZiAobSkge1xuICAgICAgY2FsbGJhY2soJ2Vudmlyb25tZW50L3JlcXVpcmUnKVxuICAgICAgY2FsbGJhY2sobVsxXSlcbiAgICB9XG4gIH1cbn1cblxuYXN5bmMgZnVuY3Rpb24gc2NhblNjcmlwdFJlcXVpcmVkRGVwZW5kZW5jaWVzKGZpbGVuYW1lKSB7XG4gIGNvbnN0IGJhc2VkaXIgPSBkaXJuYW1lKGZpbGVuYW1lKVxuICBjb25zdCBjb2RlID0gYXdhaXQgcmVhZEZpbGUoZmlsZW5hbWUsICd1dGY4JylcblxuICBjb25zdCByZXNvbHZlcnMgPSBbXVxuXG4gIGZ1bmN0aW9uIHB1c2gocGF0aCkge1xuICAgIHJlc29sdmVycy5wdXNoKHJlc29sdmUocGF0aCwgYmFzZWRpcikpXG4gIH1cblxuICBpZiAoZmlsZW5hbWUubWF0Y2goXCJhcHAvYXNzZXRzL2phdmFzY3JpcHRzXCIpKSB7XG4gICAgcmVhZFJlcXVpcmVEaXJlY3RpdmVzKGNvZGUsIHB1c2gpXG4gICAgcmVhZFJlcXVpcmVzKGNvZGUsIHB1c2gpXG4gIH0gZWxzZSBpZiAoZmlsZW5hbWUubWF0Y2goXCJhcHAvYXNzZXRzL21vZHVsZXNcIikpIHtcbiAgICByZWFkUmVxdWlyZURpcmVjdGl2ZXMoY29kZSwgcHVzaClcbiAgICByZWFkSW1wb3J0cyhjb2RlLCBwdXNoKVxuICB9IGVsc2UgaWYgKGZpbGVuYW1lLm1hdGNoKFwidGVzdC9qc1wiKSkge1xuICAgIHJlYWRSZXF1aXJlRGlyZWN0aXZlcyhjb2RlLCBwdXNoKVxuICAgIHJlYWRJbXBvcnRzKGNvZGUsIHB1c2gpXG4gIH0gZWxzZSBpZiAoZmlsZW5hbWUubWF0Y2goXCJub2RlX21vZHVsZXNcIikpIHtcbiAgICByZWFkQW1kRGVwcyhjb2RlLCBwdXNoKVxuICB9XG5cbiAgcmV0dXJuIFByb21pc2UuYWxsKHJlc29sdmVycylcbn1cblxuYXN5bmMgZnVuY3Rpb24gc2NhblNjcmlwdFN0dWJiZWREZXBlbmRlbmNpZXMoZmlsZW5hbWUpIHtcbiAgY29uc3QgYmFzZWRpciA9IGRpcm5hbWUoZmlsZW5hbWUpXG4gIGNvbnN0IGNvZGUgPSBhd2FpdCByZWFkRmlsZShmaWxlbmFtZSwgJ3V0ZjgnKVxuXG4gIGNvbnN0IHJlc29sdmVycyA9IFtdXG5cbiAgcmVhZFN0dWJEaXJlY3RpdmVzKGNvZGUsIHBhdGggPT4ge1xuICAgIHJlc29sdmVycy5wdXNoKHJlc29sdmUocGF0aCwgYmFzZWRpcikpXG4gIH0pXG5cbiAgcmV0dXJuIFByb21pc2UuYWxsKHJlc29sdmVycylcbn1cblxuYXN5bmMgZnVuY3Rpb24gdHJhdmVyc2VTY3JpcHRSZXF1aXJlZERlcGVuZGVuY2llcyhlbnRyeSkgeyAvLyBlc2xpbnQtZGlzYWJsZS1saW5lIHJlcXVpcmUteWllbGRcbiAgY29uc3QgY3R4ID0ge31cbiAgcmV0dXJuIHRzb3J0QXN5bmMoW2VudHJ5XSwgc2NhblNjcmlwdFJlcXVpcmVkRGVwZW5kZW5jaWVzLmJpbmQoY3R4KSlcbn1cblxuYXN5bmMgZnVuY3Rpb24gdHJhdmVyc2VTY3JpcHRTdHViYmVkRGVwZW5kZW5jaWVzKGVudHJ5KSB7XG4gIGNvbnN0IGN0eCA9IHt9XG4gIGNvbnN0IHN0dWJiZWQgPSBhd2FpdCBzY2FuU2NyaXB0U3R1YmJlZERlcGVuZGVuY2llcyhlbnRyeSlcbiAgcmV0dXJuIHRzb3J0QXN5bmMoc3R1YmJlZCwgc2NhblNjcmlwdFJlcXVpcmVkRGVwZW5kZW5jaWVzLmJpbmQoY3R4KSlcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHRyYXZlcnNlU2NyaXB0RGVwZW5kZW5jaWVzKGVudHJ5KSB7XG4gIGNvbnN0IHJlcXVpcmVkUGVuZGluZyA9IHRyYXZlcnNlU2NyaXB0UmVxdWlyZWREZXBlbmRlbmNpZXMoZW50cnkpXG4gIGNvbnN0IHN0dWJiZWRQZW5kaW5nID0gdHJhdmVyc2VTY3JpcHRTdHViYmVkRGVwZW5kZW5jaWVzKGVudHJ5KVxuICBjb25zdCByZXF1aXJlZCA9IGF3YWl0IHJlcXVpcmVkUGVuZGluZ1xuICBjb25zdCBzdHViYmVkID0gYXdhaXQgc3R1YmJlZFBlbmRpbmdcblxuICBmb3IgKGNvbnN0IGZpbGVuYW1lIG9mIHN0dWJiZWQpIHtcbiAgICByZXF1aXJlZC5kZWxldGUoZmlsZW5hbWUpXG4gIH1cblxuICByZXR1cm4gcmVxdWlyZWRcbn1cbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "dependencies.js"
+      ],
+      "names": [],
+      "mappings": "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",
+      "file": "dependencies.js",
+      "sourcesContent": [
+        "import {dirname} from 'path'\nimport {readFile as _readFile} from 'fs'\nimport resolve from './resolve'\nimport {tsortAsync} from './tsort'\nimport promisify from './promisify'\n\nconst readFile = promisify(_readFile)\n\nfunction readRequireDirectives(code, callback) {\n  const lines = code.match(/^\\/\\/=.+$/gm) || []\n  for (const line of lines) {\n    const m = line.match(/= require ([\\w\\.\\/-]+)/)\n    if (m) {\n      callback(m[1])\n    }\n  }\n}\n\nfunction readStubDirectives(code, callback) {\n  const lines = code.match(/^\\/\\/=.+$/gm) || []\n  for (const line of lines) {\n    const m = line.match(/= stub ([\\w\\.\\/-]+)/)\n    if (m) {\n      callback(m[1])\n    }\n  }\n}\n\nfunction readImports(code, callback) {\n  const lines = code.match(/^import.+$/gm) || []\n  for (const line of lines) {\n    const m = line.match(/^import.+['\"]([\\w\\!\\.\\/-]+)['\"];?$/)\n    if (m) {\n      callback('environment/require')\n      callback(m[1])\n    }\n  }\n}\n\nfunction readAmdDeps(code, callback) {\n  const lines = code.match(/^\\s*define\\(.+$/gm) || []\n  for (const line of lines) {\n    const m = line.match(/\\[([^\\]]+)\\]/)\n    if (m) {\n      for (const dep of m[1].replace(/['\"]/g, \"\").split(/\\s*,\\s*/)) {\n        if (dep !== 'exports') {\n          callback('environment/require')\n          callback(dep)\n        }\n      }\n    }\n  }\n}\n\nfunction readRequires(code, callback) {\n  const lines = code.match(/require\\(.+$/gm) || []\n  for (const line of lines) {\n    const m = line.match(/require[ (]['\"]([\\w\\/-]+)['\"]/)\n    if (m) {\n      callback('environment/require')\n      callback(m[1])\n    }\n  }\n}\n\nasync function scanScriptRequiredDependencies(filename) {\n  const basedir = dirname(filename)\n  const code = await readFile(filename, 'utf8')\n\n  const resolvers = []\n\n  function push(path) {\n    resolvers.push(resolve(path, basedir))\n  }\n\n  if (filename.match(\"app/assets/javascripts\")) {\n    readRequireDirectives(code, push)\n    readRequires(code, push)\n  } else if (filename.match(\"app/assets/modules\")) {\n    readRequireDirectives(code, push)\n    readImports(code, push)\n  } else if (filename.match(\"test/js\")) {\n    readRequireDirectives(code, push)\n    readImports(code, push)\n  } else if (filename.match(\"node_modules\")) {\n    readAmdDeps(code, push)\n  }\n\n  return Promise.all(resolvers)\n}\n\nasync function scanScriptStubbedDependencies(filename) {\n  const basedir = dirname(filename)\n  const code = await readFile(filename, 'utf8')\n\n  const resolvers = []\n\n  readStubDirectives(code, path => {\n    resolvers.push(resolve(path, basedir))\n  })\n\n  return Promise.all(resolvers)\n}\n\nasync function traverseScriptRequiredDependencies(entry) { // eslint-disable-line require-yield\n  const ctx = {}\n  return tsortAsync([entry], scanScriptRequiredDependencies.bind(ctx))\n}\n\nasync function traverseScriptStubbedDependencies(entry) {\n  const ctx = {}\n  const stubbed = await scanScriptStubbedDependencies(entry)\n  return tsortAsync(stubbed, scanScriptRequiredDependencies.bind(ctx))\n}\n\nexport async function traverseScriptDependencies(entry) {\n  const requiredPending = traverseScriptRequiredDependencies(entry)\n  const stubbedPending = traverseScriptStubbedDependencies(entry)\n  const required = await requiredPending\n  const stubbed = await stubbedPending\n\n  for (const filename of stubbed) {\n    required.delete(filename)\n  }\n\n  return required\n}\n"
+      ]
+    },
+    "mtime": 1470779726000
+  },
+  "{\"filename\":\"/Users/cjs/github/github/lib/sprockets/resolve.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "path",
+            "imported": [
+              "resolve"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "resolve",
+                "local": "resolve"
+              }
+            ]
+          },
+          {
+            "source": "resolve",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "_nodeResolve"
+              }
+            ]
+          },
+          {
+            "source": "./promisify",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "promisify"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [
+            "path",
+            "basedir"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "path",
+              "exported": "default"
+            },
+            {
+              "kind": "local",
+              "local": "basedir",
+              "exported": "default"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/Users/cjs/github/github/lib/sprockets/resolve.js",
+      "filenameRelative": "/Users/cjs/github/github/lib/sprockets/resolve.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "resolve.js",
+      "sourceFileName": "resolve.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "resolve"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function (path, basedir) {\n  path = resolveAliasHacks[path] || path;\n  return nodeResolve(path, { basedir: basedir, paths: loadPath });\n};\n\nvar _path = require('path');\n\nvar _resolve = require('resolve');\n\nvar _resolve2 = _interopRequireDefault(_resolve);\n\nvar _promisify = require('./promisify');\n\nvar _promisify2 = _interopRequireDefault(_promisify);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar nodeResolve = (0, _promisify2.default)(_resolve2.default);\n\n// Setup app/assets load path\n// We will eventually be able to remove this when all files are ES modules.\n// All of our ES modules use relative requires.\nvar loadPath = [(0, _path.resolve)(__dirname, '..', '..', 'app', 'assets', 'javascripts'), (0, _path.resolve)(__dirname, '..', '..', 'app', 'assets', 'modules')];\n\nvar minSuffix = process.env['UNCOMPRESS'] === '1' ? '' : '.min';\n\nvar resolveAliasHacks = {\n  // Should use package.json's \"browser\" instead of \"main\".\n  // \"main\" script is intended for server side\n  'chai': 'chai/chai',\n\n  // Should use package.json's \"browserify\" instead of \"main\"\n  // \"main\" script is intended for server side and uses jsdom.\n  'd3': 'd3/d3',\n\n  // Avoid using this .min hack for other third party scripts.\n  // See if we can get this script difference annotated in package.json.\n  'react-dom': 'react-dom/dist/react-dom' + minSuffix,\n  'react-dom/server': 'react-dom/dist/react-dom-server' + minSuffix,\n  'react': 'react/dist/react' + minSuffix,\n\n  // Should use package.json's \"browser\" instead of \"main\".\n  // \"main\" script is intended for server side and uses jsdom.\n  'topojson': 'topojson/build/topojson'\n};\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlc29sdmUuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O2tCQW9DZSxVQUFTLElBQVQsRUFBZSxPQUFmLEVBQXdCO0FBQ3JDLFNBQU8sa0JBQWtCLElBQWxCLEtBQTJCLElBQWxDO0FBQ0EsU0FBTyxZQUFZLElBQVosRUFBa0IsRUFBRSxTQUFTLE9BQVgsRUFBb0IsT0FBTyxRQUEzQixFQUFsQixDQUFQO0FBQ0QsQzs7QUF2Q0Q7O0FBQ0E7Ozs7QUFDQTs7Ozs7O0FBRUEsSUFBTSxjQUFjLDJDQUFwQjs7Ozs7QUFLQSxJQUFNLFdBQVcsQ0FDZixtQkFBUSxTQUFSLEVBQW1CLElBQW5CLEVBQXlCLElBQXpCLEVBQStCLEtBQS9CLEVBQXNDLFFBQXRDLEVBQWdELGFBQWhELENBRGUsRUFFZixtQkFBUSxTQUFSLEVBQW1CLElBQW5CLEVBQXlCLElBQXpCLEVBQStCLEtBQS9CLEVBQXNDLFFBQXRDLEVBQWdELFNBQWhELENBRmUsQ0FBakI7O0FBS0EsSUFBTSxZQUFZLFFBQVEsR0FBUixDQUFZLFlBQVosTUFBOEIsR0FBOUIsR0FBb0MsRUFBcEMsR0FBeUMsTUFBM0Q7O0FBRUEsSUFBTSxvQkFBb0I7OztBQUd4QixVQUFRLFdBSGdCOzs7O0FBT3hCLFFBQU0sT0FQa0I7Ozs7QUFXeEIsNENBQXdDLFNBWGhCO0FBWXhCLDBEQUFzRCxTQVo5QjtBQWF4QixnQ0FBNEIsU0FiSjs7OztBQWlCeEIsY0FBWTtBQWpCWSxDQUExQiIsImZpbGUiOiJyZXNvbHZlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtyZXNvbHZlfSBmcm9tICdwYXRoJ1xuaW1wb3J0IF9ub2RlUmVzb2x2ZSBmcm9tICdyZXNvbHZlJ1xuaW1wb3J0IHByb21pc2lmeSBmcm9tICcuL3Byb21pc2lmeSdcblxuY29uc3Qgbm9kZVJlc29sdmUgPSBwcm9taXNpZnkoX25vZGVSZXNvbHZlKVxuXG4vLyBTZXR1cCBhcHAvYXNzZXRzIGxvYWQgcGF0aFxuLy8gV2Ugd2lsbCBldmVudHVhbGx5IGJlIGFibGUgdG8gcmVtb3ZlIHRoaXMgd2hlbiBhbGwgZmlsZXMgYXJlIEVTIG1vZHVsZXMuXG4vLyBBbGwgb2Ygb3VyIEVTIG1vZHVsZXMgdXNlIHJlbGF0aXZlIHJlcXVpcmVzLlxuY29uc3QgbG9hZFBhdGggPSBbXG4gIHJlc29sdmUoX19kaXJuYW1lLCAnLi4nLCAnLi4nLCAnYXBwJywgJ2Fzc2V0cycsICdqYXZhc2NyaXB0cycpLFxuICByZXNvbHZlKF9fZGlybmFtZSwgJy4uJywgJy4uJywgJ2FwcCcsICdhc3NldHMnLCAnbW9kdWxlcycpXG5dXG5cbmNvbnN0IG1pblN1ZmZpeCA9IHByb2Nlc3MuZW52WydVTkNPTVBSRVNTJ10gPT09ICcxJyA/ICcnIDogJy5taW4nXG5cbmNvbnN0IHJlc29sdmVBbGlhc0hhY2tzID0ge1xuICAvLyBTaG91bGQgdXNlIHBhY2thZ2UuanNvbidzIFwiYnJvd3NlclwiIGluc3RlYWQgb2YgXCJtYWluXCIuXG4gIC8vIFwibWFpblwiIHNjcmlwdCBpcyBpbnRlbmRlZCBmb3Igc2VydmVyIHNpZGVcbiAgJ2NoYWknOiAnY2hhaS9jaGFpJyxcblxuICAvLyBTaG91bGQgdXNlIHBhY2thZ2UuanNvbidzIFwiYnJvd3NlcmlmeVwiIGluc3RlYWQgb2YgXCJtYWluXCJcbiAgLy8gXCJtYWluXCIgc2NyaXB0IGlzIGludGVuZGVkIGZvciBzZXJ2ZXIgc2lkZSBhbmQgdXNlcyBqc2RvbS5cbiAgJ2QzJzogJ2QzL2QzJyxcblxuICAvLyBBdm9pZCB1c2luZyB0aGlzIC5taW4gaGFjayBmb3Igb3RoZXIgdGhpcmQgcGFydHkgc2NyaXB0cy5cbiAgLy8gU2VlIGlmIHdlIGNhbiBnZXQgdGhpcyBzY3JpcHQgZGlmZmVyZW5jZSBhbm5vdGF0ZWQgaW4gcGFja2FnZS5qc29uLlxuICAncmVhY3QtZG9tJzogYHJlYWN0LWRvbS9kaXN0L3JlYWN0LWRvbSR7bWluU3VmZml4fWAsXG4gICdyZWFjdC1kb20vc2VydmVyJzogYHJlYWN0LWRvbS9kaXN0L3JlYWN0LWRvbS1zZXJ2ZXIke21pblN1ZmZpeH1gLFxuICAncmVhY3QnOiBgcmVhY3QvZGlzdC9yZWFjdCR7bWluU3VmZml4fWAsXG5cbiAgLy8gU2hvdWxkIHVzZSBwYWNrYWdlLmpzb24ncyBcImJyb3dzZXJcIiBpbnN0ZWFkIG9mIFwibWFpblwiLlxuICAvLyBcIm1haW5cIiBzY3JpcHQgaXMgaW50ZW5kZWQgZm9yIHNlcnZlciBzaWRlIGFuZCB1c2VzIGpzZG9tLlxuICAndG9wb2pzb24nOiAndG9wb2pzb24vYnVpbGQvdG9wb2pzb24nXG59XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uKHBhdGgsIGJhc2VkaXIpIHtcbiAgcGF0aCA9IHJlc29sdmVBbGlhc0hhY2tzW3BhdGhdIHx8IHBhdGhcbiAgcmV0dXJuIG5vZGVSZXNvbHZlKHBhdGgsIHsgYmFzZWRpcjogYmFzZWRpciwgcGF0aHM6IGxvYWRQYXRoIH0pXG59XG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "resolve.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;;kBAoCe,UAAS,IAAT,EAAe,OAAf,EAAwB;AACrC,SAAO,kBAAkB,IAAlB,KAA2B,IAAlC;AACA,SAAO,YAAY,IAAZ,EAAkB,EAAE,SAAS,OAAX,EAAoB,OAAO,QAA3B,EAAlB,CAAP;AACD,C;;AAvCD;;AACA;;;;AACA;;;;;;AAEA,IAAM,cAAc,2CAApB;;;;;AAKA,IAAM,WAAW,CACf,mBAAQ,SAAR,EAAmB,IAAnB,EAAyB,IAAzB,EAA+B,KAA/B,EAAsC,QAAtC,EAAgD,aAAhD,CADe,EAEf,mBAAQ,SAAR,EAAmB,IAAnB,EAAyB,IAAzB,EAA+B,KAA/B,EAAsC,QAAtC,EAAgD,SAAhD,CAFe,CAAjB;;AAKA,IAAM,YAAY,QAAQ,GAAR,CAAY,YAAZ,MAA8B,GAA9B,GAAoC,EAApC,GAAyC,MAA3D;;AAEA,IAAM,oBAAoB;;;AAGxB,UAAQ,WAHgB;;;;AAOxB,QAAM,OAPkB;;;;AAWxB,4CAAwC,SAXhB;AAYxB,0DAAsD,SAZ9B;AAaxB,gCAA4B,SAbJ;;;;AAiBxB,cAAY;AAjBY,CAA1B",
+      "file": "resolve.js",
+      "sourcesContent": [
+        "import {resolve} from 'path'\nimport _nodeResolve from 'resolve'\nimport promisify from './promisify'\n\nconst nodeResolve = promisify(_nodeResolve)\n\n// Setup app/assets load path\n// We will eventually be able to remove this when all files are ES modules.\n// All of our ES modules use relative requires.\nconst loadPath = [\n  resolve(__dirname, '..', '..', 'app', 'assets', 'javascripts'),\n  resolve(__dirname, '..', '..', 'app', 'assets', 'modules')\n]\n\nconst minSuffix = process.env['UNCOMPRESS'] === '1' ? '' : '.min'\n\nconst resolveAliasHacks = {\n  // Should use package.json's \"browser\" instead of \"main\".\n  // \"main\" script is intended for server side\n  'chai': 'chai/chai',\n\n  // Should use package.json's \"browserify\" instead of \"main\"\n  // \"main\" script is intended for server side and uses jsdom.\n  'd3': 'd3/d3',\n\n  // Avoid using this .min hack for other third party scripts.\n  // See if we can get this script difference annotated in package.json.\n  'react-dom': `react-dom/dist/react-dom${minSuffix}`,\n  'react-dom/server': `react-dom/dist/react-dom-server${minSuffix}`,\n  'react': `react/dist/react${minSuffix}`,\n\n  // Should use package.json's \"browser\" instead of \"main\".\n  // \"main\" script is intended for server side and uses jsdom.\n  'topojson': 'topojson/build/topojson'\n}\n\nexport default function(path, basedir) {\n  path = resolveAliasHacks[path] || path\n  return nodeResolve(path, { basedir: basedir, paths: loadPath })\n}\n"
+      ]
+    },
+    "mtime": 1470779705000
+  },
+  "{\"filename\":\"/Users/cjs/github/github/lib/sprockets/promisify.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [
+            "promisify",
+            "fn",
+            "self"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "promisify",
+              "exported": "default"
+            },
+            {
+              "kind": "local",
+              "local": "fn",
+              "exported": "default"
+            },
+            {
+              "kind": "local",
+              "local": "self",
+              "exported": "default"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/Users/cjs/github/github/lib/sprockets/promisify.js",
+      "filenameRelative": "/Users/cjs/github/github/lib/sprockets/promisify.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "promisify.js",
+      "sourceFileName": "promisify.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "promisify"
+    },
+    "ignored": false,
+    "code": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = promisify;\n// Public: Promisify Node async function.\nfunction promisify(fn, self) {\n  return function () {\n    var args = Array.prototype.slice.call(arguments);\n    return new Promise(function (resolve, reject) {\n      function callback(err, result) {\n        err ? reject(err) : resolve(result);\n      }\n      args.push(callback);\n      fn.apply(self, args);\n    });\n  };\n}\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb21pc2lmeS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7OztrQkFDd0IsUzs7QUFBVCxTQUFTLFNBQVQsQ0FBbUIsRUFBbkIsRUFBdUIsSUFBdkIsRUFBNkI7QUFDMUMsU0FBTyxZQUFXO0FBQ2hCLFFBQU0sT0FBTyxNQUFNLFNBQU4sQ0FBZ0IsS0FBaEIsQ0FBc0IsSUFBdEIsQ0FBMkIsU0FBM0IsQ0FBYjtBQUNBLFdBQU8sSUFBSSxPQUFKLENBQVksVUFBQyxPQUFELEVBQVUsTUFBVixFQUFxQjtBQUN0QyxlQUFTLFFBQVQsQ0FBa0IsR0FBbEIsRUFBdUIsTUFBdkIsRUFBK0I7QUFDN0IsY0FBTSxPQUFPLEdBQVAsQ0FBTixHQUFvQixRQUFRLE1BQVIsQ0FBcEI7QUFDRDtBQUNELFdBQUssSUFBTCxDQUFVLFFBQVY7QUFDQSxTQUFHLEtBQUgsQ0FBUyxJQUFULEVBQWUsSUFBZjtBQUNELEtBTk0sQ0FBUDtBQU9ELEdBVEQ7QUFVRCIsImZpbGUiOiJwcm9taXNpZnkuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBQdWJsaWM6IFByb21pc2lmeSBOb2RlIGFzeW5jIGZ1bmN0aW9uLlxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gcHJvbWlzaWZ5KGZuLCBzZWxmKSB7XG4gIHJldHVybiBmdW5jdGlvbigpIHtcbiAgICBjb25zdCBhcmdzID0gQXJyYXkucHJvdG90eXBlLnNsaWNlLmNhbGwoYXJndW1lbnRzKVxuICAgIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7XG4gICAgICBmdW5jdGlvbiBjYWxsYmFjayhlcnIsIHJlc3VsdCkge1xuICAgICAgICBlcnIgPyByZWplY3QoZXJyKSA6IHJlc29sdmUocmVzdWx0KVxuICAgICAgfVxuICAgICAgYXJncy5wdXNoKGNhbGxiYWNrKVxuICAgICAgZm4uYXBwbHkoc2VsZiwgYXJncylcbiAgICB9KVxuICB9XG59XG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "promisify.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;kBACwB,S;;AAAT,SAAS,SAAT,CAAmB,EAAnB,EAAuB,IAAvB,EAA6B;AAC1C,SAAO,YAAW;AAChB,QAAM,OAAO,MAAM,SAAN,CAAgB,KAAhB,CAAsB,IAAtB,CAA2B,SAA3B,CAAb;AACA,WAAO,IAAI,OAAJ,CAAY,UAAC,OAAD,EAAU,MAAV,EAAqB;AACtC,eAAS,QAAT,CAAkB,GAAlB,EAAuB,MAAvB,EAA+B;AAC7B,cAAM,OAAO,GAAP,CAAN,GAAoB,QAAQ,MAAR,CAApB;AACD;AACD,WAAK,IAAL,CAAU,QAAV;AACA,SAAG,KAAH,CAAS,IAAT,EAAe,IAAf;AACD,KANM,CAAP;AAOD,GATD;AAUD",
+      "file": "promisify.js",
+      "sourcesContent": [
+        "// Public: Promisify Node async function.\nexport default function promisify(fn, self) {\n  return function() {\n    const args = Array.prototype.slice.call(arguments)\n    return new Promise((resolve, reject) => {\n      function callback(err, result) {\n        err ? reject(err) : resolve(result)\n      }\n      args.push(callback)\n      fn.apply(self, args)\n    })\n  }\n}\n"
+      ]
+    },
+    "mtime": 1470779705000
+  },
+  "{\"filename\":\"/Users/cjs/github/github/lib/sprockets/tsort.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [
+            "tsortAsync",
+            "nodes",
+            "getEdges"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "tsortAsync",
+              "exported": "tsortAsync"
+            },
+            {
+              "kind": "local",
+              "local": "nodes",
+              "exported": "nodes"
+            },
+            {
+              "kind": "local",
+              "local": "getEdges",
+              "exported": "getEdges"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/Users/cjs/github/github/lib/sprockets/tsort.js",
+      "filenameRelative": "/Users/cjs/github/github/lib/sprockets/tsort.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "tsort.js",
+      "sourceFileName": "tsort.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "tsort"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.tsortAsync = tsortAsync;\n// Public: Topological sort (DFS)\n//\n// https://en.wikipedia.org/wiki/Topological_sorting#Depth-first_search\n//\n// Examples\n//\n//   const simple = new Map()\n//   simple.set(3, [8, 10])\n//   simple.set(5, [11])\n//   simple.set(7, [8, 11])\n//   simple.set(8, [9])\n//   simple.set(11, [2, 9, 10])\n//   tsortAsync(simple.keys(), n => simple.get(n))\n//   > 7, 5, 3, 11, 8, 10, 2, 9\n//\n//   const functions = new Map()\n//   functions.set('main', ['parse_options', 'tail_file', 'tail_forever'])\n//   functions.set('tail_file', ['pretty_name', 'write_header', 'tail'])\n//   functions.set('tail_forever', ['recheck', 'pretty_name', 'write_header', 'dump_remainder'])\n//   functions.set('tail', ['tail_lines', 'tail_bytes'])\n//   functions.set('tail_lines', ['start_lines', 'dump_remainder', 'file_lines', 'pipe_lines'])\n//   functions.set('tail_bytes', ['xlseek', 'start_bytes', 'dump_remainder', 'pipe_bytes'])\n//   functions.set('file_lines', ['dump_remainder'])\n//   functions.set('recheck', ['pretty_name'])\n//   tsortAsync(functions.keys(), n => functions.get(n))\n//\n// Returns sorted Set.\nfunction tsortAsync(nodes, getEdges) {\n  var sorted, marks, visit, _iteratorNormalCompletion2, _didIteratorError2, _iteratorError2, _iterator2, _step2, node;\n\n  return regeneratorRuntime.async(function tsortAsync$(_context2) {\n    while (1) {\n      switch (_context2.prev = _context2.next) {\n        case 0:\n          visit = function visit(node) {\n            var edges, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, edge;\n\n            return regeneratorRuntime.async(function visit$(_context) {\n              while (1) {\n                switch (_context.prev = _context.next) {\n                  case 0:\n                    if (!(marks.get(node) === 'temporary')) {\n                      _context.next = 4;\n                      break;\n                    }\n\n                    throw new Error('cycle in graph visiting ' + node);\n\n                  case 4:\n                    if (!marks.get(node)) {\n                      _context.next = 6;\n                      break;\n                    }\n\n                    return _context.abrupt('return');\n\n                  case 6:\n\n                    // mark n temporarily\n                    marks.set(node, 'temporary');\n\n                    // for each node m with an edge from n to m do\n                    _context.next = 9;\n                    return regeneratorRuntime.awrap(getEdges(node));\n\n                  case 9:\n                    edges = _context.sent;\n\n                    if (!edges) {\n                      _context.next = 37;\n                      break;\n                    }\n\n                    _iteratorNormalCompletion = true;\n                    _didIteratorError = false;\n                    _iteratorError = undefined;\n                    _context.prev = 14;\n                    _iterator = edges[Symbol.iterator]();\n\n                  case 16:\n                    if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {\n                      _context.next = 23;\n                      break;\n                    }\n\n                    edge = _step.value;\n                    _context.next = 20;\n                    return regeneratorRuntime.awrap(visit(edge));\n\n                  case 20:\n                    _iteratorNormalCompletion = true;\n                    _context.next = 16;\n                    break;\n\n                  case 23:\n                    _context.next = 29;\n                    break;\n\n                  case 25:\n                    _context.prev = 25;\n                    _context.t0 = _context['catch'](14);\n                    _didIteratorError = true;\n                    _iteratorError = _context.t0;\n\n                  case 29:\n                    _context.prev = 29;\n                    _context.prev = 30;\n\n                    if (!_iteratorNormalCompletion && _iterator.return) {\n                      _iterator.return();\n                    }\n\n                  case 32:\n                    _context.prev = 32;\n\n                    if (!_didIteratorError) {\n                      _context.next = 35;\n                      break;\n                    }\n\n                    throw _iteratorError;\n\n                  case 35:\n                    return _context.finish(32);\n\n                  case 36:\n                    return _context.finish(29);\n\n                  case 37:\n\n                    // mark n permanently\n                    // unmark n temporarily\n                    marks.set(node, 'permanent');\n\n                    // add n to head of L\n                    sorted.add(node);\n\n                  case 39:\n                  case 'end':\n                    return _context.stop();\n                }\n              }\n            }, null, this, [[14, 25, 29, 37], [30,, 32, 36]]);\n          };\n\n          // Empty list that will contain the sorted nodes\n          sorted = new Set();\n          marks = new Map();\n\n          // function visit(node n)\n\n          // while there are unmarked nodes do\n          _iteratorNormalCompletion2 = true;\n          _didIteratorError2 = false;\n          _iteratorError2 = undefined;\n          _context2.prev = 6;\n          _iterator2 = nodes[Symbol.iterator]();\n\n        case 8:\n          if (_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done) {\n            _context2.next = 16;\n            break;\n          }\n\n          node = _step2.value;\n\n          if (marks.get(node)) {\n            _context2.next = 13;\n            break;\n          }\n\n          _context2.next = 13;\n          return regeneratorRuntime.awrap(visit(node));\n\n        case 13:\n          _iteratorNormalCompletion2 = true;\n          _context2.next = 8;\n          break;\n\n        case 16:\n          _context2.next = 22;\n          break;\n\n        case 18:\n          _context2.prev = 18;\n          _context2.t0 = _context2['catch'](6);\n          _didIteratorError2 = true;\n          _iteratorError2 = _context2.t0;\n\n        case 22:\n          _context2.prev = 22;\n          _context2.prev = 23;\n\n          if (!_iteratorNormalCompletion2 && _iterator2.return) {\n            _iterator2.return();\n          }\n\n        case 25:\n          _context2.prev = 25;\n\n          if (!_didIteratorError2) {\n            _context2.next = 28;\n            break;\n          }\n\n          throw _iteratorError2;\n\n        case 28:\n          return _context2.finish(25);\n\n        case 29:\n          return _context2.finish(22);\n\n        case 30:\n          return _context2.abrupt('return', sorted);\n\n        case 31:\n        case 'end':\n          return _context2.stop();\n      }\n    }\n  }, null, this, [[6, 18, 22, 30], [23,, 25, 29]]);\n}\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRzb3J0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O1FBMkJzQixVLEdBQUEsVTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFmLFNBQWUsVUFBZixDQUEwQixLQUExQixFQUFpQyxRQUFqQztBQUFBLE1BRUMsTUFGRCxFQUlDLEtBSkQsRUFPVSxLQVBWLHVGQXNDTSxJQXRDTjs7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQU9VLGVBUFYsWUFPVSxLQVBWLENBT2dCLElBUGhCO0FBQUEsZ0JBcUJHLEtBckJILGtGQXVCVSxJQXZCVjs7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLDBCQVNDLE1BQU0sR0FBTixDQUFVLElBQVYsTUFBb0IsV0FUckI7QUFBQTtBQUFBO0FBQUE7O0FBQUEsMEJBVUssSUFBSSxLQUFKLDhCQUFxQyxJQUFyQyxDQVZMOztBQUFBO0FBQUEseUJBYVEsTUFBTSxHQUFOLENBQVUsSUFBVixDQWJSO0FBQUE7QUFBQTtBQUFBOztBQUFBOztBQUFBOzs7QUFrQkgsMEJBQU0sR0FBTixDQUFVLElBQVYsRUFBZ0IsV0FBaEI7OztBQWxCRztBQUFBLG9EQXFCaUIsU0FBUyxJQUFULENBckJqQjs7QUFBQTtBQXFCRyx5QkFyQkg7O0FBQUEseUJBc0JDLEtBdEJEO0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0NBdUJrQixLQXZCbEI7O0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUF1QlUsd0JBdkJWO0FBQUE7QUFBQSxvREF5Qk8sTUFBTSxJQUFOLENBekJQOztBQUFBO0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFBQTs7QUFBQTtBQUFBOztBQUFBO0FBQUE7O0FBQUE7Ozs7QUErQkgsMEJBQU0sR0FBTixDQUFVLElBQVYsRUFBZ0IsV0FBaEI7OztBQUdBLDJCQUFPLEdBQVAsQ0FBVyxJQUFYOztBQWxDRztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7O0FBRUMsZ0JBRkQsR0FFVSxJQUFJLEdBQUosRUFGVjtBQUlDLGVBSkQsR0FJUyxJQUFJLEdBQUosRUFKVDs7Ozs7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLHVCQXNDYyxLQXRDZDs7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOztBQXNDTSxjQXRDTjs7QUFBQSxjQXVDRSxNQUFNLEdBQU4sQ0FBVSxJQUFWLENBdkNGO0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUEsMENBeUNLLE1BQU0sSUFBTixDQXpDTDs7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBQUE7O0FBQUE7QUFBQTs7QUFBQTtBQUFBOztBQUFBO0FBQUEsNENBNkNFLE1BN0NGOztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBIiwiZmlsZSI6InRzb3J0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gUHVibGljOiBUb3BvbG9naWNhbCBzb3J0IChERlMpXG4vL1xuLy8gaHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVG9wb2xvZ2ljYWxfc29ydGluZyNEZXB0aC1maXJzdF9zZWFyY2hcbi8vXG4vLyBFeGFtcGxlc1xuLy9cbi8vICAgY29uc3Qgc2ltcGxlID0gbmV3IE1hcCgpXG4vLyAgIHNpbXBsZS5zZXQoMywgWzgsIDEwXSlcbi8vICAgc2ltcGxlLnNldCg1LCBbMTFdKVxuLy8gICBzaW1wbGUuc2V0KDcsIFs4LCAxMV0pXG4vLyAgIHNpbXBsZS5zZXQoOCwgWzldKVxuLy8gICBzaW1wbGUuc2V0KDExLCBbMiwgOSwgMTBdKVxuLy8gICB0c29ydEFzeW5jKHNpbXBsZS5rZXlzKCksIG4gPT4gc2ltcGxlLmdldChuKSlcbi8vICAgPiA3LCA1LCAzLCAxMSwgOCwgMTAsIDIsIDlcbi8vXG4vLyAgIGNvbnN0IGZ1bmN0aW9ucyA9IG5ldyBNYXAoKVxuLy8gICBmdW5jdGlvbnMuc2V0KCdtYWluJywgWydwYXJzZV9vcHRpb25zJywgJ3RhaWxfZmlsZScsICd0YWlsX2ZvcmV2ZXInXSlcbi8vICAgZnVuY3Rpb25zLnNldCgndGFpbF9maWxlJywgWydwcmV0dHlfbmFtZScsICd3cml0ZV9oZWFkZXInLCAndGFpbCddKVxuLy8gICBmdW5jdGlvbnMuc2V0KCd0YWlsX2ZvcmV2ZXInLCBbJ3JlY2hlY2snLCAncHJldHR5X25hbWUnLCAnd3JpdGVfaGVhZGVyJywgJ2R1bXBfcmVtYWluZGVyJ10pXG4vLyAgIGZ1bmN0aW9ucy5zZXQoJ3RhaWwnLCBbJ3RhaWxfbGluZXMnLCAndGFpbF9ieXRlcyddKVxuLy8gICBmdW5jdGlvbnMuc2V0KCd0YWlsX2xpbmVzJywgWydzdGFydF9saW5lcycsICdkdW1wX3JlbWFpbmRlcicsICdmaWxlX2xpbmVzJywgJ3BpcGVfbGluZXMnXSlcbi8vICAgZnVuY3Rpb25zLnNldCgndGFpbF9ieXRlcycsIFsneGxzZWVrJywgJ3N0YXJ0X2J5dGVzJywgJ2R1bXBfcmVtYWluZGVyJywgJ3BpcGVfYnl0ZXMnXSlcbi8vICAgZnVuY3Rpb25zLnNldCgnZmlsZV9saW5lcycsIFsnZHVtcF9yZW1haW5kZXInXSlcbi8vICAgZnVuY3Rpb25zLnNldCgncmVjaGVjaycsIFsncHJldHR5X25hbWUnXSlcbi8vICAgdHNvcnRBc3luYyhmdW5jdGlvbnMua2V5cygpLCBuID0+IGZ1bmN0aW9ucy5nZXQobikpXG4vL1xuLy8gUmV0dXJucyBzb3J0ZWQgU2V0LlxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHRzb3J0QXN5bmMobm9kZXMsIGdldEVkZ2VzKSB7XG4gIC8vIEVtcHR5IGxpc3QgdGhhdCB3aWxsIGNvbnRhaW4gdGhlIHNvcnRlZCBub2Rlc1xuICBjb25zdCBzb3J0ZWQgPSBuZXcgU2V0KClcblxuICBjb25zdCBtYXJrcyA9IG5ldyBNYXAoKVxuXG4gIC8vIGZ1bmN0aW9uIHZpc2l0KG5vZGUgbilcbiAgYXN5bmMgZnVuY3Rpb24gdmlzaXQobm9kZSkge1xuICAgIC8vIGlmIG4gaGFzIGEgdGVtcG9yYXJ5IG1hcmsgdGhlbiBzdG9wIChub3QgYSBEQUcpXG4gICAgaWYgKG1hcmtzLmdldChub2RlKSA9PT0gJ3RlbXBvcmFyeScpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihgY3ljbGUgaW4gZ3JhcGggdmlzaXRpbmcgJHtub2RlfWApXG5cbiAgICAvLyBza2lwIGlmIG4gaXMgYWxyZWFkeSB2aXNpdGVkXG4gICAgfSBlbHNlIGlmIChtYXJrcy5nZXQobm9kZSkpIHtcbiAgICAgIHJldHVyblxuICAgIH1cblxuICAgIC8vIG1hcmsgbiB0ZW1wb3JhcmlseVxuICAgIG1hcmtzLnNldChub2RlLCAndGVtcG9yYXJ5JylcblxuICAgIC8vIGZvciBlYWNoIG5vZGUgbSB3aXRoIGFuIGVkZ2UgZnJvbSBuIHRvIG0gZG9cbiAgICBjb25zdCBlZGdlcyA9IGF3YWl0IGdldEVkZ2VzKG5vZGUpXG4gICAgaWYgKGVkZ2VzKSB7XG4gICAgICBmb3IgKGNvbnN0IGVkZ2Ugb2YgZWRnZXMpIHtcbiAgICAgICAgLy8gdmlzaXQobSlcbiAgICAgICAgYXdhaXQgdmlzaXQoZWRnZSlcbiAgICAgIH1cbiAgICB9XG5cbiAgICAvLyBtYXJrIG4gcGVybWFuZW50bHlcbiAgICAvLyB1bm1hcmsgbiB0ZW1wb3JhcmlseVxuICAgIG1hcmtzLnNldChub2RlLCAncGVybWFuZW50JylcblxuICAgIC8vIGFkZCBuIHRvIGhlYWQgb2YgTFxuICAgIHNvcnRlZC5hZGQobm9kZSlcbiAgfVxuXG4gIC8vIHdoaWxlIHRoZXJlIGFyZSB1bm1hcmtlZCBub2RlcyBkb1xuICBmb3IgKGNvbnN0IG5vZGUgb2Ygbm9kZXMpIHtcbiAgICBpZiAoIW1hcmtzLmdldChub2RlKSkge1xuICAgICAgLy8gdmlzaXQobilcbiAgICAgIGF3YWl0IHZpc2l0KG5vZGUpXG4gICAgfVxuICB9XG5cbiAgcmV0dXJuIHNvcnRlZFxufVxuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "tsort.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;QA2BsB,U,GAAA,U;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAf,SAAe,UAAf,CAA0B,KAA1B,EAAiC,QAAjC;AAAA,MAEC,MAFD,EAIC,KAJD,EAOU,KAPV,uFAsCM,IAtCN;;AAAA;AAAA;AAAA;AAAA;AAOU,eAPV,YAOU,KAPV,CAOgB,IAPhB;AAAA,gBAqBG,KArBH,kFAuBU,IAvBV;;AAAA;AAAA;AAAA;AAAA;AAAA,0BASC,MAAM,GAAN,CAAU,IAAV,MAAoB,WATrB;AAAA;AAAA;AAAA;;AAAA,0BAUK,IAAI,KAAJ,8BAAqC,IAArC,CAVL;;AAAA;AAAA,yBAaQ,MAAM,GAAN,CAAU,IAAV,CAbR;AAAA;AAAA;AAAA;;AAAA;;AAAA;;;AAkBH,0BAAM,GAAN,CAAU,IAAV,EAAgB,WAAhB;;;AAlBG;AAAA,oDAqBiB,SAAS,IAAT,CArBjB;;AAAA;AAqBG,yBArBH;;AAAA,yBAsBC,KAtBD;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA,gCAuBkB,KAvBlB;;AAAA;AAAA;AAAA;AAAA;AAAA;;AAuBU,wBAvBV;AAAA;AAAA,oDAyBO,MAAM,IAAN,CAzBP;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;;;;AA+BH,0BAAM,GAAN,CAAU,IAAV,EAAgB,WAAhB;;;AAGA,2BAAO,GAAP,CAAW,IAAX;;AAlCG;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAEC,gBAFD,GAEU,IAAI,GAAJ,EAFV;AAIC,eAJD,GAIS,IAAI,GAAJ,EAJT;;;;;AAAA;AAAA;AAAA;AAAA;AAAA,uBAsCc,KAtCd;;AAAA;AAAA;AAAA;AAAA;AAAA;;AAsCM,cAtCN;;AAAA,cAuCE,MAAM,GAAN,CAAU,IAAV,CAvCF;AAAA;AAAA;AAAA;;AAAA;AAAA,0CAyCK,MAAM,IAAN,CAzCL;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA,4CA6CE,MA7CF;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA",
+      "file": "tsort.js",
+      "sourcesContent": [
+        "// Public: Topological sort (DFS)\n//\n// https://en.wikipedia.org/wiki/Topological_sorting#Depth-first_search\n//\n// Examples\n//\n//   const simple = new Map()\n//   simple.set(3, [8, 10])\n//   simple.set(5, [11])\n//   simple.set(7, [8, 11])\n//   simple.set(8, [9])\n//   simple.set(11, [2, 9, 10])\n//   tsortAsync(simple.keys(), n => simple.get(n))\n//   > 7, 5, 3, 11, 8, 10, 2, 9\n//\n//   const functions = new Map()\n//   functions.set('main', ['parse_options', 'tail_file', 'tail_forever'])\n//   functions.set('tail_file', ['pretty_name', 'write_header', 'tail'])\n//   functions.set('tail_forever', ['recheck', 'pretty_name', 'write_header', 'dump_remainder'])\n//   functions.set('tail', ['tail_lines', 'tail_bytes'])\n//   functions.set('tail_lines', ['start_lines', 'dump_remainder', 'file_lines', 'pipe_lines'])\n//   functions.set('tail_bytes', ['xlseek', 'start_bytes', 'dump_remainder', 'pipe_bytes'])\n//   functions.set('file_lines', ['dump_remainder'])\n//   functions.set('recheck', ['pretty_name'])\n//   tsortAsync(functions.keys(), n => functions.get(n))\n//\n// Returns sorted Set.\nexport async function tsortAsync(nodes, getEdges) {\n  // Empty list that will contain the sorted nodes\n  const sorted = new Set()\n\n  const marks = new Map()\n\n  // function visit(node n)\n  async function visit(node) {\n    // if n has a temporary mark then stop (not a DAG)\n    if (marks.get(node) === 'temporary') {\n      throw new Error(`cycle in graph visiting ${node}`)\n\n    // skip if n is already visited\n    } else if (marks.get(node)) {\n      return\n    }\n\n    // mark n temporarily\n    marks.set(node, 'temporary')\n\n    // for each node m with an edge from n to m do\n    const edges = await getEdges(node)\n    if (edges) {\n      for (const edge of edges) {\n        // visit(m)\n        await visit(edge)\n      }\n    }\n\n    // mark n permanently\n    // unmark n temporarily\n    marks.set(node, 'permanent')\n\n    // add n to head of L\n    sorted.add(node)\n  }\n\n  // while there are unmarked nodes do\n  for (const node of nodes) {\n    if (!marks.get(node)) {\n      // visit(n)\n      await visit(node)\n    }\n  }\n\n  return sorted\n}\n"
+      ]
+    },
+    "mtime": 1470779705000
+  }
+}
