@@ -213,8 +213,6 @@ brew "mkcert"
 brew "mysql-client"
 # Open source relational database management system
 brew "mysql@5.7", restart_service: true
-# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
 # Port scanning utility for large networks
 brew "nmap"
 # Install NodeJS versions
@@ -337,8 +335,6 @@ brew "authzed/tap/spicedb"
 brew "authzed/tap/zed"
 # Distributed SQL database
 brew "cockroachdb/tap/cockroach"
-# Distributed search & analytics engine
-brew "github/bootstrap/elasticsearch@2.4"
 # Template-free customization of Kubernetes YAML manifests
 brew "github/bootstrap/kustomize@3.1"
 # AWS role assumption tool
@@ -479,8 +475,6 @@ cask "yubico-yubikey-manager"
 cask "yubico-yubikey-personalization-gui"
 # Application for configuring a PIV-enabled YubiKey
 cask "yubico-yubikey-piv-manager"
-cask "yubikey-personalization-gui"
-mas "1Password 7", id: 1333542190
 mas "Affinity Designer", id: 824171161
 mas "Bear", id: 1091189122
 mas "Boop", id: 1518425043

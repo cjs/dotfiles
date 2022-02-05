@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ ! -f "${HOME}/.age/key.txt" ]; then
+    age --decrypt --output "${HOME}/.age/key.txt" "{{ .chezmoi.sourceDir }}/dot_age/key.txt.age" < {{ keyring "age" "cjs" }}
+    chmod 600 "${HOME}/.age/key.txt"
+fi
