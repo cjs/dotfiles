@@ -1,9 +1,6 @@
 tap "authzed/tap"
 tap "buo/cask-upgrade"
 tap "cockroachdb/tap"
-tap "github/bootstrap"
-tap "github/gh", "git@github.com:github/homebrew-gh.git"
-tap "github/packages"
 tap "golangci/tap"
 tap "goles/battery"
 tap "heroku/brew"
@@ -17,10 +14,8 @@ tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
 tap "vitorgalvao/tiny-scripts"
 tap "wata727/tflint"
-# Search tool like grep, but optimized for programmers
-brew "ack"
-# Slice and dice log files on the command-line
-brew "angle-grinder"
+# Simple, modern, secure file encryption
+brew "age"
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -35,24 +30,16 @@ brew "unixodbc"
 brew "asdf"
 # Configuration editing tool and API
 brew "augeas"
-# Use AWS IAM credentials to authenticate to Kubernetes
-brew "aws-iam-authenticator"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Microsoft Azure CLI 2.0
 brew "azure-cli"
-# Implementation of malloc emphasizing fragmentation avoidance
-brew "jemalloc"
-# HTTP/2 C Library
-brew "nghttp2"
-# Platform built on V8 to build network applications
-brew "node"
-# Command-line tool for interacting with the balenaCloud and balena API
-brew "balena-cli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Development kit for the Java programming language
 brew "openjdk"
 # Remove large files or passwords from Git history like git-filter-branch
@@ -73,16 +60,12 @@ brew "certstrap"
 brew "cfssl"
 # Checks for bashisms in shell scripts
 brew "checkbashisms"
-# Command-line tool for Amazon Route 53
-brew "cli53"
 # Cross-platform make
 brew "cmake"
 # Color-highlighted diff(1) output
 brew "colordiff"
 # Diff your Docker containers
 brew "container-diff"
-# Configurable talking characters in ASCII art
-brew "cowsay"
 # Tool for browsing source code
 brew "cscope"
 # Display user-friendly message boxes from shell scripts
@@ -91,6 +74,8 @@ brew "dialog"
 brew "direnv"
 # Tool for exploring each layer in a docker image
 brew "dive"
+# Tool for managing dock items
+brew "dockutil"
 # Text processing system for reStructuredText
 brew "docutils"
 # Run arbitrary commands when files change
@@ -101,6 +86,8 @@ brew "exa"
 brew "exercism"
 # Program that can automate interactive applications
 brew "expect"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # GNU Ubiquitous Intelligent Language for Extensions
 brew "guile"
 # GNU Transport Layer Security (TLS) Library
@@ -119,8 +106,6 @@ brew "figlet"
 brew "fish"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# C library for multiple-precision floating-point computations
-brew "mpfr"
 # GitHub command-line tool
 brew "gh", args: ["HEAD"]
 # Interpreter for PostScript and PDF
@@ -159,18 +144,14 @@ brew "hopenpgp-tools"
 brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
-# Toolkit for embedding hypervisor capabilities in your application
-brew "hyperkit"
-# High-performance regular expression matching library
-brew "hyperscan"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # C library for encoding, decoding, and manipulating JSON
 brew "jansson"
+# Implementation of malloc emphasizing fragmentation avoidance
+brew "jemalloc"
 # Regular expressions library
 brew "oniguruma"
 # Lightweight and flexible command-line JSON processor
@@ -179,16 +160,10 @@ brew "jq"
 brew "jrnl"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
-# Run local Kubernetes cluster in Docker
-brew "kind"
-# Kubernetes command-line interface
-brew "kubernetes-cli"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
 # Bind to privileged ports without running a server as root
 brew "launch_socket_server"
-# Mini DNS server designed solely to route queries to localhost
-brew "launchdns"
 # Graphical front-end for GCC's coverage testing tool (gcov)
 brew "lcov"
 # Let's Encrypt client and ACME library
@@ -203,18 +178,20 @@ brew "linkerd"
 brew "lnav"
 # Mac App Store command-line interface
 brew "mas"
-# High performance, distributed memory object caching system
-brew "memcached", restart_service: true
-# Run a Kubernetes cluster locally
-brew "minikube"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
+# C library for multiple-precision floating-point computations
+brew "mpfr"
 # Open source relational database management system
 brew "mysql-client"
 # Open source relational database management system
 brew "mysql@5.7", restart_service: true
+# HTTP/2 C Library
+brew "nghttp2"
 # Port scanning utility for large networks
 brew "nmap"
+# Platform built on V8 to build network applications
+brew "node"
 # Install NodeJS versions
 brew "node-build"
 # Platform built on V8 to build network applications
@@ -233,12 +210,6 @@ brew "openssl@3"
 brew "operator-sdk"
 # OCI Registry As Storage
 brew "oras"
-# Clean C library for processing UTF-8 Unicode data
-brew "utf8proc"
-# Terminal multiplexer
-brew "tmux"
-# Process manager for Procfile-based applications and tmux
-brew "overmind"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
 # Tool for creating identical machine images for multiple platforms
@@ -253,58 +224,38 @@ brew "pinentry-mac"
 brew "protobuf"
 # Show ps output as a tree
 brew "pstree"
-# Python version management
-brew "pyenv"
-# Pyenv plugin to manage virtualenv
-brew "pyenv-virtualenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
 # Rakudo compiler and commonly used packages
 brew "rakudo-star"
-# Install various Ruby versions and implementations
-brew "ruby-build"
-# Ruby version manager
-brew "rbenv"
-# Makes shims aware of bundle install paths
-brew "rbenv-bundler"
-# Auto-installs gems for Ruby installs
-brew "rbenv-default-gems"
-# Adds basic gemset support to rbenv
-brew "rbenv-gemset"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
-# Persistent key-value database, with built-in net interface
-brew "redis"
 # Fast, efficient and secure backup program
 brew "restic"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Install various Ruby versions and implementations
+brew "ruby-build"
 # Wraps rm to prevent dangerous deletion of files
 brew "safe-rm"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
-# Command-line utility for posting snippets to Slack
-brew "slackcat"
 # SOcket CAT: netcat on steroids
 brew "socat"
 # Cryptographic store accessible through a PKCS#11 interface
 brew "softhsm"
 # Sparklines for the shell
 brew "spark"
-# Recursive piecewise hashing tool
-brew "ssdeep"
-# Add a public key to a remote machine's authorized_keys file
-brew "ssh-copy-id", link: true
-# Cross-shell prompt for astronauts
-brew "starship"
 # Crypto and x509 Swiss-Army-Knife
 brew "step"
-# Organize software neatly under a single directory tree (e.g. /usr/local)
-brew "stow"
+# Clean C library for processing UTF-8 Unicode data
+brew "utf8proc"
+# Version control system designed to be a better CVS
+brew "subversion"
 # Feature-rich console based todo list manager
 brew "task"
 # Shell wrapper for Taskwarrior commands
 brew "tasksh"
-# User interface to the TELNET protocol
-brew "telnet"
 # Thin wrapper for Terraform e.g. for locking state
 brew "terragrunt"
 # Linter for Terraform files
@@ -313,6 +264,8 @@ brew "tflint"
 brew "the_silver_searcher"
 # Command-line time tracking application
 brew "timewarrior"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # File synchronization tool for OSX
@@ -329,36 +282,24 @@ brew "ykpers"
 brew "yq"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-# SpiceDB is a Zanzibar-inspired database that stores, computes, and validates application permissions.
-brew "authzed/tap/spicedb"
 # manage Authzed from your command line.
 brew "authzed/tap/zed"
 # Distributed SQL database
 brew "cockroachdb/tap/cockroach"
-# Template-free customization of Kubernetes YAML manifests
-brew "github/bootstrap/kustomize@3.1"
-# AWS role assumption tool
-brew "github/packages/awssume"
 # Fast linters runner for Go.
 brew "golangci/tap/golangci-lint"
-brew "goles/battery/battery"
-# Everything you need to get started with Heroku
-brew "heroku/brew/heroku"
-# Maintained ctags implementation
-brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 # Quickly repair outdated/broken Casks from homebrew-cask
 brew "vitorgalvao/tiny-scripts/cask-repair"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
-# Application launcher and productivity software
-cask "alfred"
+# Command-line helper for the 1Password password manager
+cask "1password-cli"
 # Application uninstaller
 cask "appcleaner"
 # Text editor
 cask "atom"
 # Utility that prevents the system from going to sleep
 cask "caffeine"
-cask "cd-to-terminal"
 # API documentation browser and code snippet manager
 cask "dash"
 cask "deckset"
@@ -368,18 +309,13 @@ cask "discord"
 cask "docker"
 # Developer platform
 cask "dotnet-sdk"
-# VPN and encryption software
-cask "encryptme"
-cask "etcher"
 # Web browser
 cask "firefox"
 cask "font-fira-mono"
 cask "font-hack-nerd-font"
-cask "font-hack-nerd-font-mono"
 cask "font-inconsolata"
 cask "font-inconsolata-for-powerline"
 cask "font-inconsolata-for-powerline-bold"
-cask "font-input"
 cask "font-lato"
 cask "font-menlo-for-powerline"
 cask "font-meslo-lg"
@@ -394,8 +330,6 @@ cask "font-share-tech-mono"
 cask "font-source-code-pro"
 # Go (golang) IDE
 cask "goland"
-# Web browser
-cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
 # Graphically shows disk usage within a file system
@@ -412,20 +346,22 @@ cask "insomnia"
 cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-cask "java"
-cask "java8"
 # Open-source screen recorder built with web technology
 cask "kap"
-# Keyboard customizer
-cask "karabiner-elements"
 # End-to-end encryption software
 cask "keybase"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
+# Software for Logitech devices
+cask "logitech-options"
 # Utility for pairing devices with Unifying receivers
 cask "logitech-unifying"
 # Text editor
 cask "macvim"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Web browser
+cask "microsoft-edge"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # Note taking app
@@ -440,8 +376,12 @@ cask "paw"
 cask "postman"
 cask "qlprettypatch"
 cask "quicklook-json"
+# Control your tools with a few keystrokes
+cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Store SSH keys in the Secure Enclave
+cask "secretive"
 # MySQL/MariaDB database management platform
 cask "sequel-pro"
 # Video editor
@@ -449,12 +389,8 @@ cask "shotcut"
 # Instant messaging application focusing on security
 cask "signal"
 cask "soundcleod"
-# Move and resize windows with ease
-cask "spectacle"
 # Development environment
 cask "vagrant"
-# Virtualizer for x86 hardware
-cask "virtualbox"
 # VPN client for secure internet access and private browsing
 cask "viscosity"
 # Open-source code editor
@@ -463,8 +399,6 @@ cask "visual-studio-code"
 cask "visual-studio-code-insiders"
 # Multimedia player
 cask "vlc"
-# Create, manage, and run virtual machines
-cask "vmware-fusion"
 # Network protocol analyzer
 cask "wireshark"
 # Application for generating TOTP and HOTP codes
@@ -475,10 +409,13 @@ cask "yubico-yubikey-manager"
 cask "yubico-yubikey-personalization-gui"
 # Application for configuring a PIV-enabled YubiKey
 cask "yubico-yubikey-piv-manager"
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "Affinity Designer", id: 824171161
 mas "Bear", id: 1091189122
 mas "Boop", id: 1518425043
 mas "Drafts", id: 1435957248
+mas "GarageBand", id: 682658836
 mas "Gifski", id: 1351639930
 mas "HazeOver", id: 430798174
 mas "iMovie", id: 408981434
