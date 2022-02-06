@@ -8,3 +8,9 @@
 {{ if eq .chezmoi.os "darwin" }}
   darwin_hostname = "{{ $darwin_hostname }}"
 {{ end }}
+
+encryption = "age"
+[age]
+    identity = "/Users/cjs/.age/key.txt"
+    recipient = "age1w2l80l28v26hadxczj73va2ff7kzljalsdsqdac7p4zez5xygy0s5kqafa"
+
