@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+{{ template "script_darwin_only" . }}
+{{ template "script_no_root" . }}
+
+set -eufo pipefail
+
+# Setup iterm2 to load from chezmoi source-path
+defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string "{{ .chezmoi.sourceDir }}/dot_config/iterm2"
+defaults write com.googlecode.iterm2 "LoadPrefsFromCustomFolder" -bool true
