@@ -1,0 +1,112 @@
+# vim: ft=gitconfig
+[include]
+  # For username / creds / etc
+  path = ~/.gitconfig.local
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = blue
+  untracked = cyan
+[alias]
+  # show all branches, even across remotes
+  branches = branch -a --color -v
+  # remove all local branches included in the current branch
+  cleanup = !sh -c 'git branch --merged | grep -E "^[^*]" --exclude "^\\s*master" | xargs -n1 git branch -d'
+  co = checkout
+  ctags = !.git/hooks/ctags
+  # Get short SHA-1 for object
+  hash = rev-parse --short HEAD
+  lc = log ORIG_HEAD.. --stat --no-merges
+  # just for fun
+  l33t = !"git shortlog | l33t"
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+  mybranches = "!f() { if test $# = 0 ; then set -- refs/remotes ; fi ; git for-each-ref --format='%(authordate:relative)\t%(refname:short)\t%(authoremail)' --sort=authordate \"$@\" | sed -ne \"s/\t<$(git config user.email)>//p\" | column -s '\t' -t ; } ; f"
+  # depends on hub
+  mypulls = browse -- pulls/cjs
+  # Find FIXME, TODO, etc, optimized by @x3ro https://gist.github.com/3908985
+  n = !"f() { git ls-files $1 | xargs notes | awk -F: '{ print $1,$2; print $3,$4; print $5}' | grcat conf.notes | less -r;  }; f"
+  safe = !mkdir -p .git/safe && echo "Repository marked safe!"
+  # track a remote branch
+  track = checkout -t
+  # update all submodules
+  subs = submodule foreach git pull origin master
+  # clean up fully merged branches
+  sweep = !git-sweep
+  # list only untracked files
+  untracked = ls-files --others --exclude-standard
+  # remove a file from the index
+  unstage = reset HEAD --
+  up = "!git remote update -p; git merge --ff-only @{u}"
+  wdiff = diff --color-words
+  wip = "!$EDITOR $(git ls-files -m)"
+
+[push]
+  default = simple
+
+[hub]
+  protocol = https
+
+[branch]
+
+[github]
+  user = cjs
+
+[difftool]
+  prompt = false
+
+[diff]
+  tool = vimdiff
+  confictstyle = diff3
+
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+
+[mergetool]
+	prompt = false
+
+[web]
+  browser = open
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+  required = true
+	process = git-lfs filter-process
+[commit]
+	gpgsign = true
+[credential]
+	helper = osxkeychain
+[protocol]
+	version = 2
+[code]
+	excludesfile = /Users/cjs/.gitignore_global
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[core]
+	pager = delta --dark
+[tag]
+	forceSignAnnotated = true
+
+# Enforce SSH
+#[url "ssh://git@github.com/"]
+#  insteadOf = https://github.com/
+[url "ssh://git@gitlab.com/"]
+  insteadOf = https://gitlab.com/
+[url "ssh://git@bitbucket.org/"]
+  insteadOf = https://bitbucket.org/

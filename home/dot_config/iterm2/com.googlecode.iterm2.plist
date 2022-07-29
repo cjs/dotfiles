@@ -2580,6 +2580,7 @@
 			<key>Bound Hosts</key>
 			<array>
 				<string>cjs@security-bastion*</string>
+				<string>cjs@vault-bastion*</string>
 			</array>
 			<key>Character Encoding</key>
 			<integer>4</integer>
@@ -3280,7 +3281,7 @@
 					<key>action</key>
 					<string>PasswordTrigger</string>
 					<key>parameter</key>
-					<string></string>
+					<string>GitHub — cjs</string>
 					<key>partial</key>
 					<true/>
 					<key>regex</key>

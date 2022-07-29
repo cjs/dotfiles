@@ -12,11 +12,11 @@ prepend_to_path "./bin"
 prepend_to_path "$HOME/github/gh-helper-cli/exe"
 
 # base-16
-if status --is-interactive
-   source $HOME/.config/base16-shell/profile_helper.fish
-end
+#if status --is-interactive
+#   source $HOME/.config/base16-shell/profile_helper.fish
+#   base16-nord
+#end
 
-base16-nord
 
 set -x -g DOTFILES "$HOME/.dotfiles"
 set -x -g PROJECTS "$HOME/code"
@@ -46,4 +46,15 @@ if type -q zoxide
   zoxide init fish | source
 end
 
+#asdf
 source (brew --prefix asdf)/libexec/asdf.fish
+
+#direnv
+if type -q direnv
+  direnv hook fish | source
+end
+  
+
+# Secretive
+
+set -x SSH_AUTH_SOCK /Users/cjs/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
