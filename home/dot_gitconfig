@@ -54,6 +54,7 @@
 
 [push]
   default = simple
+  autoSetupRemote = true
 
 [hub]
   protocol = https
@@ -97,11 +98,12 @@
 [code]
 	excludesfile = /Users/cjs/.gitignore_global
 [gpg]
-	program = /opt/homebrew/bin/gpg
+  format = ssh
 [core]
 	pager = delta --dark
 [tag]
-	forceSignAnnotated = true
+  forceSignAnnotated = true
+  gpgsign = true
 
 # Enforce SSH
 #[url "ssh://git@github.com/"]
@@ -110,3 +112,5 @@
   insteadOf = https://gitlab.com/
 [url "ssh://git@bitbucket.org/"]
   insteadOf = https://bitbucket.org/
+[gpg "ssh"]
+	allowedSignersFile = /Users/cjs/.config/git/allowed_signers
