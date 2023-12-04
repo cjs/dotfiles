@@ -14,3 +14,4 @@ run_once_configure-macos.sh
 .hushlogin
 {{ end }}
 com.googlecode.iterm2.plist
+install.sh
