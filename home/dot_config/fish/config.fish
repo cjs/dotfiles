@@ -54,6 +54,8 @@ if type -q direnv
   direnv hook fish | source
 end
   
+# vscode 
+string match -q "$TERM_PROGRAM" "vscode" and . (code --locate-shell-integration-path fish)
 
 # Secretive
 
