@@ -10,6 +10,16 @@ update_brewfile.sh
 {{ if ne .chezmoi.os "darwin" }}
 run_once_configure-macos.sh
 {{ end }}
+{{ if .codespaces }}
+dot_age/**
+dot_aws/**
+dot_azure/**
+dot_balena/**
+dot_task/**
+**/private_dot_*
+**/encrypted_*
+**/*.age
+{{ end }}
 {{ if ne .chezmoi.os "linux" }}
 .hushlogin
 {{ end }}
