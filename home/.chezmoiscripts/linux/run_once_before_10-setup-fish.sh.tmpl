@@ -1,0 +1,18 @@
+{{ if eq .osid "linux-debian" "linux-ubuntu" -}}
+#!/usr/bin/env bash
+set -eufo pipefail
+
+{{ $sudo := "sudo " -}}
+{{ if eq .chezmoi.username "root" -}}
+{{   $sudo = "" -}}
+{{ end -}}
+
+{{ $sudo }}apt-get update
+{{ $sudo }}apt-get install -y fish
+
+# Set fish as default shell
+if [ $SHELL != $(which fish) ]; then
+  echo "Changing default shell to fish"
+  chsh -s $(which fish)
+fi
+{{ end -}}
