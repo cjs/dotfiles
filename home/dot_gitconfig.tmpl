@@ -1,7 +1,9 @@
 # vim: ft=gitconfig
+{{ if eq .chezmoi.os "darwin" -}}
 [include]
   # For username / creds / etc
   path = ~/.gitconfig.local
+{{ end -}}
 [color]
   ui = auto
 [color "branch"]
@@ -91,8 +93,6 @@
 	process = git-lfs filter-process
 [commit]
 	gpgsign = true
-[credential]
-	helper = osxkeychain
 [protocol]
 	version = 2
 [code]
@@ -112,5 +112,3 @@
   insteadOf = https://gitlab.com/
 [url "ssh://git@bitbucket.org/"]
   insteadOf = https://bitbucket.org/
-[gpg "ssh"]
-	allowedSignersFile = /Users/cjs/.config/git/allowed_signers

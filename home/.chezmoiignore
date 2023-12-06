@@ -6,21 +6,25 @@ Brewfile
 Brewfile.lock.json
 update_brewfile.sh
 .bundle/cache/
-.age/key.txt.age
+.task
 {{ if ne .chezmoi.os "darwin" }}
-run_once_configure-macos.sh
-{{ end }}
-{{ if .codespaces }}
-dot_age/**
-dot_aws/**
-dot_azure/**
-dot_balena/**
-dot_task/**
-**/private_dot_*
-**/encrypted_*
-**/*.age
+.chezmoiscripts/darwin/**
+.age
+.aws
+.azure
+.config/git
+.config/exercism
+.cups
+.gitconfig.local.age
+.gnupg
+.ngrok2/
+.ngrok2/ngrok.yml.age
+.netrc.age
+.taskrc
+.taskrc.age
 {{ end }}
 {{ if ne .chezmoi.os "linux" }}
+.chezmoiscripts/linux/**
 .hushlogin
 {{ end }}
 com.googlecode.iterm2.plist
