@@ -29,5 +29,8 @@ update_brewfile.sh
 .chezmoiscripts/linux/**
 .hushlogin
 {{ end }}
+{{ if .codespaces }}
+.bashrc
+{{ end }}
 com.googlecode.iterm2.plist
 install.sh
