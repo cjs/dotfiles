@@ -13,6 +13,6 @@ set -eufo pipefail
 # Set fish as default shell
 if [ $SHELL != $(which fish) ]; then
   echo "Changing default shell to fish"
-  chsh -s $(which fish)
+  {{ $sudo }}chsh -s $(which fish)
 fi
 {{ end -}}
