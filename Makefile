@@ -9,7 +9,7 @@ docker:
 	@if ! docker inspect $(DOCKER_IMAGE_NAME) &>/dev/null; then \
 		docker build -t $(DOCKER_IMAGE_NAME) . --build-arg USERNAME="$$(whoami)"; \
 	fi
-	docker run -it -v "$$(pwd):/home/$$(whoami)/.local/share/chezmoi" dotfiles /bin/bash --login
+	docker run --rm -it -v "$$(pwd):/home/$$(whoami)/.local/share/chezmoi" dotfiles /bin/bash --login
 
 #
 # Chezmoi

@@ -14,6 +14,7 @@ update_brewfile.sh
 .azure
 .config/git
 .config/exercism
+.config/wezterm
 .cups
 .gitconfig.local
 .gitconfig.local.age
