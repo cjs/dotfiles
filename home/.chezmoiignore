@@ -15,11 +15,12 @@ update_brewfile.sh
 .config/git
 .config/exercism
 .cups
+.gitconfig.local
 .gitconfig.local.age
 .gnupg
 .ngrok2/
 .ngrok2/ngrok.yml.age
-.netrc.age
+.netrc
 .taskrc
 .taskrc.age
 {{ end }}
