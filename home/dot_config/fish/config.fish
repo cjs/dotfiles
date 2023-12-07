@@ -40,7 +40,9 @@ if type -q zoxide
 end
 
 #asdf
-source (brew --prefix asdf)/libexec/asdf.fish
+if type -q asdf
+  source (brew --prefix asdf)/libexec/asdf.fish
+end
 
 #direnv
 if type -q direnv
@@ -48,8 +50,6 @@ if type -q direnv
 end
   
 # vscode 
-string match -q "$TERM_PROGRAM" "vscode" and . (code --locate-shell-integration-path fish)
-
-# Secretive
-
-set -x SSH_AUTH_SOCK /Users/cjs/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+if string match -q "$TERM_PROGRAM" "vscode" 
+  source code --locate-shell-integration-path fish
+end
