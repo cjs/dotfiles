@@ -6,10 +6,8 @@
 "build-essential"
 "direnv"
 "fish"
-"fuse"
 "fzf"
 "jq"
-"libfuse2"
 "ripgrep"
 -}}
 
@@ -23,8 +21,4 @@ set -eufo pipefail
 {{ $sudo }}apt-get update
 {{ $sudo }}apt-get install -y {{ $packages | join " " }}
 
-{{ if .codespaces }}
-{{ $sudo }}groupadd fuse
-{{ $sudo }}usermod -aG fuse "$(whoami)"
-{{ end -}}
 {{ end -}}
