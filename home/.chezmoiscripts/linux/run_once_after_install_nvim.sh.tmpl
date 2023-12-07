@@ -1,0 +1,7 @@
+{{ template "sudo_if_needed" . }}
+#/usr/bin/env bash
+
+if [ -f $HOME/.local/cache/nvim-linux64.deb ]; then
+  {{ $sudo }}apt install -y $HOME/.local/cache/nvim-linux64.deb
+    exit 0
+fi
