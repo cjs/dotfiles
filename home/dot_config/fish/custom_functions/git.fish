@@ -14,7 +14,8 @@ end
 function g
   switch (count $argv)
     case "0" 
-      echo "Last commit: (time_since_last commit) ago"
+      set -l gtslc  (git_time_since_last_commit)
+      printf "Last commit: (%s) ago\n" $gtslc
       git status --short --branch
     case "*"
       git $argv
