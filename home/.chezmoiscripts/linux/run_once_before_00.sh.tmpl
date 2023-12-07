@@ -18,7 +18,7 @@
 
 set -eufo pipefail
 
-{{ $sudo }}apt-get update
-{{ $sudo }}apt-get install -y {{ $packages | join " " }}
+{{ $sudo }}apt-get update -y -o DPkg::Lock::Timeout=60
+{{ $sudo }}apt-get install -y -o DPkg::Lock::Timeout=60 {{ $packages | join " " }}
 
 {{ end -}}
