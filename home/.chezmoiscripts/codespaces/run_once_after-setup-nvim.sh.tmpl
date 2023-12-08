@@ -3,6 +3,7 @@
 
 {{ $packages := list
 "build-essential"
+"kmod"
 "fuse" 
 -}}
 
@@ -21,7 +22,7 @@ if ! dpkg -o DPkg::Lock::Timeout=60 -s {{ $packages | join " " }}; then
   {{ $sudo }}apt-get install -y -o DPkg::Lock::Timeout=60 {{ $packages | join " " }}
 fi
 
-{{ $sudo }}modprobe fuse
+# {{ $sudo }}modprobe fuse
 {{ $sudo }}groupadd fuse
 {{ $sudo }}usermod -aG fuse {{ .chezmoi.username }}
 
