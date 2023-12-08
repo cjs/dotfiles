@@ -7,7 +7,7 @@ function chezmoi_refresh
 end
 
 if type -f /home/linuxbrew/.linuxbrew/bin/brew
-    eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    /home/linuxbrew/.linuxbrew/bin/brew shellenv | source
 end
 
-eval (rbenv init -)
+rbenv init - | source
