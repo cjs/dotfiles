@@ -1,3 +1,4 @@
+fish_prepend_path ~/.local/bin
 alias cslog="less /workspaces/.codespaces/.persistedshare/creation.log"
 
 function chezmoi_refresh
@@ -5,7 +6,7 @@ function chezmoi_refresh
     chezmoi init --apply --source /workspaces/.codespaces/.persistedshare/dotfiles
 end
 
-if type -e /home/linuxbrew/.linuxbrew/bin/brew
+if type -f /home/linuxbrew/.linuxbrew/bin/brew
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 end
 
