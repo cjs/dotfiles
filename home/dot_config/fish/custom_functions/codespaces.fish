@@ -1,4 +1,4 @@
-fish_prepend_path ~/.local/bin
+fish_add_path ~/.local/bin
 alias cslog="less /workspaces/.codespaces/.persistedshare/creation.log"
 
 function chezmoi_refresh
