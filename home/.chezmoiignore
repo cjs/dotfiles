@@ -31,6 +31,8 @@ update_brewfile.sh
 {{ end }}
 {{ if .codespaces }}
 .bashrc
+{{ else }}
+.chezmoiscripts/codespaces/**
 {{ end }}
 .config/iterm2/com.googlecode.iterm2.plist
 com.googlecode.iterm2.plist
