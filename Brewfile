@@ -1,6 +1,4 @@
-tap "authzed/tap"
 tap "buo/cask-upgrade"
-tap "cockroachdb/tap"
 tap "derailed/k9s"
 tap "github/bootstrap"
 tap "golangci/tap"
@@ -8,9 +6,11 @@ tap "goles/battery"
 tap "heroku/brew"
 tap "homebrew-ffmpeg/ffmpeg"
 tap "homebrew/bundle"
+tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+tap "homebrew/core"
 tap "homebrew/services"
 tap "tidbyt/tidbyt"
 tap "universal-ctags/universal-ctags"
@@ -84,6 +84,8 @@ brew "kubernetes-cli"
 brew "devspace"
 # Display user-friendly message boxes from shell scripts
 brew "dialog"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
 # Diff that understands syntax
 brew "difftastic"
 # Load/unload environment variables based on $PWD
@@ -167,7 +169,7 @@ brew "hopenpgp-tools"
 # Improved top (interactive process viewer)
 brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
-brew "httpie", link: false
+brew "httpie"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
 # Interpreted, interactive, object-oriented programming language
@@ -224,10 +226,6 @@ brew "mpfr"
 brew "mpv"
 # Open source relational database management system
 brew "mysql-client"
-# Protocol buffers (Google's data interchange format)
-brew "protobuf"
-# Open source relational database management system
-brew "mysql@5.7"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP/2 C Library
@@ -262,6 +260,8 @@ brew "peco"
 brew "pidof"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
 # Show ps output as a tree
 brew "pstree"
 # Interpreted, interactive, object-oriented programming language
@@ -410,6 +410,8 @@ cask "hashbackup"
 cask "hookmark"
 # Testing client for REST, GraphQL, and HTTP APIs
 cask "httpie"
+# HTTP and GraphQL Client
+cask "insomnia"
 # System monitoring app
 cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -466,6 +468,8 @@ cask "rectangle"
 cask "scapple"
 # Store SSH keys in the Secure Enclave
 cask "secretive"
+# MySQL/MariaDB database management platform
+cask "sequel-pro"
 # Video editor
 cask "shotcut"
 # Screenshot measurement and annotation tool
@@ -487,6 +491,8 @@ cask "vlc"
 cask "wezterm"
 # Network protocol analyzer
 cask "wireshark"
+# Application for generating TOTP and HOTP codes
+cask "yubico-authenticator"
 # Application for configuring any YubiKey
 cask "yubico-yubikey-manager"
 # YubiKey tool
@@ -497,21 +503,32 @@ cask "yubico-yubikey-piv-manager"
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Affinity Designer", id: 824171161
+mas "Affinity Designer 2", id: 1616831348
+mas "Affinity Photo 2", id: 1616822987
+mas "Affinity Publisher 2", id: 1606941598
+mas "Animoog Z", id: 1586841361
 mas "AS Timer", id: 512464723
 mas "Bear", id: 1091189122
 mas "Boop", id: 1518425043
 mas "Craft", id: 1487937127
 mas "DaVinci Resolve", id: 571213070
+mas "Developer", id: 640199958
 mas "Drafts", id: 1435957248
 mas "GarageBand", id: 682658836
 mas "Gifski", id: 1351639930
+mas "Hand Mirror", id: 1502839586
 mas "HazeOver", id: 430798174
+mas "Hush", id: 1544743900
 mas "iMovie", id: 408981434
 mas "Ka-Block!", id: 1335413823
 mas "Keynote", id: 409183694
+mas "MainStage", id: 634159523
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft To Do", id: 1274495053
+mas "Model 15", id: 1041465860
+mas "Model D", id: 1339418001
+mas "Notion Web Clipper", id: 1559269364
 mas "Numbers", id: 409203825
 mas "Okta Extension App", id: 1439967473
 mas "Pages", id: 409201541
@@ -523,10 +540,13 @@ mas "Remote Desktop", id: 409907375
 mas "Sequel Ace", id: 1518036000
 mas "Slack", id: 803453959
 mas "SomaFM", id: 449155338
+mas "Soulver 2", id: 413965349
+mas "Spaces", id: 1509611686
 mas "Tailscale", id: 1475387142
 mas "TestFlight", id: 899247664
 mas "Tot", id: 1491071483
 mas "Xcode", id: 497799835
+mas "Zavala", id: 1546457750
 vscode "42Crunch.vscode-openapi"
 vscode "aaron-bond.better-comments"
 vscode "arcticicestudio.nord-visual-studio-code"
