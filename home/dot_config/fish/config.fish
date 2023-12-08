@@ -1,15 +1,8 @@
-function prepend_to_path -d "Prepend the given dir to PATH if it exists and is not already in it"
-    if test -d $argv[1]
-        if not contains $argv[1] $PATH
-            set -gx PATH "$argv[1]" $PATH
-        end
-    end
-end
-
-prepend_to_path /usr/local/bin
-prepend_to_path "$HOME/bin"
-prepend_to_path "./bin"
-prepend_to_path "$HOME/github/gh-helper-cli/exe"
+fish_add_path /usr/local/bin
+fish_add_path "$HOME/bin"
+fish_add_path ~/.local/bin
+fish_add_path "./bin"
+fish_add_path "$HOME/github/gh-helper-cli/exe"
 
 # base-16
 #if status --is-interactive
