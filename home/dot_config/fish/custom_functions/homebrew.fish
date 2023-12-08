@@ -1,6 +1,7 @@
+# codespaces linux brew initialized in codespaces.fish
 if test -d /opt/homebrew
   eval (/opt/homebrew/bin/brew shellenv)
-else if test -d /usr/local/bin/brew
+else if test -e /usr/local/bin/brew
   eval (/usr/local/bin/brew shellenv)
 else
   exit 0
