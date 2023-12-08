@@ -1,9 +1,15 @@
-fish_add_path /usr/local/bin
-fish_add_path ~/bin
-fish_add_path ./bin
-fish_add_path ~/github/gh-helper-cli/exe
-fish_add_path go/bin
-fish_add_path .local/bin
+function prepend_to_path -d "Prepend the given dir to PATH if it exists and is not already in it"
+  if test -d $argv[1]
+    if not contains $argv[1] $PATH
+      set -gx PATH "$argv[1]" $PATH
+    end
+  end
+end
+
+prepend_to_path "/usr/local/bin"
+prepend_to_path "$HOME/bin"
+prepend_to_path "./bin"
+prepend_to_path "$HOME/github/gh-helper-cli/exe"
 
 # base-16
 #if status --is-interactive
@@ -12,6 +18,7 @@ fish_add_path .local/bin
 #end
 
 
+set -x -g DOTFILES "$HOME/.dotfiles"
 set -x -g PROJECTS "$HOME/code"
 
 
@@ -40,9 +47,7 @@ if type -q zoxide
 end
 
 #asdf
-if type -q asdf
-  source (brew --prefix asdf)/libexec/asdf.fish
-end
+source (brew --prefix asdf)/libexec/asdf.fish
 
 #direnv
 if type -q direnv
@@ -50,6 +55,8 @@ if type -q direnv
 end
   
 # vscode 
-if string match -q "$TERM_PROGRAM" "vscode" 
-  source code --locate-shell-integration-path fish
-end
+string match -q "$TERM_PROGRAM" "vscode" and . (code --locate-shell-integration-path fish)
+
+# Secretive
+
+set -x SSH_AUTH_SOCK /Users/cjs/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh

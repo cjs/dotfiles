@@ -22,5 +22,3 @@ FISH_LOCATION="$(brew --prefix)/bin/fish"
 
 grep -q ${FISH_LOCATION} /etc/shells || echo ${FISH_LOCATION} | sudo tee -a /etc/shells
 chsh -s ${FISH_LOCATION}
-
-{{ end -}}
