@@ -7,6 +7,9 @@ Brewfile.lock.json
 update_brewfile.sh
 .bundle/cache/
 .task
+.config/iterm2/com.googlecode.iterm2.plist
+com.googlecode.iterm2.plist
+install.sh
 {{ if ne .chezmoi.os "darwin" }}
 .chezmoiscripts/darwin/**
 .age
@@ -31,9 +34,22 @@ update_brewfile.sh
 {{ end }}
 {{ if .codespaces }}
 .bashrc
+.bash_logout
+.bundle/**
+.cargo/**
+.chezmoiscripts/**
+!.chezmoiscript/codespaces/**
+.config/JetBrains/**
+.docker
+.gitconfig
+.java
+.local/share/**
+.npm/**
+.netrc
+.profile
+.rbenv/**
+.vscode-remote/**
+.yarnrc
 {{ else }}
 .chezmoiscripts/codespaces/**
 {{ end }}
-.config/iterm2/com.googlecode.iterm2.plist
-com.googlecode.iterm2.plist
-install.sh
