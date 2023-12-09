@@ -14,7 +14,7 @@
   type = "file"
   url = "https://raw.githubusercontent.com/arcticicestudio/nord-dircolors/develop/src/dir_colors"
   refreshPeriod = "168h"
-{{ if eq .osid "linux-ubuntu" }}
+{{ if eq .osid "linux-ubuntu" and not .codespaces }}
 [".local/bin/nvim"]
     type = "file"
     url = "https://github.com/neovim/neovim/releases/download/stable/nvim.appimage"
