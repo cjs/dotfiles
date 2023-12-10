@@ -37,8 +37,8 @@ install.sh
 .bash_logout
 .bundle/**
 .cargo/**
-.chezmoiscripts/**
-!.chezmoiscript/codespaces/**
+.chezmoiscripts/darwin/**
+.chez moiscripts/linux/**
 .config/JetBrains/**
 .docker
 .gitconfig
