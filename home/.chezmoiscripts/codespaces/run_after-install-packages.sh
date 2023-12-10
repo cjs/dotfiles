@@ -2,7 +2,9 @@
 
 # check if brew is installed
 if ! command -v brew &>/dev/null; then
-	echo "brew could not be found"
+	echo "brew could not be found, installing"
+	NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" &&
+		eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 	exit 1
 fi
 
@@ -17,6 +19,7 @@ brew_install() {
 
 brew_install "fzf"
 brew_install "ripgrep"
+brew install "rbenv"
 brew_install "neovim"
 
 # nvim +'PlugInstall --sync' +qa
