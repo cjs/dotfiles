@@ -38,7 +38,7 @@ install.sh
 .bundle/**
 .cargo/**
 .chezmoiscripts/darwin/**
-.chez moiscripts/linux/**
+.chezmoiscripts/linux/**
 .config/JetBrains/**
 .docker
 .gitconfig
