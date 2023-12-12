@@ -14,10 +14,12 @@
   type = "file"
   url = "https://raw.githubusercontent.com/arcticicestudio/nord-dircolors/develop/src/dir_colors"
   refreshPeriod = "168h"
+{{- if eq .chezmoi.os "linux"}}
 [".local/bin/nvim"]
     type = "file"
     url = "https://github.com/neovim/neovim/releases/download/stable/nvim.appimage"
     executable = true
+{{- end }}
 {{- if and (eq .chezmoi.os "linux") .personal (not .ephemeral) }}
 {{- $ageVersion := "1.1.1" }}
 [".local/bin/age"]
