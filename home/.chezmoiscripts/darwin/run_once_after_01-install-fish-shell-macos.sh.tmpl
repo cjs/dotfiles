@@ -2,9 +2,6 @@
 
 # Install Fish Shell via Homebrew
 
-source /tmp/chezmoi-utils.sh
-
-printf "${green}[01 - macOS] ${reset}"
 {{- if or (lt 01 (atoi (env "SCRIPTS_START_AT"))) (env "SKIP_FISH_INSTALL") }}
 echo "Skip installing Fish Shell"
 exit 0

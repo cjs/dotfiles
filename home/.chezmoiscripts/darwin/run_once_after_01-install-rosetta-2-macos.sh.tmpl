@@ -3,9 +3,7 @@
 {{ if eq .chezmoi.arch "arm64" }}
 {{ template "script_no_root" . }}
 {{ template "script_caffeinate" . }}
-source /tmp/chezmoi-utils.sh
 
-printf "${green}[01 - macOS] ${reset}"
 set -eufo pipefail
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 {{ else }}
