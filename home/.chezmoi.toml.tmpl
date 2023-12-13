@@ -36,10 +36,6 @@
 {{-   end -}}
 {{- end -}}
 
-{{- if eq .chezmoi.os "darwin" -}}
-[diff]
-    pager = "diff-so-fancy | less --tabs=4 -RFX"
-{{- end -}}
 [data]
     docker = {{ $docker }}
     ephemeral = {{ $ephemeral }}
@@ -53,4 +49,5 @@ encryption = "age"
 [age]
     identity = "/Users/cjs/.age/key.txt"
     recipient = "age1w2l80l28v26hadxczj73va2ff7kzljalsdsqdac7p4zez5xygy0s5kqafa"
+
 

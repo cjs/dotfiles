@@ -2,5 +2,5 @@
 
 set -e
 
-echo "Installing: bootstrapping neovim plugins ********************"
-~/.local/bin/nvim --headless "+Lazy! sync" +qa
+# echo "Installing: bootstrapping neovim plugins ********************"
+# ~/.local/bin/nvim --headless "+Lazy! sync" +qa
