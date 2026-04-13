@@ -403,6 +403,7 @@ cask "grandperspective"
 # Light, Electron-based Wrapper around GraphiQL
 cask "graphiql"
 # Open-source video transcoder
+cask "hammerspoon"
 cask "handbrake"
 # Command-line backup program
 cask "hashbackup"
