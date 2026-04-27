@@ -4,6 +4,8 @@
   # For username / creds / etc
   path = ~/.gitconfig.local
 {{ end -}}
+[init]
+  defaultBranch = main
 [color]
   ui = auto
 [color "branch"]
@@ -58,9 +60,6 @@
   default = simple
   autoSetupRemote = true
 
-[hub]
-  protocol = https
-
 [branch]
 
 [github]
@@ -82,6 +81,7 @@
 
 [web]
   browser = open
+
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
@@ -91,18 +91,34 @@
 	smudge = git-lfs smudge -- %f
   required = true
 	process = git-lfs filter-process
+
 [commit]
 	gpgsign = true
+
 [protocol]
 	version = 2
+
 [code]
 	excludesfile = /Users/cjs/.gitignore_global
+
 [gpg]
   format = ssh
+
 [gpg "ssh"]
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
 [core]
-	pager = delta --dark
+	pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true # use n and N to move between diff sections
+
+[merge]
+  conflictStyle = zdiff3
+
 [tag]
   forceSignAnnotated = true
   gpgsign = true
