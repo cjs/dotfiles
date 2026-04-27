@@ -57,3 +57,11 @@ command -v vg >/dev/null 2>&1 && eval "$(vg eval --shell bash)"
 
 # Secretive Config
 export SSH_AUTH_SOCK=/Users/cjs/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/cjs/.lmstudio/bin"
+# End of LM Studio CLI section
+
+export GITHUB_APP_ID=
+export GITHUB_PRIVATE_KEY=
+export GITHUB_INSTALLATION_ID=
