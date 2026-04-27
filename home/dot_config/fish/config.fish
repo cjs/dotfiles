@@ -11,9 +11,7 @@ fish_add_path "$HOME/github/gh-helper-cli/exe"
 #end
 
 
-set -x -g DOTFILES "$HOME/.dotfiles"
 set -x -g PROJECTS "$HOME/code"
-
 
 for i in ~/.config/fish/custom_functions/*.fish
     source $i
@@ -30,9 +28,6 @@ end
 
 # command -v vg >/dev/null 2>&1; and vg eval --shell fish | source
 
-# THEME PURE #
-#set fish_function_path /Users/cjs/.config/fish/functions/theme-pure/functions/ $fish_function_path
-#source /Users/cjs/.config/fish/functions/theme-pure/conf.d/pure.fish
 
 # zoxide
 if type -q zoxide
