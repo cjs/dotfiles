@@ -14,3 +14,4 @@ function parse_git_branch() {
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/cjs/.lmstudio/bin"
 # End of LM Studio CLI section
+eval "$(mise activate bash)"

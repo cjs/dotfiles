@@ -32,11 +32,6 @@ if type -q zoxide
     zoxide init fish | source
 end
 
-#asdf
-if type -q asdf
-    source (brew --prefix asdf)/libexec/asdf.fish
-end
-
 # gh hubber-skills
 gh hubber-skills completion fish | source
 
