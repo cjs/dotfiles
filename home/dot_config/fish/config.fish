@@ -17,7 +17,6 @@ for i in ~/.config/fish/custom_functions/*.fish
     source $i
 end
 
-
 if type -q fzf and type -q rg
     set -x FZF_DEFAULT_COMMAND 'rg -g "" --files'
     set -x FZF_CTRL_T_COMMAND $$FZF_DEFAULT_COMMAND
@@ -27,7 +26,6 @@ if type -q fzf and type -q rg
 end
 
 # command -v vg >/dev/null 2>&1; and vg eval --shell fish | source
-
 
 # zoxide
 if type -q zoxide
@@ -39,6 +37,8 @@ if type -q asdf
     source (brew --prefix asdf)/libexec/asdf.fish
 end
 
+# gh hubber-skills
+gh hubber-skills completion fish | source
 
 #direnv
 if type -q direnv
@@ -50,8 +50,9 @@ if string match -q "$TERM_PROGRAM" vscode
     source (code --locate-shell-integration-path fish)
 end
 
-# Secretive
-if type -s $secretive_socketfile
-    set -l secretive_socketfile /Users/cjs/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
-    set -x SSH_AUTH_SOCK $secretive_socketfile
-end
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/cjs/.lmstudio/bin
+# End of LM Studio CLI section
+
+# GitHub Ace
+fish_add_path $HOME/.ace/bin

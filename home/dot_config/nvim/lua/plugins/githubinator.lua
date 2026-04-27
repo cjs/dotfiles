@@ -1,5 +1,0 @@
-return {
-  {
-    "danishprakash/vim-githubinator",
-  },
-}

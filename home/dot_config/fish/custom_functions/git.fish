@@ -2,9 +2,6 @@ set -x GHI_PAGER less
 set -x GIT_SANDBOX $HOME/Projects/sandbox
 set -x GIT_MERGE_AUTOEDIT no
 
-if command -q hub
-    alias git hub
-end
 
 function git_time_since_last_commit
     set ref (git symbolic-ref HEAD 2> /dev/null) or return
