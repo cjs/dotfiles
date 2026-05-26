@@ -4,13 +4,6 @@ fish_add_path ~/.local/bin
 fish_add_path "./bin"
 fish_add_path "$HOME/github/gh-helper-cli/exe"
 
-# base-16
-#if status --is-interactive
-#   source $HOME/.config/base16-shell/profile_helper.fish
-#   base16-nord
-#end
-
-
 set -x -g PROJECTS "$HOME/code"
 
 for i in ~/.config/fish/custom_functions/*.fish
@@ -22,7 +15,11 @@ if type -q fzf and type -q rg
     set -x FZF_CTRL_T_COMMAND $$FZF_DEFAULT_COMMAND
     set -x FZF_ALT_C_COMMAND $FZF_DEFAULT_COMMAND
 
-    source ~/.config/base16-fzf/fish/base16-nord.fish
+    # Nord color scheme for fzf (base16-nord palette)
+    set -Ux FZF_DEFAULT_OPTS \
+        "--color=bg+:#3b4252,bg:#2e3440,spinner:#88c0d0,hl:#81a1c1" \
+        "--color=fg:#d8dee9,header:#81a1c1,info:#ebcb8b,pointer:#88c0d0" \
+        "--color=marker:#88c0d0,fg+:#eceff4,prompt:#ebcb8b,hl+:#81a1c1"
 end
 
 # command -v vg >/dev/null 2>&1; and vg eval --shell fish | source
